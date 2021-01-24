@@ -1,0 +1,59 @@
+@include mq-prefix( 'b' ) {
+
+	&-n {
+		border: none;
+	}
+
+	&-br-round {
+		border-radius: 999rem;
+	}
+
+	@each $c_name, $c_value in $colours {
+		&-c-#{$c_name} {
+			border-color: var( --color-#{$c_name} );
+		}
+	}
+
+	&-a {
+		border: var( --border-width ) solid var( --color-border );
+	}
+
+	@each $p_name, $p_value in $positions {
+		&-#{$p_name} {
+			border-#{$p_value}: var( --border-width ) solid var( --color-border );
+		}
+	}
+
+	@each $value in ( 1, 2, 3, 4, 5 ) {
+
+		$s: nth( $sizes, $value );
+		$s_name: nth( $s, 1 );
+		$s_value: nth( $s, 2 );
+
+		// Border Radius on all corners.
+		&-br#{$s_name} {
+			border-radius: var( --size-#{$s_name} );
+		}
+
+		// Border width.
+		&-bw#{$s_name} {
+			border-width: var( --size-#{$s_name} );
+		}
+
+		// Border Radius on specific corners.
+		@each $p_name, $p_value in $positions-corner {
+			&-br-#{$p_name}#{$s_name} {
+				border-#{$p_value}-radius: var( --size-#{$s_name} );
+			}
+		}
+
+		// Border width.
+		@each $p_name, $p_value in $positions {
+			&-bw-#{$p_name}#{$s_name} {
+				border-#{$p_value}-width: var( --size-#{$s_name} );
+			}
+		}
+
+	}
+
+};

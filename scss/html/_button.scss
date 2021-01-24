@@ -1,0 +1,49 @@
+button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+
+	-webkit-appearance: button;
+
+}
+
+.btn,
+button,
+[role=button],
+input[type=submit],
+input[type=reset],
+input[type=button] {
+
+	font: inherit;
+	border: none;
+	display: inline-block;
+	width: auto;
+	text-decoration: none;
+
+	border-radius: var( --border-radius );
+	padding: var( --size-1 ) var( --size-3 );
+	background: var( --color-accent );
+	color: var( --color-accent-contrast );
+
+	&:hover {
+
+		cursor: pointer;
+		filter: contrast( 1.5 );
+
+	}
+
+	&:active,
+	&:focus {
+
+		@extend .outline;
+
+	}
+
+	&:disabled {
+
+		opacity: 0.5;
+		cursor: not-allowed;
+
+	}
+
+}

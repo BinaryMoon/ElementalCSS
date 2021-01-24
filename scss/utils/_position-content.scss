@@ -1,0 +1,38 @@
+$position-content: (
+	'fs': 'flex-start',
+	'fe': 'flex-end',
+	'c': 'center',
+	'sb': 'space-between',
+	'sa': 'space-around',
+	'se': 'space-evenly',
+);
+
+$position-items: (
+	'a': 'auto',
+	's': 'stretch',
+	'e': 'end',
+	'c': 'center',
+);
+
+
+@include mq-prefix( 'pc' ) {
+
+	@each $pc_name, $pc_value in $position-content {
+		&#{'-jc-' + $pc_name} {
+			justify-content: #{$pc_value};
+		}
+		&#{'-ac-' + $pc_name} {
+			align-content: #{$pc_value};
+		}
+	}
+
+	@each $pc_name, $pc_value in $position-items {
+		&#{'-ji-' + $pc_name} {
+			justify-items: #{$pc_value};
+		}
+		&#{'-ai-' + $pc_name} {
+			align-items: #{$pc_value};
+		}
+	}
+
+}

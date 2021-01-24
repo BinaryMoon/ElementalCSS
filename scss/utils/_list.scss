@@ -1,0 +1,16 @@
+@include mq-prefix( 'l' ) {
+
+	&-inline {
+
+		list-style-type: none;
+		padding: 0;
+
+		li {
+
+			display: inline;
+
+		}
+
+	}
+
+}

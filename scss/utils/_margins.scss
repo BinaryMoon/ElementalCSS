@@ -1,0 +1,31 @@
+@include mq-prefix( 'm' ) {
+// .m {
+
+	// Center content horizontally.
+	&-a {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@each $value in (1,2,3,4,5,6,7) {
+
+		$s: nth( $sizes, $value );
+		$s_name: nth( $s, 1 );
+		$s_value: nth( $s, 2 );
+
+		// Margin on all sides.
+		&#{$s_name} {
+			margin: var( --size-#{$s_name} );
+		}
+
+		// Margin in specific direction.
+		@each $p_name, $p_value in $positions {
+			&-#{$p_name}#{$s_name} {
+				margin-#{$p_value}: var( --size-#{$s_name} );
+			}
+		}
+
+	}
+
+
+}

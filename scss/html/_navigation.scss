@@ -1,0 +1,16 @@
+nav {
+
+	ul {
+
+		list-style-type: none;
+		padding: 0;
+
+		ul {
+
+			padding-inline-start: var( --size-3 );
+
+		}
+
+	}
+
+}

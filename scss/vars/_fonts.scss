@@ -1,0 +1,55 @@
+$font-weights: ( 100, 200, 300, 400, 500, 600, 700, 800, 900 );
+
+$font-sizes: (
+	'1': ( var( --type-lh-1 ), & ),
+	'2': ( var( --type-lh-1 ), & ),
+	'3': ( var( --type-lh-1 ), & ),
+	'4': ( var( --type-lh-2 ), & ),
+	'5': ( var( --type-lh-2 ), & ),
+	'6': ( var( --type-lh-2 ), var( --type-ls-1 ) ),
+);
+
+$font-families: (
+	'arial': ( Arial, Helvetica Neue, Helvetica, Liberation Sans, sans-serif ),
+	'arial-black': ( Arial Black, Arial Bold, Gadget, sans-serif ),
+	'arial-narrow': ( Arial Narrow, Arial, sans-serif ),
+	'arial-rounded': ( Arial Rounded MT Bold, Arial Rounded Bold, Helvetica Rounded, Arial, sans-serif ),
+	'baskerville': ( Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif ),
+	'book-antiqua': ( Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Bitstream Charter, URW Palladio, Georgia, serif ),
+	'bookman': ( Bookman, Bookman Old Style, Book Antiqua, Palatino, URW Bookman, serif ),
+	'calibri': ( Calibri, Candara, Segoe, Segoe UI, Carlito, Roboto, Ubuntu, Optima, Arial, sans-serif ),
+	'cambria': ( Cambria, Caladea, Roboto Slab, Georgia, serif ),
+	'century-gothic': ( Century Gothic, CenturyGothic, URW Gothic, AppleGothic, sans-serif ),
+	'consolas': ( Consolas, monaco, Liberation Mono, monospace ),
+	'courier-new': ( Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace ),
+	'franklin-gothic': ( Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif ),
+	'futura': ( Futura, Trebuchet MS, Arial, sans-serif ),
+	'garamond': ( Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif ),
+	'geneva': ( Geneva, Tahoma, Verdana, DejaVu Sans, Bitstream Vera Sans, sans-serif ),
+	'georgia': ( Georgia, Times, Times New Roman, serif ),
+	'gill-sans': ( Gill Sans, Gill Sans MT, Century Gothic, Calibri, sans-serif ),
+	'helvetica': ( Helvetica Neue, Helvetica, Arial, sans-serif ),
+	'hoefler': ( Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif ),
+	'lucida-bright': ( Lucida Bright, Georgia, serif ),
+	'lucida-grande': ( Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif ),
+	'lucida-console': ( Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, Liberation Mono, monospace ),
+	'palatino': ( Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, URW Palladio, Georgia, serif ),
+	'system': ( -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ),
+	'system-monospace': ( SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace ),
+	'tahoma': ( Tahoma, Verdana, Segoe, sans-serif ),
+	'times-new-roman': ( TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, Liberation Serif, FreeSerif, serif ),
+	'trebuchet': ( Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif ),
+	'verdana': ( Verdana, Geneva, DejaVu Sans, sans-serif ),
+);
+
+:root {
+
+	// Font families.
+	@each $f_name, $f_value in $font-families {
+		--font-#{$f_name}: #{$f_value};
+	}
+
+	--font-main: var( --font-system );
+	--font-monospace: var( --font-system-monospace );
+
+}

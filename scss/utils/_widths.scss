@@ -1,0 +1,27 @@
+@each $classname, $property in ( 'w': 'width', 'mw': 'max-width' ) {
+
+	@include mq-prefix( $classname ) {
+
+		@each $value in ( 3, 4, 5, 6, 7, 8, 9 ) {
+			&#{ $value - 2 } {
+				#{$property}: var( --size-#{$value} );
+			}
+		}
+
+		@each $p_value in $percentages {
+			&#{$p_value}p {
+				#{$property}: percentage( $p_value / 100 );
+			}
+		}
+
+		&-auto {
+			#{$property}: auto;
+		}
+
+		&-screen {
+			width: 100vw;
+		}
+
+	}
+
+}

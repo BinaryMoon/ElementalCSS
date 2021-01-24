@@ -1,0 +1,26 @@
+
+.f {
+
+	// Font weights.
+	@each $w in $font-weights {
+		&-fw#{$w} {
+			font-weight: $w;
+		}
+	}
+
+	// Font size.
+	@each $s_name, $s_value in $font-sizes  {
+		&-s#{$s_name} {
+			font-size: var( --type-size-#{$s_name} );
+
+			@if $s_value {
+				line-height: #{nth($s_value,1)};
+			}
+
+			@if nth( $s_value, 2 ) {
+				letter-spacing: #{nth( $s_value, 2 )};
+			}
+		}
+	}
+
+}

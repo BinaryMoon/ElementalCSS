@@ -1,0 +1,105 @@
+$colours: (
+
+	// Color Palette.
+	'black': #000,
+	'white': #fff,
+
+	'gray5': #111827,
+	'gray4': #374151,
+	'gray3': #6B7280,
+	'gray2': #D1D5DB,
+	'gray1': #F3F4F6,
+
+	'blue3': #1E40AF,
+	'blue2': #3B82F6,
+	'blue1': #BFDBFE,
+
+	'red3': #991B1B,
+	'red2': #EF4444,
+	'red1': #FECACA,
+
+	'green3': #065F46,
+	'green2': #10B981,
+	'green1': #A7F3D0,
+
+	'yellow3': #D97706,
+	'yellow2': #FBBF24,
+	'yellow1': #FDE68A,
+
+);
+
+// Theme colours.
+// The first colour is for the light theme, the second is for the dark theme.
+$colour_theme: (
+
+	'bg': (
+		white,
+		gray5
+	),
+	'border': (
+		gray2,
+		gray4,
+	),
+	'text': (
+		gray5,
+		gray1
+	),
+	'accent': (
+		blue2,
+		red2
+	),
+	'accent-contrast': (
+		white,
+		black
+	),
+	'highlight-bg': (
+		yellow1,
+		gray4
+	),
+	'highlight': (
+		black,
+		white
+	),
+	'input-bg': (
+		gray2,
+		gray4
+	),
+	'input': (
+		black,
+		white
+	),
+	'code': (
+		green2,
+		green2
+	),
+	'outline': (
+		blue2,
+		blue2
+	),
+
+);
+
+:root {
+
+	@each $c_name, $c_value in $colours {
+		--color-#{$c_name}: #{$c_value};
+	}
+
+	@each $c_name, $c_value in $colour_theme {
+		--color-#{$c_name}: var( --color-#{nth($c_value,1)} );
+	}
+
+}
+
+/* Dark theme */
+@media ( prefers-color-scheme: dark ) {
+
+	:root {
+
+		@each $c_name, $c_value in $colour_theme {
+			--color-#{$c_name}: var( --color-#{nth($c_value,2)} );
+		}
+
+	}
+
+}

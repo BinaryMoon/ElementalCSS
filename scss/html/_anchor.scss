@@ -1,0 +1,17 @@
+a {
+
+	color: var( --color-accent );
+
+	&:not([class]) {
+
+		text-decoration-skip-ink: auto;
+
+	}
+
+	&:hover {
+
+		text-decoration: none;
+
+	}
+
+}

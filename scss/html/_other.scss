@@ -1,0 +1,97 @@
+hr {
+
+	border: none;
+	border-top: var( --size-1 ) solid var( --color-border );
+	margin: var( --size-3 ) auto;
+
+}
+
+// Text highlighting.
+mark {
+
+	padding: var( --size-1 ) var( --size-2 );
+	background: var( --color-highlight-bg );
+	color: var( --color-highlight );
+
+}
+
+figure {
+
+	margin: 0;
+
+}
+
+figcaption {
+
+	text-align: center;
+
+	font-size: var( --type-size-6 );
+	margin-bottom: var( --size-3 );
+
+}
+
+blockquote {
+
+	font-style: italic;
+
+	background: var( --color-input-bg );
+	color: var( --color-input );
+	font-size: var( --type-size-4 );
+	margin-top: var( --size-4 );
+	margin-bottom: var( --size-4 );
+	padding: var( --size-4 ) var( --size-4 );
+	border-left: var( --size-2 ) solid var( --color-accent );
+
+}
+
+cite {
+
+	font-style: normal;
+	opacity: 0.8;
+
+	font-size: var( --type-size-6 );
+
+}
+
+/* Use mono font for code like elements */
+code,
+pre,
+kbd,
+samp {
+
+	font-family: var( --font-monospace );
+	color: var( --color-code );
+}
+
+kbd {
+
+	line-height: 1;
+	border-radius: var( --border-radius );
+	border: 1px solid var( --color-code );
+	border-bottom: 2px solid var( --color-code );
+	padding: var( --size-1 ) var( --size-2 );
+	font-family: var( --font-monospace );
+
+}
+
+pre {
+
+	max-width: 100%;
+	overflow: auto;
+
+	padding: var( --size-3 ) var( --size-4 );
+	background: var( --color-input-bg );
+	border: 1px solid var( --color-border );
+	border-radius: var( --border-radius );
+
+	code {
+
+		background: none;
+		margin: 0;
+		padding: 0;
+
+		color: var( --color-input );
+
+	}
+
+}

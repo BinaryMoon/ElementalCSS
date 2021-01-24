@@ -1,0 +1,34 @@
+/**
+ * Colours
+ */
+
+// Background colours.
+// Listed before normal colours so that colours can override the accessible
+// colour set by the background property,
+.bg {
+
+	@each $c_name, $c_value in $colours {
+		&-#{$c_name} {
+			background-color: var( --color-#{$c_name} );
+			color: get_contrast( $c_value );
+		}
+	}
+
+}
+
+// Normal colours.
+.c {
+
+	@each $c_name, $c_value in $colours {
+		&-#{$c_name} {
+			color: var( --color-#{$c_name} );
+		}
+	}
+
+	&-current {
+
+		color: currentColor;
+
+	}
+
+}

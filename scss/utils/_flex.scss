@@ -1,0 +1,45 @@
+@include mq-prefix( 'flex' ) {
+
+	display: flex;
+
+	&-wrap {
+
+		flex-wrap: wrap;
+
+	}
+
+	// Direction.
+	&-d {
+
+		&-c {
+			flex-direction: column;
+		}
+		&-r {
+			flex-direction: row;
+		}
+
+	}
+
+	@each $s_value in (0,1) {
+		&-g#{$s_value} {
+			flex-grow: $s_value;
+		}
+		&-s#{$s_value} {
+			flex-shrink: $s_value;
+		}
+	}
+
+	// Justify.
+	&-jc {
+		&-sb {
+			justify-content: space-between;
+		}
+	}
+
+	&-ai {
+		&-c {
+			align-items: center;
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+p {
+
+	margin-block: var( --size-4 );
+
+}
+
+small {
+
+	@extend .f-s6;
+
+}
+
+sub,
+sup {
+
+	@extend .f-s6;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+
+}
+
+sub {
+
+	bottom: -0.25em;
+
+}
+
+sup {
+
+	top: -0.5em;
+
+}
