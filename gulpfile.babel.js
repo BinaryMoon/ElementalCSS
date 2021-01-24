@@ -76,7 +76,7 @@ export function process_styles() {
 			)
 		)
 		.pipe(
-			dest( './' )
+			dest( './dist/' )
 		);
 
 }
