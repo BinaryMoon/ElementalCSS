@@ -3671,7 +3671,7 @@ textarea {
 }
 
 /* Makes input fields wider on smaller screens */
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 32em) {
 	textarea,
 	select,
 	input {
