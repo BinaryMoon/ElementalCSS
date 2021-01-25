@@ -31,6 +31,8 @@ const sass_properties = {
  */
 export function process_styles() {
 
+	const export_path = './dist/'
+
 	return src( './scss/*.scss' )
 		.pipe( plumber() )
 		.pipe(
@@ -47,7 +49,7 @@ export function process_styles() {
 			)
 		)
 		.pipe(
-			dest( './' )
+			dest( export_path )
 		)
 		.pipe(
 			change( removeComments )
@@ -76,7 +78,7 @@ export function process_styles() {
 			)
 		)
 		.pipe(
-			dest( './dist/' )
+			dest( export_path )
 		);
 
 }
