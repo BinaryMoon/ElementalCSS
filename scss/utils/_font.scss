@@ -13,8 +13,8 @@
 		&-s#{$s_name} {
 			font-size: var( --type-size-#{$s_name} );
 
-			@if $s_value {
-				line-height: #{nth($s_value,1)};
+			@if nth( $s_value, 1 ) {
+				line-height: #{nth( $s_value, 1 )};
 			}
 
 			@if nth( $s_value, 2 ) {
