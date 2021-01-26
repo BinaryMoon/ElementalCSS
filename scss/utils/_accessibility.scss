@@ -1,0 +1,36 @@
+/* Text meant only for screen readers. */
+.screen-reader-text {
+
+	border: 0;
+	clip: rect( 1px, 1px, 1px, 1px );
+	clip-path: inset(50%);
+	position: absolute !important;
+	padding: 0;
+	margin: -1px;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+
+	&:focus {
+
+		@extend .outline;
+		@extend .f-s4;
+
+		font-weight: bold;
+		clip: auto !important;
+		display: block;
+		height: auto;
+		width: auto;
+		z-index: 99999;
+
+		padding: var( --size-2 );
+		background: var( --color-accent );
+		color: var( --color-accent-contrast );
+		left: var( --size-2 );
+		top: var( --size-2 );
+		max-width: var( --size-7 );
+
+	}
+
+}
