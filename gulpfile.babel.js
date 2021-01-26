@@ -17,7 +17,7 @@ const cleancss = require( 'gulp-clean-css' );
 const change = require( 'gulp-change' );
 const rename = require( 'gulp-rename' );
 const plumber = require( 'gulp-plumber' );
-const size = require('gulp-size');
+const size = require( 'gulp-size' );
 
 const sass_properties = {
 	indentType: 'tab',
