@@ -125,6 +125,8 @@ div > :first-child,
 main > :first-child,
 section > :first-child,
 article > :first-child,
+header > :first-child,
+footer > :first-child,
 aside > :first-child {
 	margin-top: 0;
 }
@@ -133,6 +135,8 @@ div > :last-child,
 main > :last-child,
 section > :last-child,
 article > :last-child,
+header > :last-child,
+footer > :last-child,
 aside > :last-child {
 	margin-bottom: 0;
 }
@@ -191,8 +195,48 @@ picture {
 	}
 }
 
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	position: absolute !important;
+	padding: 0;
+	margin: -1px;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	font-weight: bold;
+	clip: auto !important;
+	display: block;
+	height: auto;
+	width: auto;
+	z-index: 99999;
+	padding: var(--size-2);
+	background: var(--color-accent);
+	color: var(--color-accent-contrast);
+	left: var(--size-2);
+	top: var(--size-2);
+	max-width: var(--size-7);
+}
+
+.bg {
+	/**
+	 * Use style="--bg-image: url(/image/url/);" to set the image.
+	 */
+}
+
 .bg-t {
 	background: transparent;
+}
+
+.bg-i {
+	background-image: var(--bg-image);
 }
 
 .b-n {
@@ -1296,7 +1340,7 @@ picture {
 	line-height: var(--type-lh-1);
 }
 
-.f-s4, h3 {
+.f-s4, .screen-reader-text:focus, h3 {
 	font-size: var(--type-size-4);
 	line-height: var(--type-lh-2);
 }
@@ -2586,7 +2630,7 @@ sup {
 	}
 }
 
-.outline, .btn:active, .btn:focus,
+.outline, .screen-reader-text:focus, .btn:active, .btn:focus,
 button:active,
 button:focus,
 [role=button]:active,
