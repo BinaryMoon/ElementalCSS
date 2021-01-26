@@ -23,16 +23,16 @@
 
 	&-col {
 		&2 {
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: repeat( 2, minmax( 10px, 1fr ) );
 		}
 		&3 {
-			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-columns: repeat( 3, minmax( 10px, 1fr ) );
 		}
 		&4 {
-			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-columns: repeat( 4, minmax( 10px, 1fr ) );
 		}
 		&5 {
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-columns: repeat( 5, minmax( 10px, 1fr ) );
 		}
 	}
 
