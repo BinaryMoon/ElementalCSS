@@ -1,0 +1,18 @@
+table {
+
+	caption,
+	th {
+
+		text-align: left;
+		font-weight: bold;
+
+	}
+
+	caption,
+	th, td {
+
+		padding: var( --size-1 );
+
+	}
+
+}
