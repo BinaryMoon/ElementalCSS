@@ -3,8 +3,9 @@ select,
 textarea {
 
 	font: inherit;
+	color: inherit;
 	box-shadow: none;
-	width: 60%;
+	width: 100%;
 
 	border-radius: var( --border-radius );
 	line-height: var( --type-lh-2 );
@@ -12,9 +13,23 @@ textarea {
 	background: var( --color-pop );
 	border: 2px solid var( --color-border );
 
+	@include mq-tablet() {
+
+		width: 60%;
+
+	}
+
+	&:active,
 	&:focus {
 
 		@extend .outline;
+
+	}
+
+	&:disabled {
+
+		opacity: 0.5;
+		cursor: not-allowed;
 
 	}
 
@@ -24,18 +39,8 @@ textarea {
 /* Make the textarea wider than other inputs */
 textarea {
 
-	width: 80%;
-
-}
-
-/* Makes input fields wider on smaller screens */
-@include mq-tablet() {
-
-	textarea,
-	select,
-	input {
-		width: 100%;
-	}
+	width: 100%;
+	resize: vertical;
 
 }
 
@@ -44,5 +49,38 @@ input[type="checkbox"],
 input[type="radio"]{
 
 	width: auto;
+
+}
+
+label {
+
+	font-weight: bold;
+	display: block;
+
+	margin-top: var( --size-1 );
+	margin-bottom: var( --size-1 );
+
+}
+
+fieldset {
+
+	margin-top: var( --size-4 );
+	margin-bottom: var( --size-4 );
+	padding: var( --size-3 );
+	border: var( --border-width ) solid var( --color-border );
+
+}
+
+legend {
+
+	padding-left: var( --size-2 );
+	padding-right: var( --size-2 );
+	font-weight: bold;
+
+	> * {
+
+		margin: 0;
+
+	}
 
 }
