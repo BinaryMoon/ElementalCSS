@@ -9,18 +9,6 @@
 
 	}
 
-	@each $value in ( 0, 1, 2, 3, 4, 5 ) {
-		&-gg#{$value} {
-			gap: var( --size-#{$value} );
-		}
-		&-gg-r#{$value} {
-			row-gap: var( --size-#{$value} );
-		}
-		&-gg-c#{$value} {
-			column-gap: var( --size-#{$value} );
-		}
-	}
-
 	&-col {
 		&2 {
 			grid-template-columns: repeat( 2, minmax( 10px, 1fr ) );
