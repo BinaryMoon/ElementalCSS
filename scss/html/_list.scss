@@ -1,6 +1,20 @@
+dd,
+dt,
 li {
 
 	margin-top: var( --size-1 );
 	margin-bottom: var( --size-1 );
+
+}
+
+dt {
+
+	font-weight: bold;
+
+}
+
+dd:not( :last-of-type ) {
+
+	margin-bottom: var( --size-3 );
 
 }
