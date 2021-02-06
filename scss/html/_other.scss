@@ -46,7 +46,6 @@ blockquote {
 cite {
 
 	font-style: normal;
-	opacity: 0.8;
 
 	font-size: var( --type-size-6 );
 
@@ -60,6 +59,7 @@ samp {
 
 	font-family: var( --font-monospace );
 	color: var( --color-code );
+
 }
 
 kbd {
@@ -88,6 +88,24 @@ pre {
 		margin: 0;
 		padding: 0;
 
+	}
+
+}
+
+summary {
+
+	font-weight: bold;
+
+	&:active,
+	&:focus {
+
+		@extend .outline;
+
+	}
+
+	> * {
+
+		display: inline;
 
 	}
 
