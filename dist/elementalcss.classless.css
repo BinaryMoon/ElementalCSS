@@ -4,55 +4,37 @@
 }
 
 :root {
-	--color-black: #000;
-	--color-white: #fff;
+	--color-black: #000000;
 	--color-gray5: #111827;
 	--color-gray4: #374151;
 	--color-gray3: #6B7280;
 	--color-gray2: #D1D5DB;
-	--color-gray1: #F3F4F6;
-	--color-blue3: #1E40AF;
-	--color-blue2: #3B82F6;
-	--color-blue1: #BFDBFE;
-	--color-red3: #991B1B;
-	--color-red2: #EF4444;
-	--color-red1: #FECACA;
-	--color-green3: #065F46;
-	--color-green2: #10B981;
-	--color-green1: #A7F3D0;
-	--color-yellow3: #D97706;
-	--color-yellow2: #FBBF24;
-	--color-yellow1: #FDE68A;
+	--color-gray1: #E5E7EB;
+	--color-white: #FFFFFF;
+	--color-tint: rgba(229, 231, 235, 0.2);
+	--color-shade: rgba(17, 24, 39, 0.2);
+	--color-blue: #3B82F6;
+	--color-blue-dark: #1E40AF;
+	--color-red: #d4351c;
+	--color-red-dark: #903425;
+	--color-green: #10B981;
+	--color-green-dark: #047857;
+	--color-yellow: #FFDD00;
+	--color-purple: #8B5CF6;
+	--color-pink: #EC4899;
 	--color-bg: var( --color-white );
-	--color-border: var( --color-gray2 );
-	--color-text: var( --color-gray5 );
-	--color-accent: var( --color-blue2 );
-	--color-accent-contrast: var( --color-white );
-	--color-highlight-bg: var( --color-yellow1 );
-	--color-highlight: var( --color-black );
-	--color-input-bg: var( --color-gray2 );
-	--color-input: var( --color-black );
-	--color-code: var( --color-green2 );
-	--color-outline: var( --color-blue2 );
+	--color-fg: var( --color-gray5 );
+	--color-bg-accent: var( --color-blue );
+	--color-fg-accent: var( --color-white );
+	--color-bg-highlight: var( --color-yellow );
+	--color-fg-highlight: var( --color-black );
+	--color-pop: var( --color-gray1 );
+	--color-link: var( --color-red );
+	--color-border: var( --color-gray1 );
+	--color-code: var( --color-green );
 }
 
 /* Dark theme */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-bg: var( --color-gray5 );
-		--color-border: var( --color-gray4 );
-		--color-text: var( --color-gray1 );
-		--color-accent: var( --color-red2 );
-		--color-accent-contrast: var( --color-black );
-		--color-highlight-bg: var( --color-gray4 );
-		--color-highlight: var( --color-white );
-		--color-input-bg: var( --color-gray4 );
-		--color-input: var( --color-white );
-		--color-code: var( --color-green2 );
-		--color-outline: var( --color-blue2 );
-	}
-}
-
 :root {
 	--font-arial: Arial, Helvetica Neue, Helvetica, Liberation Sans, sans-serif;
 	--font-arial-black: Arial Black, Arial Bold, Gadget, sans-serif;
@@ -114,7 +96,6 @@
 	}
 }
 
-/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -125,6 +106,7 @@ div > :first-child,
 main > :first-child,
 section > :first-child,
 article > :first-child,
+blockquote > :first-child,
 header > :first-child,
 footer > :first-child,
 aside > :first-child {
@@ -135,13 +117,13 @@ div > :last-child,
 main > :last-child,
 section > :last-child,
 article > :last-child,
+blockquote > :last-child,
 header > :last-child,
 footer > :last-child,
 aside > :last-child {
 	margin-bottom: 0;
 }
 
-/* Set core root defaults */
 html {
 	font-size: 16px;
 }
@@ -150,18 +132,16 @@ html:focus-within {
 	scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	background: var(--color-bg);
-	color: var(--color-text);
+	color: var(--color-fg);
 	font-size: var(--type-base);
 	line-height: var(--type-lh-2);
 	font-family: var(--font-main);
 }
 
-/* Remove default margin */
 body,
 p,
 figure,
@@ -171,14 +151,12 @@ dd {
 	margin: 0;
 }
 
-/* Make images easier to work with */
 img,
 picture {
 	max-width: 100%;
 	display: block;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
 	html:focus-within {
 		scroll-behavior: auto;
@@ -193,6 +171,15 @@ picture {
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
+}
+
+::target-text {
+	background: var(--color-bg-highlight);
+	color: var(--color-fg-highlight);
+}
+
+[id] {
+	scroll-margin-top: 2ex;
 }
 
 /* Text meant only for screen readers. */
@@ -218,8 +205,8 @@ picture {
 	width: auto;
 	z-index: 99999;
 	padding: var(--size-2);
-	background: var(--color-accent);
-	color: var(--color-accent-contrast);
+	background: var(--color-bg-accent);
+	color: var(--color-fg-accent);
 	left: var(--size-2);
 	top: var(--size-2);
 	max-width: var(--size-7);
@@ -303,15 +290,17 @@ input[type=submit]:focus,
 input[type=reset]:active,
 input[type=reset]:focus,
 input[type=button]:active,
-input[type=button]:focus, input:focus,
+input[type=button]:focus, input:active, input:focus,
+select:active,
 select:focus,
-textarea:focus {
+textarea:active,
+textarea:focus, summary:active, summary:focus {
 	outline: none;
-	box-shadow: 0 0 0 3px var(--color-outline);
+	box-shadow: 0 0 0 3px var(--color-bg-highlight);
 }
 
 a {
-	color: var(--color-accent);
+	color: var(--color-link);
 }
 
 a:not([class]) {
@@ -341,10 +330,11 @@ input[type=button] {
 	display: inline-block;
 	width: auto;
 	text-decoration: none;
+	border-width: 2px;
 	border-radius: var(--border-radius);
 	padding: var(--size-1) var(--size-3);
-	background: var(--color-accent);
-	color: var(--color-accent-contrast);
+	background: var(--color-bg-accent);
+	color: var(--color-fg-accent);
 }
 
 .btn:hover,
@@ -376,28 +366,35 @@ input,
 select,
 textarea {
 	font: inherit;
+	color: inherit;
 	box-shadow: none;
-	width: 60%;
+	width: 100%;
 	border-radius: var(--border-radius);
 	line-height: var(--type-lh-2);
 	padding: var(--size-2);
-	color: var(--color-input);
-	background: var(--color-input-bg);
-	border: 1px solid var(--color-border);
+	background: var(--color-pop);
+	border: 2px solid var(--color-border);
+}
+
+@media only screen and (min-width: 32em) {
+	input,
+	select,
+	textarea {
+		width: 60%;
+	}
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
 }
 
 /* Make the textarea wider than other inputs */
 textarea {
-	width: 80%;
-}
-
-/* Makes input fields wider on smaller screens */
-@media only screen and (min-width: 32em) {
-	textarea,
-	select,
-	input {
-		width: 100%;
-	}
+	width: 100%;
+	resize: vertical;
 }
 
 /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
@@ -406,9 +403,43 @@ input[type="radio"] {
 	width: auto;
 }
 
+label {
+	font-weight: bold;
+	display: block;
+	margin-top: var(--size-1);
+	margin-bottom: var(--size-1);
+}
+
+fieldset {
+	margin-top: var(--size-4);
+	margin-bottom: var(--size-4);
+	padding: var(--size-3);
+	border: var(--border-width) solid var(--color-border);
+}
+
+legend {
+	padding-left: var(--size-2);
+	padding-right: var(--size-2);
+	font-weight: bold;
+}
+
+legend > * {
+	margin: 0;
+}
+
+dd,
+dt,
 li {
 	margin-top: var(--size-1);
 	margin-bottom: var(--size-1);
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd:not(:last-of-type) {
+	margin-bottom: var(--size-3);
 }
 
 nav ul {
@@ -429,8 +460,8 @@ hr {
 
 mark {
 	padding: var(--size-1) var(--size-2);
-	background: var(--color-highlight-bg);
-	color: var(--color-highlight);
+	background: var(--color-bg-highlight);
+	color: var(--color-fg-highlight);
 }
 
 figure {
@@ -445,18 +476,16 @@ figcaption {
 
 blockquote {
 	font-style: italic;
-	background: var(--color-input-bg);
-	color: var(--color-input);
+	background: var(--color-pop);
 	font-size: var(--type-size-4);
 	margin-top: var(--size-4);
 	margin-bottom: var(--size-4);
 	padding: var(--size-4) var(--size-4);
-	border-left: var(--size-2) solid var(--color-accent);
+	border-left: var(--size-2) solid var(--color-bg-accent);
 }
 
 cite {
 	font-style: normal;
-	opacity: 0.8;
 	font-size: var(--type-size-6);
 }
 
@@ -482,8 +511,7 @@ pre {
 	max-width: 100%;
 	overflow: auto;
 	padding: var(--size-3) var(--size-4);
-	background: var(--color-input-bg);
-	border: 1px solid var(--color-border);
+	background: var(--color-pop);
 	border-radius: var(--border-radius);
 }
 
@@ -491,11 +519,30 @@ pre code {
 	background: none;
 	margin: 0;
 	padding: 0;
-	color: var(--color-input);
+}
+
+summary {
+	font-weight: bold;
+}
+
+summary > * {
+	display: inline;
+}
+
+table caption,
+table th {
+	text-align: left;
+	font-weight: bold;
+}
+
+table caption,
+table th, table td {
+	padding: var(--size-1);
 }
 
 p {
-	margin-block: var(--size-4);
+	margin-top: var(--size-4);
+	margin-bottom: var(--size-4);
 }
 
 sub,
@@ -503,6 +550,7 @@ sup {
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
+	padding: 0 0.1em;
 }
 
 sub {
