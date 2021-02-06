@@ -10,8 +10,8 @@ hr {
 mark {
 
 	padding: var( --size-1 ) var( --size-2 );
-	background: var( --color-highlight-bg );
-	color: var( --color-highlight );
+	background: var( --color-bg-highlight );
+	color: var( --color-fg-highlight );
 
 }
 
@@ -34,13 +34,12 @@ blockquote {
 
 	font-style: italic;
 
-	background: var( --color-input-bg );
-	color: var( --color-input );
+	background: var( --color-pop );
 	font-size: var( --type-size-4 );
 	margin-top: var( --size-4 );
 	margin-bottom: var( --size-4 );
 	padding: var( --size-4 ) var( --size-4 );
-	border-left: var( --size-2 ) solid var( --color-accent );
+	border-left: var( --size-2 ) solid var( --color-bg-accent );
 
 }
 
@@ -80,8 +79,7 @@ pre {
 	overflow: auto;
 
 	padding: var( --size-3 ) var( --size-4 );
-	background: var( --color-input-bg );
-	border: 1px solid var( --color-border );
+	background: var( --color-pop );
 	border-radius: var( --border-radius );
 
 	code {
@@ -90,7 +88,6 @@ pre {
 		margin: 0;
 		padding: 0;
 
-		color: var( --color-input );
 
 	}
 

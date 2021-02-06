@@ -19,11 +19,12 @@ input[type=button] {
 	display: inline-block;
 	width: auto;
 	text-decoration: none;
+	border-width: 2px;
 
 	border-radius: var( --border-radius );
 	padding: var( --size-1 ) var( --size-3 );
-	background: var( --color-accent );
-	color: var( --color-accent-contrast );
+	background: var( --color-bg-accent );
+	color: var( --color-fg-accent );
 
 	&:hover {
 

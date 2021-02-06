@@ -49,7 +49,7 @@ body {
 	text-rendering: optimizeSpeed;
 
 	background: var( --color-bg );
-	color: var( --color-text );
+	color: var( --color-fg );
 	font-size: var( --type-base );
 	line-height: var( --type-lh-2 );
 	font-family: var( --font-main );
@@ -98,3 +98,11 @@ picture {
 	}
 
 }
+
+// Text fragment styles.
+// @see https://twitter.com/bramus/status/1355987715532054529
+::target-text {
+	background: var( --color-bg-highlight );
+	color: var( --color-fg-highlight );
+}
+

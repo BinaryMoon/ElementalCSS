@@ -1,30 +1,25 @@
 $colours: (
 
 	// Color Palette.
-	'black': #000,
-	'white': #fff,
+	'black': #000000,
+	'gray4': #111827,
+	'gray3': #374151,
+	'gray2': #6B7280,
+	'gray1': #D7DAE0,
+	'white': #FFFFFF,
 
-	'gray5': #111827,
-	'gray4': #374151,
-	'gray3': #6B7280,
-	'gray2': #D1D5DB,
-	'gray1': #F3F4F6,
+	'tint': rgba( #D7DAE0, 0.2 ),
+	'shade': rgba( #111827, 0.2 ),
 
-	'blue3': #1E40AF,
-	'blue2': #3B82F6,
-	'blue1': #BFDBFE,
-
-	'red3': #991B1B,
-	'red2': #EF4444,
-	'red1': #FECACA,
-
-	'green3': #065F46,
-	'green2': #10B981,
-	'green1': #A7F3D0,
-
-	'yellow3': #D97706,
-	'yellow2': #FBBF24,
-	'yellow1': #FDE68A,
+	'blue': #3B82F6,
+	'blue-dark': #1E40AF,
+	'red': #d4351c,
+	'red-dark': #903425,
+	'green': #1BBB7E,
+	'green-dark': #006647,
+	'yellow': #FFDD00,
+	'purple': #8B5CF6,
+	'pink': #EC4899,
 
 );
 
@@ -34,47 +29,40 @@ $colour_theme: (
 
 	'bg': (
 		white,
-		gray5
+		gray4
 	),
-	'border': (
-		gray2,
+	'fg': (
 		gray4,
-	),
-	'text': (
-		gray5,
 		gray1
 	),
-	'accent': (
-		blue2,
-		red2
+	'bg-accent': (
+		blue,
+		red
 	),
-	'accent-contrast': (
+	'fg-accent': (
 		white,
 		black
 	),
-	'highlight-bg': (
-		yellow1,
-		gray4
+	'bg-highlight': (
+		yellow,
 	),
-	'highlight': (
+	'fg-highlight': (
 		black,
-		white
 	),
-	'input-bg': (
-		gray2,
-		gray4
-	),
-	'input': (
+	'pop': (
+		gray1,
 		black,
-		white
+	),
+	'link': (
+		red,
+	),
+	'border': (
+		gray1,
+		gray3,
 	),
 	'code': (
-		green2,
-		green2
-	),
-	'outline': (
-		blue2,
-		blue2
+		green,
+		green
 	),
 
 );
@@ -97,7 +85,9 @@ $colour_theme: (
 	:root {
 
 		@each $c_name, $c_value in $colour_theme {
-			--color-#{$c_name}: var( --color-#{nth($c_value,2)} );
+			@if (2 == length($c_value) ) {
+				--color-#{$c_name}: var( --color-#{nth($c_value,2)} );
+			}
 		}
 
 	}

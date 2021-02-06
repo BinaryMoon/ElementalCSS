@@ -9,9 +9,8 @@ textarea {
 	border-radius: var( --border-radius );
 	line-height: var( --type-lh-2 );
 	padding: var( --size-2 );
-	color: var( --color-input );
-	background: var( --color-input-bg );
-	border: 1px solid var( --color-border );
+	background: var( --color-pop );
+	border: 2px solid var( --color-border );
 
 	&:focus {
 
