@@ -1,22 +1,13 @@
 @import "lib/functions";
 @import "lib/responsive";
 
-@import "vars/borders";
-@import "vars/colours";
-@import "vars/fonts";
-@import "vars/sizes";
+@import "vars/index";
 
 @import "html/reset";
 
+// Only include the utils that are extended by HTML.
 @import "utils/accessibility";
 @import "utils/font";
 @import "utils/outline";
 
-@import "html/anchor";
-@import "html/button";
-@import "html/heading";
-@import "html/input";
-@import "html/list";
-@import "html/navigation";
-@import "html/other";
-@import "html/typography";
+@import "html/index"
