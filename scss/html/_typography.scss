@@ -1,6 +1,7 @@
 p {
 
-	margin-block: var( --size-4 );
+	margin-top: var( --size-4 );
+	margin-bottom: var( --size-4 );
 
 }
 
@@ -17,6 +18,7 @@ sup {
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
+	padding: 0 0.1em;
 
 }
 
