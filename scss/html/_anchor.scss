@@ -1,12 +1,8 @@
 a {
 
 	color: var( --color-link );
-
-	&:not([class]) {
-
-		text-decoration-skip-ink: auto;
-
-	}
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 0.05em;
 
 	&:hover {
 
