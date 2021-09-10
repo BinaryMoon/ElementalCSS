@@ -39,7 +39,7 @@
 	:root {
 		--color-bg: var( --color-gray4 );
 		--color-fg: var( --color-gray1 );
-		--color-bg-accent: var( --color-tint );
+		--color-bg-accent: var( --color-yellow );
 		--color-fg-accent: var( --color-black );
 		--color-pop: var( --color-black );
 		--color-link: var( --color-yellow );
@@ -113,6 +113,11 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+}
+
+:focus:not(:focus-visible),
+[tabindex="-1"]:focus {
+	outline: none;
 }
 
 div > :first-child,
@@ -193,6 +198,14 @@ picture {
 
 [id] {
 	scroll-margin-top: 2ex;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		-webkit-animation-duration: 0.001 !important;
+		animation-duration: 0.001 !important;
+		transition-duration: 0.001 !important;
+	}
 }
 
 /* Text meant only for screen readers. */
@@ -2616,9 +2629,31 @@ picture {
 	}
 }
 
+.overflow-a {
+	overflow: auto;
+}
+
+.overflow-h {
+	overflow: hidden;
+}
+
+.overflow-s::-webkit-scrollbar {
+	width: var(--size-3);
+	height: var(--size-3);
+}
+
+.overflow-s::-webkit-scrollbar-track {
+	background: var(--color-fg);
+}
+
+.overflow-s::-webkit-scrollbar-thumb {
+	background: var(--color-fg-accent);
+	border: 1px solid var(--color-fg);
+}
+
 .outline, .screen-reader-text:focus {
-	outline: none;
-	box-shadow: 0 0 0 3px var(--color-bg-highlight);
+	outline: var(--size-1) solid var(--color-bg-highlight);
+	outline-offset: var(--size-1);
 }
 
 .p0 {
