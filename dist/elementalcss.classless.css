@@ -325,6 +325,28 @@ textarea:focus, summary:active, summary:focus {
 	outline-offset: var(--size-1);
 }
 
+.overflow-a {
+	overflow: auto;
+}
+
+.overflow-h {
+	overflow: hidden;
+}
+
+.overflow-s::-webkit-scrollbar, pre::-webkit-scrollbar {
+	width: var(--size-3);
+	height: var(--size-3);
+}
+
+.overflow-s::-webkit-scrollbar-track, pre::-webkit-scrollbar-track {
+	background: var(--color-fg);
+}
+
+.overflow-s::-webkit-scrollbar-thumb, pre::-webkit-scrollbar-thumb {
+	background: var(--color-fg-accent);
+	border: 1px solid var(--color-fg);
+}
+
 a {
 	color: var(--color-link);
 	-webkit-text-decoration-skip: ink;
