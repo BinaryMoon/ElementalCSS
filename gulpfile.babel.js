@@ -11,7 +11,7 @@ const {
 } = require( 'gulp' );
 
 const { src, dest } = require( 'gulp' );
-const sass = require( 'gulp-sass' )( require( 'sass' ) );
+const sass = require( 'gulp-sass' )( require( 'node-sass' ) );
 const autoprefixer = require( 'gulp-autoprefixer' );
 const cleancss = require( 'gulp-clean-css' );
 const change = require( 'gulp-change' );
