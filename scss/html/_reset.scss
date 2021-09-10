@@ -7,6 +7,13 @@
 
 }
 
+:focus:not(:focus-visible),
+[tabindex="-1"]:focus {
+
+	outline: none;
+
+}
+
 div,
 main,
 section,
@@ -114,5 +121,15 @@ picture {
 [id] {
 
 	scroll-margin-top: 2ex;
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+	* {
+		animation-duration: 0.001 !important;
+		transition-duration: 0.001 !important;
+	}
 
 }
