@@ -208,8 +208,8 @@ picture {
 	}
 }
 
-/* Text meant only for screen readers. */
-.screen-reader-text {
+/* Screen Reader Text: meant only for screen readers. */
+.a-srt {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
 	-webkit-clip-path: inset(50%);
@@ -223,7 +223,7 @@ picture {
 	word-wrap: normal !important;
 }
 
-.screen-reader-text:focus {
+.a-srt:focus {
 	font-weight: bold;
 	clip: auto !important;
 	display: block;
@@ -1334,7 +1334,7 @@ picture {
 	line-height: var(--type-lh-1);
 }
 
-.f-s4, .screen-reader-text:focus {
+.f-s4, .a-srt:focus {
 	font-size: var(--type-size-4);
 	line-height: var(--type-lh-2);
 }
@@ -2651,7 +2651,7 @@ picture {
 	border: 1px solid var(--color-fg);
 }
 
-.outline, .screen-reader-text:focus {
+.outline, .a-srt:focus {
 	outline: var(--size-1) solid var(--color-bg-highlight);
 	outline-offset: var(--size-1);
 }
