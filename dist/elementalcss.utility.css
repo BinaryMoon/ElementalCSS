@@ -1311,28 +1311,27 @@ picture {
 	line-height: var(--type-lh-1);
 }
 
-.f-s2, h1 {
+.f-s2 {
 	font-size: var(--type-size-2);
 	line-height: var(--type-lh-1);
 }
 
-.f-s3, h2 {
+.f-s3 {
 	font-size: var(--type-size-3);
 	line-height: var(--type-lh-1);
 }
 
-.f-s4, .screen-reader-text:focus, h3 {
+.f-s4, .screen-reader-text:focus {
 	font-size: var(--type-size-4);
 	line-height: var(--type-lh-2);
 }
 
-.f-s5, h4 {
+.f-s5 {
 	font-size: var(--type-size-5);
 	line-height: var(--type-lh-2);
 }
 
-.f-s6, h5, h6, small, sub,
-sup {
+.f-s6 {
 	font-size: var(--type-size-6);
 	line-height: var(--type-lh-2);
 	letter-spacing: var(--type-ls-1);
@@ -2617,21 +2616,7 @@ sup {
 	}
 }
 
-.outline, .screen-reader-text:focus, a:active, a:focus, .btn:active, .btn:focus,
-button:active,
-button:focus,
-[role=button]:active,
-[role=button]:focus,
-input[type=submit]:active,
-input[type=submit]:focus,
-input[type=reset]:active,
-input[type=reset]:focus,
-input[type=button]:active,
-input[type=button]:focus, input:active, input:focus,
-select:active,
-select:focus,
-textarea:active,
-textarea:focus, summary:active, summary:focus {
+.outline, .screen-reader-text:focus {
 	outline: none;
 	box-shadow: 0 0 0 3px var(--color-bg-highlight);
 }
@@ -3620,272 +3605,4 @@ textarea:focus, summary:active, summary:focus {
 	.d\:mw-screen {
 		width: 100vw;
 	}
-}
-
-a {
-	color: var(--color-link);
-	-webkit-text-decoration-skip: ink;
-	text-decoration-skip-ink: auto;
-	text-underline-offset: 0.05em;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-button,
-input[type=submit],
-input[type=reset],
-input[type=button] {
-	-webkit-appearance: button;
-}
-
-.btn,
-button,
-[role=button],
-input[type=submit],
-input[type=reset],
-input[type=button] {
-	font: inherit;
-	border: none;
-	display: inline-block;
-	width: auto;
-	text-decoration: none;
-	border-width: 2px;
-	border-radius: var(--border-radius);
-	padding: var(--size-1) var(--size-3);
-	background: var(--color-bg-accent);
-	color: var(--color-fg-accent);
-}
-
-.btn:hover,
-button:hover,
-[role=button]:hover,
-input[type=submit]:hover,
-input[type=reset]:hover,
-input[type=button]:hover {
-	cursor: pointer;
-	filter: contrast(1.5);
-}
-
-.btn:disabled,
-button:disabled,
-[role=button]:disabled,
-input[type=submit]:disabled,
-input[type=reset]:disabled,
-input[type=button]:disabled {
-	opacity: 0.5;
-	cursor: not-allowed;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	margin-top: var(--size-5);
-	margin-bottom: var(--size-4);
-}
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	-webkit-text-decoration-color: var(--color-link);
-	text-decoration-color: var(--color-link);
-	-webkit-text-decoration-skip-ink: none;
-	text-decoration-skip-ink: none;
-	color: inherit;
-}
-
-input,
-select,
-textarea {
-	font: inherit;
-	color: inherit;
-	box-shadow: none;
-	width: 100%;
-	border-radius: var(--border-radius);
-	line-height: var(--type-lh-2);
-	padding: var(--size-2);
-	background: var(--color-pop);
-	border: 2px solid var(--color-border);
-}
-
-@media only screen and (min-width: 32em) {
-	input,
-	select,
-	textarea {
-		width: 60%;
-	}
-}
-
-input:disabled,
-select:disabled,
-textarea:disabled {
-	opacity: 0.5;
-	cursor: not-allowed;
-}
-
-/* Make the textarea wider than other inputs */
-textarea {
-	width: 100%;
-	resize: vertical;
-}
-
-/* Ensures the checkbox and radio inputs do not have a set width like other input fields */
-input[type="checkbox"],
-input[type="radio"] {
-	width: auto;
-}
-
-label {
-	font-weight: bold;
-	display: block;
-	margin-top: var(--size-1);
-	margin-bottom: var(--size-1);
-}
-
-fieldset {
-	margin-top: var(--size-4);
-	margin-bottom: var(--size-4);
-	padding: var(--size-3);
-	border: var(--border-width) solid var(--color-border);
-}
-
-legend {
-	padding-left: var(--size-2);
-	padding-right: var(--size-2);
-	font-weight: bold;
-}
-
-legend > * {
-	margin: 0;
-}
-
-dd,
-dt,
-li {
-	margin-top: var(--size-1);
-	margin-bottom: var(--size-1);
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd:not(:last-of-type) {
-	margin-bottom: var(--size-3);
-}
-
-nav ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-nav ul ul {
-	-webkit-padding-start: var(--size-3);
-	padding-inline-start: var(--size-3);
-}
-
-hr {
-	border: none;
-	border-top: var(--size-1) solid var(--color-border);
-	margin: var(--size-3) auto;
-}
-
-mark {
-	padding: var(--size-1) var(--size-2);
-	background: var(--color-bg-highlight);
-	color: var(--color-fg-highlight);
-}
-
-figure {
-	margin: 0;
-}
-
-figcaption {
-	text-align: center;
-	font-size: var(--type-size-6);
-	margin-bottom: var(--size-3);
-}
-
-blockquote {
-	font-style: italic;
-	background: var(--color-pop);
-	font-size: var(--type-size-4);
-	margin-top: var(--size-4);
-	margin-bottom: var(--size-4);
-	padding: var(--size-4) var(--size-4);
-	border-left: var(--size-2) solid var(--color-bg-accent);
-}
-
-cite {
-	font-style: normal;
-	font-size: var(--type-size-6);
-}
-
-/* Use mono font for code like elements */
-code,
-pre,
-kbd,
-samp {
-	font-family: var(--font-monospace);
-	color: var(--color-code);
-}
-
-kbd {
-	line-height: 1;
-	border-radius: var(--border-radius);
-	border: 1px solid var(--color-code);
-	border-bottom: 2px solid var(--color-code);
-	padding: var(--size-1) var(--size-2);
-	font-family: var(--font-monospace);
-}
-
-pre {
-	max-width: 100%;
-	overflow: auto;
-	padding: var(--size-3) var(--size-4);
-	background: var(--color-pop);
-	border-radius: var(--border-radius);
-}
-
-pre code {
-	background: none;
-	margin: 0;
-	padding: 0;
-}
-
-summary {
-	font-weight: bold;
-}
-
-summary > * {
-	display: inline;
-}
-
-table caption,
-table th {
-	text-align: left;
-	font-weight: bold;
-}
-
-table caption,
-table th, table td {
-	padding: var(--size-1);
-}
-
-p {
-	margin-top: var(--size-4);
-	margin-bottom: var(--size-4);
-}
-
-sub,
-sup {
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-	padding: 0 0.1em;
-}
-
-sub {
-	bottom: -0.25em;
-}
-
-sup {
-	top: -0.5em;
 }
