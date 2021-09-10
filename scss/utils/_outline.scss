@@ -1,6 +1,6 @@
 .outline {
 
-	outline: none;
-	box-shadow: 0 0 0 3px var( --color-bg-highlight );
+	outline: var( --size-1 ) solid var( --color-bg-highlight );
+	outline-offset: var( --size-1 );
 
 }
