@@ -11,15 +11,16 @@ $colours: (
 	'tint': rgba( #D7DAE0, 0.2 ),
 	'shade': rgba( #111827, 0.2 ),
 
-	'blue': #3B82F6,
-	'blue-dark': #1E40AF,
-	'red': #d4351c,
-	'red-dark': #903425,
-	'green': #1BBB7E,
-	'green-dark': #006647,
-	'yellow': #FFDD00,
-	'purple': #8B5CF6,
-	'pink': #EC4899,
+	'blue-light': #72aee6, // 20
+	'blue': #2271b1, // 50
+	'blue-dark': #043959, // 80
+	'red-light': #ff8085,
+	'red': #d63638,
+	'red-dark': #691c1c,
+	'green-light': #1ed14b,
+	'green': #008a20,
+	'green-dark': #00450c,
+	'yellow': #f0c33c,
 
 );
 
@@ -37,7 +38,7 @@ $colour_theme: (
 	),
 	'bg-accent': (
 		blue,
-		red
+		yellow
 	),
 	'fg-accent': (
 		white,
@@ -54,7 +55,8 @@ $colour_theme: (
 		black,
 	),
 	'link': (
-		red,
+		blue-dark,
+		yellow,
 	),
 	'border': (
 		gray1,
