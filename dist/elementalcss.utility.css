@@ -1283,6 +1283,18 @@ picture {
 	}
 }
 
+.cl {
+	clear: both;
+}
+
+.cl-r {
+	clear: right;
+}
+
+.cl-l {
+	clear: left;
+}
+
 .f-fw100 {
 	font-weight: 100;
 }
@@ -2629,7 +2641,7 @@ picture {
 	}
 }
 
-.overflow-a {
+.overflow {
 	overflow: auto;
 }
 
