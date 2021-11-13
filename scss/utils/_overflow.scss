@@ -2,13 +2,13 @@
 
 	overflow: auto;
 
-	&-h {
+	&-truncate { overflow: hidden; text-overflow: ellipsis; }
+	&-hidden { overflow: hidden; }
+	&-visible { overflow: visible; }
 
-		overflow: hidden;
+	&-scroll {
 
-	}
-
-	&-s {
+		overflow: scroll;
 
 		// Size.
 		&::-webkit-scrollbar {

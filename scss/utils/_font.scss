@@ -3,9 +3,7 @@
 
 	// Font weights.
 	@each $w in $font-weights {
-		&-fw#{$w} {
-			font-weight: $w;
-		}
+		&-fw#{$w} { font-weight: $w; }
 	}
 
 	// Font size.

@@ -82,7 +82,7 @@ pre {
 	background: var( --color-pop );
 	border-radius: var( --border-radius );
 
-	@extend .overflow-s;
+	@extend .overflow-scroll;
 
 	code {
 

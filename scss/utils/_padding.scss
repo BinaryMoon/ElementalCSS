@@ -1,7 +1,6 @@
 @include mq-prefix( 'p' ) {
-// .p {
 
-	@each $value in (1,2,3,4,5,6) {
+	@each $value in ( 1, 2, 3, 4, 5, 6, 7 ) {
 
 		$s: nth( $sizes, $value );
 		$s_name: nth( $s, 1 );
@@ -10,6 +9,14 @@
 		// Margin on all sides.
 		&#{$s_name} {
 			padding: var( --size-#{$s_name} );
+		}
+		&-x#{$s_name} {
+			padding-left: var( --size-#{$s_name} );
+			padding-right: var( --size-#{$s_name} );
+		}
+		&-y#{$s_name} {
+			padding-top: var( --size-#{$s_name} );
+			padding-bottom: var( --size-#{$s_name} );
 		}
 
 		// Margin in specific direction.

@@ -1,15 +1,9 @@
 @include mq-prefix( 'gap' ) {
 
-	@each $value in ( 0, 1, 2, 3, 4, 5 ) {
-		&#{$value} {
-			gap: var( --size-#{$value} );
-		}
-		&-r#{$value} {
-			row-gap: var( --size-#{$value} );
-		}
-		&-c#{$value} {
-			column-gap: var( --size-#{$value} );
-		}
+	@each $v in ( 0, 1, 2, 3, 4, 5 ) {
+		&#{$v} { gap: var( --size-#{$v} ); }
+		&-r#{$v} { row-gap: var( --size-#{$v} ); }
+		&-c#{$v} { column-gap: var( --size-#{$v} ); }
 	}
 
 }

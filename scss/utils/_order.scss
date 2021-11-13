@@ -1,15 +1,12 @@
 @include mq-prefix( 'order' ) {
 
-	@each $value in (1,2,3,4,5,6,) {
+	&-first { order: -1; }
+	&-last { order: 9999; }
+
+	@each $value in ( 1, 2, 3, 4, 5, 6 ) {
 		&#{$value} {
 			order: #{$value};
 		}
-	}
-	&-first {
-		order: -1;
-	}
-	&-last {
-		order: 9999;
 	}
 
 }

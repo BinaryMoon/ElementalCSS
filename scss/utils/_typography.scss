@@ -38,27 +38,15 @@
 @include mq-prefix( 't' ) {
 
 	&-ta- {
-		&c {
-			text-align: center;
-		}
-		&l {
-			text-align: left;
-		}
-		&r {
-			text-align: right;
-		}
+		&c { text-align: center; }
+		&l { text-align: left; }
+		&r { text-align: right; }
 	}
 
-	&-td-n {
+	&-td-n { text-decoration: none; }
+	&-td-u { text-decoration: underline; }
 
-		text-decoration: none;
-
-	}
-
-	&-tt-u {
-
-		text-transform: uppercase;
-
-	}
+	&-tt-n { text-transform: none; }
+	&-tt-u { text-transform: uppercase; }
 
 }

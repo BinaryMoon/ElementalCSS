@@ -3,49 +3,21 @@
 	display: grid;
 	gap: var( --size-4 );
 
-	&-auto {
-
-		grid-auto-flow: row;
-
-	}
+	&-auto { grid-auto-flow: row; }
 
 	&-col {
-		&2 {
-			grid-template-columns: repeat( 2, minmax( 10px, 1fr ) );
-		}
-		&3 {
-			grid-template-columns: repeat( 3, minmax( 10px, 1fr ) );
-		}
-		&4 {
-			grid-template-columns: repeat( 4, minmax( 10px, 1fr ) );
-		}
-		&5 {
-			grid-template-columns: repeat( 5, minmax( 10px, 1fr ) );
-		}
-	}
 
-	&-col-all {
+		&-all { grid-column: 1 / -1; }
+		&-auto { grid-column: auto; }
 
-		grid-column: 1/-1;
-
-	}
-
-	&-col-s {
-
-		@each $v in (1,2,3,4,5,6) {
-			&#{$v} {
-				grid-column-start: $v;
-			}
+		@each $v in ( 1, 2, 3, 4, 5, 6 ) {
+			&s#{$v} { grid-template-columns: repeat( $v, minmax( 10px, 1fr ) ); }
+			&-s#{$v} { grid-column-start: $v; }
+			&-e#{$v} { grid-column-end: $v; }
 		}
 
-	}
-
-	&-col-e {
-
-		@each $v in (1,2,3,4,5,6) {
-			&#{$v} {
-				grid-column-end: $v;
-			}
+		@each $v in ( 1, 2, 3, 4, 5 ) {
+			&span#{$v} { grid-column: span $v; }
 		}
 
 	}

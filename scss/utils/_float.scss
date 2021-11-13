@@ -1,17 +1,17 @@
-.cl {
+@include mq-prefix( 'float' ) {
+
+	&-none { float: none; }
+	&-r { float: right; }
+	&-l { float: left; }
+
+}
+
+@include mq-prefix( 'clear' ) {
 
 	clear: both;
 
-	&-r {
-
-		clear: right;
-
-	}
-
-	&-l {
-
-		clear: left;
-
-	}
+	&-none { clear: none; }
+	&-r { clear: right; }
+	&-l { clear: left; }
 
 }
