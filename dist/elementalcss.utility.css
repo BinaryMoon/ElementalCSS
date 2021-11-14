@@ -32,6 +32,7 @@
 	--color-link: var( --color-blue-dark );
 	--color-border: var( --color-gray1 );
 	--color-code: var( --color-green );
+	accent-color: var(--color-fg-accent);
 }
 
 /* Dark theme */
@@ -1048,7 +1049,17 @@ picture {
 	color: white;
 }
 
+.bg-black__hover:hover {
+	background-color: var(--color-black);
+	color: white;
+}
+
 .bg-gray4 {
+	background-color: var(--color-gray4);
+	color: white;
+}
+
+.bg-gray4__hover:hover {
 	background-color: var(--color-gray4);
 	color: white;
 }
@@ -1058,7 +1069,17 @@ picture {
 	color: white;
 }
 
+.bg-gray3__hover:hover {
+	background-color: var(--color-gray3);
+	color: white;
+}
+
 .bg-gray2 {
+	background-color: var(--color-gray2);
+	color: white;
+}
+
+.bg-gray2__hover:hover {
 	background-color: var(--color-gray2);
 	color: white;
 }
@@ -1068,7 +1089,17 @@ picture {
 	color: black;
 }
 
+.bg-gray1__hover:hover {
+	background-color: var(--color-gray1);
+	color: black;
+}
+
 .bg-white {
+	background-color: var(--color-white);
+	color: black;
+}
+
+.bg-white__hover:hover {
 	background-color: var(--color-white);
 	color: black;
 }
@@ -1078,7 +1109,17 @@ picture {
 	color: black;
 }
 
+.bg-tint__hover:hover {
+	background-color: var(--color-tint);
+	color: black;
+}
+
 .bg-shade {
+	background-color: var(--color-shade);
+	color: white;
+}
+
+.bg-shade__hover:hover {
 	background-color: var(--color-shade);
 	color: white;
 }
@@ -1088,7 +1129,17 @@ picture {
 	color: black;
 }
 
+.bg-blue-light__hover:hover {
+	background-color: var(--color-blue-light);
+	color: black;
+}
+
 .bg-blue {
+	background-color: var(--color-blue);
+	color: white;
+}
+
+.bg-blue__hover:hover {
 	background-color: var(--color-blue);
 	color: white;
 }
@@ -1098,7 +1149,17 @@ picture {
 	color: white;
 }
 
+.bg-blue-dark__hover:hover {
+	background-color: var(--color-blue-dark);
+	color: white;
+}
+
 .bg-red-light {
+	background-color: var(--color-red-light);
+	color: black;
+}
+
+.bg-red-light__hover:hover {
 	background-color: var(--color-red-light);
 	color: black;
 }
@@ -1108,7 +1169,17 @@ picture {
 	color: white;
 }
 
+.bg-red__hover:hover {
+	background-color: var(--color-red);
+	color: white;
+}
+
 .bg-red-dark {
+	background-color: var(--color-red-dark);
+	color: white;
+}
+
+.bg-red-dark__hover:hover {
 	background-color: var(--color-red-dark);
 	color: white;
 }
@@ -1118,7 +1189,17 @@ picture {
 	color: black;
 }
 
+.bg-green-light__hover:hover {
+	background-color: var(--color-green-light);
+	color: black;
+}
+
 .bg-green {
+	background-color: var(--color-green);
+	color: white;
+}
+
+.bg-green__hover:hover {
 	background-color: var(--color-green);
 	color: white;
 }
@@ -1128,7 +1209,17 @@ picture {
 	color: white;
 }
 
+.bg-green-dark__hover:hover {
+	background-color: var(--color-green-dark);
+	color: white;
+}
+
 .bg-yellow {
+	background-color: var(--color-yellow);
+	color: black;
+}
+
+.bg-yellow__hover:hover {
 	background-color: var(--color-yellow);
 	color: black;
 }
@@ -1141,7 +1232,15 @@ picture {
 	color: var(--color-black);
 }
 
+.fg-black__hover:hover {
+	color: var(--color-black);
+}
+
 .fg-gray4 {
+	color: var(--color-gray4);
+}
+
+.fg-gray4__hover:hover {
 	color: var(--color-gray4);
 }
 
@@ -1149,7 +1248,15 @@ picture {
 	color: var(--color-gray3);
 }
 
+.fg-gray3__hover:hover {
+	color: var(--color-gray3);
+}
+
 .fg-gray2 {
+	color: var(--color-gray2);
+}
+
+.fg-gray2__hover:hover {
 	color: var(--color-gray2);
 }
 
@@ -1157,7 +1264,15 @@ picture {
 	color: var(--color-gray1);
 }
 
+.fg-gray1__hover:hover {
+	color: var(--color-gray1);
+}
+
 .fg-white {
+	color: var(--color-white);
+}
+
+.fg-white__hover:hover {
 	color: var(--color-white);
 }
 
@@ -1165,7 +1280,15 @@ picture {
 	color: var(--color-tint);
 }
 
+.fg-tint__hover:hover {
+	color: var(--color-tint);
+}
+
 .fg-shade {
+	color: var(--color-shade);
+}
+
+.fg-shade__hover:hover {
 	color: var(--color-shade);
 }
 
@@ -1173,7 +1296,15 @@ picture {
 	color: var(--color-blue-light);
 }
 
+.fg-blue-light__hover:hover {
+	color: var(--color-blue-light);
+}
+
 .fg-blue {
+	color: var(--color-blue);
+}
+
+.fg-blue__hover:hover {
 	color: var(--color-blue);
 }
 
@@ -1181,7 +1312,15 @@ picture {
 	color: var(--color-blue-dark);
 }
 
+.fg-blue-dark__hover:hover {
+	color: var(--color-blue-dark);
+}
+
 .fg-red-light {
+	color: var(--color-red-light);
+}
+
+.fg-red-light__hover:hover {
 	color: var(--color-red-light);
 }
 
@@ -1189,7 +1328,15 @@ picture {
 	color: var(--color-red);
 }
 
+.fg-red__hover:hover {
+	color: var(--color-red);
+}
+
 .fg-red-dark {
+	color: var(--color-red-dark);
+}
+
+.fg-red-dark__hover:hover {
 	color: var(--color-red-dark);
 }
 
@@ -1197,7 +1344,15 @@ picture {
 	color: var(--color-green-light);
 }
 
+.fg-green-light__hover:hover {
+	color: var(--color-green-light);
+}
+
 .fg-green {
+	color: var(--color-green);
+}
+
+.fg-green__hover:hover {
 	color: var(--color-green);
 }
 
@@ -1205,7 +1360,15 @@ picture {
 	color: var(--color-green-dark);
 }
 
+.fg-green-dark__hover:hover {
+	color: var(--color-green-dark);
+}
+
 .fg-yellow {
+	color: var(--color-yellow);
+}
+
+.fg-yellow__hover:hover {
 	color: var(--color-yellow);
 }
 
@@ -2663,6 +2826,232 @@ picture {
 	}
 }
 
+.o-0 {
+	opacity: 0;
+}
+
+.o-0__hover:hover {
+	opacity: 0;
+}
+
+.o-1 {
+	opacity: 0.1;
+}
+
+.o-1__hover:hover {
+	opacity: 0.1;
+}
+
+.o-2 {
+	opacity: 0.2;
+}
+
+.o-2__hover:hover {
+	opacity: 0.2;
+}
+
+.o-3 {
+	opacity: 0.3;
+}
+
+.o-3__hover:hover {
+	opacity: 0.3;
+}
+
+.o-4 {
+	opacity: 0.4;
+}
+
+.o-4__hover:hover {
+	opacity: 0.4;
+}
+
+.o-5 {
+	opacity: 0.5;
+}
+
+.o-5__hover:hover {
+	opacity: 0.5;
+}
+
+.o-6 {
+	opacity: 0.6;
+}
+
+.o-6__hover:hover {
+	opacity: 0.6;
+}
+
+.o-7 {
+	opacity: 0.7;
+}
+
+.o-7__hover:hover {
+	opacity: 0.7;
+}
+
+.o-8 {
+	opacity: 0.8;
+}
+
+.o-8__hover:hover {
+	opacity: 0.8;
+}
+
+.o-9 {
+	opacity: 0.9;
+}
+
+.o-9__hover:hover {
+	opacity: 0.9;
+}
+
+.o-10 {
+	opacity: 1;
+}
+
+.o-10__hover:hover {
+	opacity: 1;
+}
+
+@media only screen and (min-width: 32em) {
+	.t\:o-0 {
+		opacity: 0;
+	}
+	.t\:o-0__hover:hover {
+		opacity: 0;
+	}
+	.t\:o-1 {
+		opacity: 0.1;
+	}
+	.t\:o-1__hover:hover {
+		opacity: 0.1;
+	}
+	.t\:o-2 {
+		opacity: 0.2;
+	}
+	.t\:o-2__hover:hover {
+		opacity: 0.2;
+	}
+	.t\:o-3 {
+		opacity: 0.3;
+	}
+	.t\:o-3__hover:hover {
+		opacity: 0.3;
+	}
+	.t\:o-4 {
+		opacity: 0.4;
+	}
+	.t\:o-4__hover:hover {
+		opacity: 0.4;
+	}
+	.t\:o-5 {
+		opacity: 0.5;
+	}
+	.t\:o-5__hover:hover {
+		opacity: 0.5;
+	}
+	.t\:o-6 {
+		opacity: 0.6;
+	}
+	.t\:o-6__hover:hover {
+		opacity: 0.6;
+	}
+	.t\:o-7 {
+		opacity: 0.7;
+	}
+	.t\:o-7__hover:hover {
+		opacity: 0.7;
+	}
+	.t\:o-8 {
+		opacity: 0.8;
+	}
+	.t\:o-8__hover:hover {
+		opacity: 0.8;
+	}
+	.t\:o-9 {
+		opacity: 0.9;
+	}
+	.t\:o-9__hover:hover {
+		opacity: 0.9;
+	}
+	.t\:o-10 {
+		opacity: 1;
+	}
+	.t\:o-10__hover:hover {
+		opacity: 1;
+	}
+}
+
+@media only screen and (min-width: 64em) {
+	.d\:o-0 {
+		opacity: 0;
+	}
+	.d\:o-0__hover:hover {
+		opacity: 0;
+	}
+	.d\:o-1 {
+		opacity: 0.1;
+	}
+	.d\:o-1__hover:hover {
+		opacity: 0.1;
+	}
+	.d\:o-2 {
+		opacity: 0.2;
+	}
+	.d\:o-2__hover:hover {
+		opacity: 0.2;
+	}
+	.d\:o-3 {
+		opacity: 0.3;
+	}
+	.d\:o-3__hover:hover {
+		opacity: 0.3;
+	}
+	.d\:o-4 {
+		opacity: 0.4;
+	}
+	.d\:o-4__hover:hover {
+		opacity: 0.4;
+	}
+	.d\:o-5 {
+		opacity: 0.5;
+	}
+	.d\:o-5__hover:hover {
+		opacity: 0.5;
+	}
+	.d\:o-6 {
+		opacity: 0.6;
+	}
+	.d\:o-6__hover:hover {
+		opacity: 0.6;
+	}
+	.d\:o-7 {
+		opacity: 0.7;
+	}
+	.d\:o-7__hover:hover {
+		opacity: 0.7;
+	}
+	.d\:o-8 {
+		opacity: 0.8;
+	}
+	.d\:o-8__hover:hover {
+		opacity: 0.8;
+	}
+	.d\:o-9 {
+		opacity: 0.9;
+	}
+	.d\:o-9__hover:hover {
+		opacity: 0.9;
+	}
+	.d\:o-10 {
+		opacity: 1;
+	}
+	.d\:o-10__hover:hover {
+		opacity: 1;
+	}
+}
+
 .order-first {
 	order: -1;
 }
@@ -3575,7 +3964,15 @@ picture {
 	text-decoration: none;
 }
 
+.t-td-n__hover:hover {
+	text-decoration: none;
+}
+
 .t-td-u {
+	text-decoration: underline;
+}
+
+.t-td-u__hover:hover {
 	text-decoration: underline;
 }
 
@@ -3600,7 +3997,13 @@ picture {
 	.t\:t-td-n {
 		text-decoration: none;
 	}
+	.t\:t-td-n__hover:hover {
+		text-decoration: none;
+	}
 	.t\:t-td-u {
+		text-decoration: underline;
+	}
+	.t\:t-td-u__hover:hover {
 		text-decoration: underline;
 	}
 	.t\:t-tt-n {
@@ -3624,7 +4027,13 @@ picture {
 	.d\:t-td-n {
 		text-decoration: none;
 	}
+	.d\:t-td-n__hover:hover {
+		text-decoration: none;
+	}
 	.d\:t-td-u {
+		text-decoration: underline;
+	}
+	.d\:t-td-u__hover:hover {
 		text-decoration: underline;
 	}
 	.d\:t-tt-n {

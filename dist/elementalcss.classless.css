@@ -32,6 +32,7 @@
 	--color-link: var( --color-blue-dark );
 	--color-border: var( --color-gray1 );
 	--color-code: var( --color-green );
+	accent-color: var(--color-fg-accent);
 }
 
 /* Dark theme */
