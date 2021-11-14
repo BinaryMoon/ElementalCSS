@@ -43,8 +43,11 @@
 		&r { text-align: right; }
 	}
 
+	// @include mq-prefix-hover ( &-td-n ) { text-decoration: none; }
 	&-td-n { text-decoration: none; }
+	&-td-n__hover:hover { text-decoration: none; }
 	&-td-u { text-decoration: underline; }
+	&-td-u__hover:hover { text-decoration: underline; }
 
 	&-tt-n { text-transform: none; }
 	&-tt-u { text-transform: uppercase; }
