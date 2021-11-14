@@ -1,6 +1,6 @@
 @mixin mq-prefix( $prefix ) {
 
-	#{'.' + $prefix} {
+	.#{$prefix} {
 		@content;
 	}
 
@@ -17,6 +17,7 @@
 	}
 
 }
+
 
 @mixin mq-tablet() {
 
