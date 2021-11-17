@@ -2,7 +2,10 @@
 
 	overflow: auto;
 
-	&-truncate { overflow: hidden; text-overflow: ellipsis; }
+	&-truncate {
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 	&-hidden { overflow: hidden; }
 	&-visible { overflow: visible; }
 
