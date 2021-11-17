@@ -1,10 +1,23 @@
-@include mq-prefix( 'bg' ) {
 
-	&-transparent { background: transparent; }
+@include mq-prefix( 'bg' ) {
 
 	/**
 	 * Use style="--bg-image: url(/image/url/);" to set the image.
 	 */
-	&-image { background-image: var( --bg-image ); }
+	&-image {
+		background-image: var( --bg-image );
+		background-size: cover;
+		background-position: center;
+	}
+
+	&-transparent { background: transparent; }
+
+	&-auto { background-size: auto; }
+	&-cover { background-size: cover; }
+	&-contain { background-size: contain; }
+
+	&-repeat-none { background-repeat: no-repeat; }
+	&-repeat-x { background-repeat: repeat-x; }
+	&-repeat-y { background-repeat: repeat-y; }
 
 }
