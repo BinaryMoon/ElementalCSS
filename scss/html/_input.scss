@@ -45,8 +45,8 @@ textarea {
 }
 
 /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
-input[type="checkbox"],
-input[type="radio"]{
+[type="checkbox"],
+[type="radio"]{
 
 	width: auto;
 

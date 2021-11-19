@@ -1,7 +1,7 @@
 button,
-input[type=submit],
-input[type=reset],
-input[type=button] {
+[type=submit],
+[type=reset],
+[type=button] {
 
 	-webkit-appearance: button;
 
@@ -10,9 +10,9 @@ input[type=button] {
 .btn,
 button,
 [role=button],
-input[type=submit],
-input[type=reset],
-input[type=button] {
+[type=submit],
+[type=reset],
+[type=button] {
 
 	font: inherit;
 	border: none;
