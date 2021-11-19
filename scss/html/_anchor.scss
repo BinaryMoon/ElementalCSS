@@ -3,10 +3,13 @@ a {
 	color: var( --color-link );
 	text-decoration-skip-ink: auto;
 	text-underline-offset: 0.05em;
+	cursor: pointer;
 
 	&:active,
 	&:focus {
+
 		@extend .outline;
+
 	}
 
 	&:hover {
