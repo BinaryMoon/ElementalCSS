@@ -79,8 +79,6 @@ $colour_theme: (
 		--color-#{$c_name}: var( --color-#{nth($c_value,1)} );
 	}
 
-	accent-color: var( --color-fg-accent );
-
 }
 
 /* Dark theme */
