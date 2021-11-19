@@ -17,7 +17,7 @@
 		}
 
 		@each $v in ( 1, 2, 3, 4, 5 ) {
-			&span#{$v} { grid-column: span $v; }
+			&-span#{$v} { grid-column: span $v; }
 		}
 
 	}
