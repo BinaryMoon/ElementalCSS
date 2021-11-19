@@ -32,7 +32,6 @@
 	--color-link: var( --color-blue-dark );
 	--color-border: var( --color-gray1 );
 	--color-code: var( --color-green );
-	accent-color: var(--color-fg-accent);
 }
 
 /* Dark theme */
@@ -145,6 +144,7 @@ aside > :last-child {
 
 html {
 	font-size: 16px;
+	accent-color: var(--color-fg-accent);
 }
 
 html:focus-within {
@@ -174,6 +174,7 @@ img,
 picture {
 	max-width: 100%;
 	display: block;
+	height: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1438,48 +1439,48 @@ picture {
 	color: var(--color-yellow);
 }
 
-.display .none {
+.display-none {
 	display: none;
 }
 
-.display .block {
+.display-block {
 	display: block;
 }
 
-.display .inline-block {
+.display-inline-block {
 	display: inline-block;
 }
 
-.display .inline {
+.display-inline {
 	display: inline;
 }
 
 @media only screen and (min-width: 32em) {
-	.t\:display .none {
+	.t\:display-none {
 		display: none;
 	}
-	.t\:display .block {
+	.t\:display-block {
 		display: block;
 	}
-	.t\:display .inline-block {
+	.t\:display-inline-block {
 		display: inline-block;
 	}
-	.t\:display .inline {
+	.t\:display-inline {
 		display: inline;
 	}
 }
 
 @media only screen and (min-width: 64em) {
-	.d\:display .none {
+	.d\:display-none {
 		display: none;
 	}
-	.d\:display .block {
+	.d\:display-block {
 		display: block;
 	}
-	.d\:display .inline-block {
+	.d\:display-inline-block {
 		display: inline-block;
 	}
-	.d\:display .inline {
+	.d\:display-inline {
 		display: inline;
 	}
 }
@@ -1918,23 +1919,23 @@ picture {
 	grid-column-end: 6;
 }
 
-.grid-colspan1 {
+.grid-col-span1 {
 	grid-column: span 1;
 }
 
-.grid-colspan2 {
+.grid-col-span2 {
 	grid-column: span 2;
 }
 
-.grid-colspan3 {
+.grid-col-span3 {
 	grid-column: span 3;
 }
 
-.grid-colspan4 {
+.grid-col-span4 {
 	grid-column: span 4;
 }
 
-.grid-colspan5 {
+.grid-col-span5 {
 	grid-column: span 5;
 }
 
@@ -2006,19 +2007,19 @@ picture {
 	.t\:grid-col-e6 {
 		grid-column-end: 6;
 	}
-	.t\:grid-colspan1 {
+	.t\:grid-col-span1 {
 		grid-column: span 1;
 	}
-	.t\:grid-colspan2 {
+	.t\:grid-col-span2 {
 		grid-column: span 2;
 	}
-	.t\:grid-colspan3 {
+	.t\:grid-col-span3 {
 		grid-column: span 3;
 	}
-	.t\:grid-colspan4 {
+	.t\:grid-col-span4 {
 		grid-column: span 4;
 	}
-	.t\:grid-colspan5 {
+	.t\:grid-col-span5 {
 		grid-column: span 5;
 	}
 }
@@ -2091,19 +2092,19 @@ picture {
 	.d\:grid-col-e6 {
 		grid-column-end: 6;
 	}
-	.d\:grid-colspan1 {
+	.d\:grid-col-span1 {
 		grid-column: span 1;
 	}
-	.d\:grid-colspan2 {
+	.d\:grid-col-span2 {
 		grid-column: span 2;
 	}
-	.d\:grid-colspan3 {
+	.d\:grid-col-span3 {
 		grid-column: span 3;
 	}
-	.d\:grid-colspan4 {
+	.d\:grid-col-span4 {
 		grid-column: span 4;
 	}
-	.d\:grid-colspan5 {
+	.d\:grid-col-span5 {
 		grid-column: span 5;
 	}
 }
@@ -4126,6 +4127,10 @@ picture {
 	width: 100vw;
 }
 
+.w100 {
+	width: 100%;
+}
+
 .w1 {
 	width: var(--size-3);
 }
@@ -4201,6 +4206,9 @@ picture {
 	.t\:w-screen {
 		width: 100vw;
 	}
+	.t\:w100 {
+		width: 100%;
+	}
 	.t\:w1 {
 		width: var(--size-3);
 	}
@@ -4261,6 +4269,9 @@ picture {
 	.d\:w-screen {
 		width: 100vw;
 	}
+	.d\:w100 {
+		width: 100%;
+	}
 	.d\:w1 {
 		width: var(--size-3);
 	}
@@ -4320,6 +4331,10 @@ picture {
 
 .mw-screen {
 	max-width: 100vw;
+}
+
+.mw100 {
+	max-width: 100%;
 }
 
 .mw1 {
@@ -4397,6 +4412,9 @@ picture {
 	.t\:mw-screen {
 		max-width: 100vw;
 	}
+	.t\:mw100 {
+		max-width: 100%;
+	}
 	.t\:mw1 {
 		max-width: var(--size-3);
 	}
@@ -4457,6 +4475,9 @@ picture {
 	.d\:mw-screen {
 		max-width: 100vw;
 	}
+	.d\:mw100 {
+		max-width: 100%;
+	}
 	.d\:mw1 {
 		max-width: var(--size-3);
 	}
@@ -4516,6 +4537,10 @@ picture {
 
 .h-screen {
 	height: 100vw;
+}
+
+.h100 {
+	height: 100%;
 }
 
 .h1 {
@@ -4593,6 +4618,9 @@ picture {
 	.t\:h-screen {
 		height: 100vw;
 	}
+	.t\:h100 {
+		height: 100%;
+	}
 	.t\:h1 {
 		height: var(--size-3);
 	}
@@ -4653,6 +4681,9 @@ picture {
 	.d\:h-screen {
 		height: 100vw;
 	}
+	.d\:h100 {
+		height: 100%;
+	}
 	.d\:h1 {
 		height: var(--size-3);
 	}
@@ -4712,6 +4743,10 @@ picture {
 
 .mh-screen {
 	max-height: 100vw;
+}
+
+.mh100 {
+	max-height: 100%;
 }
 
 .mh1 {
@@ -4789,6 +4824,9 @@ picture {
 	.t\:mh-screen {
 		max-height: 100vw;
 	}
+	.t\:mh100 {
+		max-height: 100%;
+	}
 	.t\:mh1 {
 		max-height: var(--size-3);
 	}
@@ -4848,6 +4886,9 @@ picture {
 	}
 	.d\:mh-screen {
 		max-height: 100vw;
+	}
+	.d\:mh100 {
+		max-height: 100%;
 	}
 	.d\:mh1 {
 		max-height: var(--size-3);
