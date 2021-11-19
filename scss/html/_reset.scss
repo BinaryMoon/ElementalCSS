@@ -41,6 +41,7 @@ aside {
 html {
 
 	font-size: 16px;
+	accent-color: var( --color-fg-accent );
 
 	&:focus-within {
 
@@ -82,6 +83,7 @@ picture {
 
 	max-width: 100%;
 	display: block;
+	height: auto;
 
 }
 
