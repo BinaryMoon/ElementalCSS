@@ -313,12 +313,12 @@ button:active,
 button:focus,
 [role=button]:active,
 [role=button]:focus,
-input[type=submit]:active,
-input[type=submit]:focus,
-input[type=reset]:active,
-input[type=reset]:focus,
-input[type=button]:active,
-input[type=button]:focus, input:active, input:focus,
+[type=submit]:active,
+[type=submit]:focus,
+[type=reset]:active,
+[type=reset]:focus,
+[type=button]:active,
+[type=button]:focus, input:active, input:focus,
 select:active,
 select:focus,
 textarea:active,
@@ -375,18 +375,18 @@ a:hover {
 }
 
 button,
-input[type=submit],
-input[type=reset],
-input[type=button] {
+[type=submit],
+[type=reset],
+[type=button] {
 	-webkit-appearance: button;
 }
 
 .btn,
 button,
 [role=button],
-input[type=submit],
-input[type=reset],
-input[type=button] {
+[type=submit],
+[type=reset],
+[type=button] {
 	font: inherit;
 	border: none;
 	display: inline-block;
@@ -402,9 +402,9 @@ input[type=button] {
 .btn:hover,
 button:hover,
 [role=button]:hover,
-input[type=submit]:hover,
-input[type=reset]:hover,
-input[type=button]:hover {
+[type=submit]:hover,
+[type=reset]:hover,
+[type=button]:hover {
 	cursor: pointer;
 	filter: contrast(1.5);
 }
@@ -412,9 +412,9 @@ input[type=button]:hover {
 .btn:disabled,
 button:disabled,
 [role=button]:disabled,
-input[type=submit]:disabled,
-input[type=reset]:disabled,
-input[type=button]:disabled {
+[type=submit]:disabled,
+[type=reset]:disabled,
+[type=button]:disabled {
 	opacity: 0.5;
 	cursor: not-allowed;
 }
@@ -468,8 +468,8 @@ textarea {
 }
 
 /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
-input[type="checkbox"],
-input[type="radio"] {
+[type="checkbox"],
+[type="radio"] {
 	width: auto;
 }
 
