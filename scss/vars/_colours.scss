@@ -1,72 +1,76 @@
-$colours: (
+$colours: () !default;
+$colours: map-merge(
+	(
+		// Color Palette.
+		'black': #000000,
+		'gray4': #111827,
+		'gray3': #374151,
+		'gray2': #6B7280,
+		'gray1': #D7DAE0,
+		'white': #FFFFFF,
 
-	// Color Palette.
-	'black': #000000,
-	'gray4': #111827,
-	'gray3': #374151,
-	'gray2': #6B7280,
-	'gray1': #D7DAE0,
-	'white': #FFFFFF,
+		'tint': rgba( #D7DAE0, 0.2 ),
+		'shade': rgba( #111827, 0.2 ),
 
-	'tint': rgba( #D7DAE0, 0.2 ),
-	'shade': rgba( #111827, 0.2 ),
-
-	'blue-light': #72aee6, // 20
-	'blue': #2271b1, // 50
-	'blue-dark': #043959, // 80
-	'red-light': #ff8085,
-	'red': #d63638,
-	'red-dark': #691c1c,
-	'green-light': #1ed14b,
-	'green': #008a20,
-	'green-dark': #00450c,
-	'yellow': #f0c33c,
-
+		'blue-light': #72aee6, // 20
+		'blue': #2271b1, // 50
+		'blue-dark': #043959, // 80
+		'red-light': #ff8085,
+		'red': #d63638,
+		'red-dark': #691c1c,
+		'green-light': #1ed14b,
+		'green': #008a20,
+		'green-dark': #00450c,
+		'yellow': #f0c33c,
+	),
+	$colours
 );
 
 // Theme colours.
 // The first colour is for the light theme, the second is for the dark theme.
-$colour_theme: (
-
-	'bg': (
-		white,
-		gray4
+$colour_theme: () !default;
+$colour_theme: map-merge(
+	(
+		'bg': (
+			white,
+			gray4
+		),
+		'fg': (
+			gray4,
+			gray1
+		),
+		'bg-accent': (
+			blue,
+			yellow
+		),
+		'fg-accent': (
+			white,
+			black
+		),
+		'bg-highlight': (
+			yellow,
+		),
+		'fg-highlight': (
+			black,
+		),
+		'pop': (
+			gray1,
+			black,
+		),
+		'link': (
+			blue-dark,
+			yellow,
+		),
+		'border': (
+			gray1,
+			gray3,
+		),
+		'code': (
+			green,
+			green
+		),
 	),
-	'fg': (
-		gray4,
-		gray1
-	),
-	'bg-accent': (
-		blue,
-		yellow
-	),
-	'fg-accent': (
-		white,
-		black
-	),
-	'bg-highlight': (
-		yellow,
-	),
-	'fg-highlight': (
-		black,
-	),
-	'pop': (
-		gray1,
-		black,
-	),
-	'link': (
-		blue-dark,
-		yellow,
-	),
-	'border': (
-		gray1,
-		gray3,
-	),
-	'code': (
-		green,
-		green
-	),
-
+	$colour_theme
 );
 
 :root {
