@@ -14,7 +14,7 @@
 
 		@each $p_value in $percentages {
 			&#{$p_value}p {
-				#{$property}: percentage( $p_value / 100 );
+				#{$property}: percentage( math.div( $p_value, 100 ) );
 			}
 		}
 

@@ -29,9 +29,10 @@
 	$green-component: green( $color );
 	$blue-component: blue( $color );
 
-	$number: sqrt( ( ($red-component * $red-component * $red-magic-number ) + ( $green-component * $green-component * $green-magic-number ) + ( $blue-component * $blue-component * $blue-magic-number ) ) / $brightness-divisor );
+	$sum: ( ( $red-component * $red-component * $red-magic-number ) + ( $green-component * $green-component * $green-magic-number ) + ( $blue-component * $blue-component * $blue-magic-number ) );
+	$number: sqrt( math.div( $sum, $brightness-divisor ) );
 
-	@return ( 100% * $number / 255 );
+	@return 100% * math.div( $number, 255 );
 
 }
 
@@ -44,7 +45,7 @@
 	$x1: $x0;
 
 	@for $i from 1 through 10 {
-		$x1: $x0 - ( $x0 * $x0 - abs( $r ) ) / ( 2 * $x0 );
+		$x1: $x0 - math.div( $x0 * $x0 - abs( $r ), 2 * $x0 );
 		$x0: $x1;
 	}
 
