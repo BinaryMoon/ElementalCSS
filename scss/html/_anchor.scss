@@ -1,9 +1,10 @@
 a {
 
-	color: var( --color-link );
 	text-decoration-skip-ink: auto;
 	text-underline-offset: 0.05em;
 	cursor: pointer;
+
+	color: var( --color-link );
 
 	&:active,
 	&:focus {
