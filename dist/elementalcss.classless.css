@@ -47,7 +47,6 @@
 		--color-code: var( --color-green );
 	}
 }
-
 :root {
 	--font-arial: Arial, Helvetica Neue, Helvetica, Liberation Sans, sans-serif;
 	--font-arial-black: Arial Black, Arial Bold, Gadget, sans-serif;
@@ -87,22 +86,20 @@
 	--size-base: 0.15rem;
 	--size-0: 0;
 	--size-1: var(--size-base);
-	--size-2: calc( var( --size-base ) * 2);
-	--size-3: calc( var( --size-base ) * 4);
-	--size-4: calc( var( --size-base ) * 8);
-	--size-5: calc( var( --size-base ) * 16);
-	--size-6: calc( var( --size-base ) * 32);
-	--size-7: calc( var( --size-base ) * 64);
-	--size-8: calc( var( --size-base ) * 128);
-	--size-9: calc( var( --size-base ) * 256);
+	--size-2: calc(var(--size-base) * 2);
+	--size-3: calc(var(--size-base) * 4);
+	--size-4: calc(var(--size-base) * 8);
+	--size-5: calc(var(--size-base) * 16);
+	--size-6: calc(var(--size-base) * 32);
+	--size-7: calc(var(--size-base) * 64);
+	--size-8: calc(var(--size-base) * 128);
+	--size-9: calc(var(--size-base) * 256);
 }
-
 @media only screen and (min-width: 32em) {
 	:root {
 		--size-base: 0.2rem;
 	}
 }
-
 @media only screen and (min-width: 64em) {
 	:root {
 		--size-base: 0.25rem;
@@ -113,6 +110,10 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
 }
 
 :focus:not(:focus-visible),
@@ -130,7 +131,6 @@ footer > :first-child,
 aside > :first-child {
 	margin-top: 0;
 }
-
 div > :last-child,
 main > :last-child,
 section > :last-child,
@@ -143,10 +143,10 @@ aside > :last-child {
 }
 
 html {
+	height: 100%;
 	font-size: 16px;
 	accent-color: var(--color-fg-accent);
 }
-
 html:focus-within {
 	scroll-behavior: smooth;
 }
@@ -154,6 +154,7 @@ html:focus-within {
 body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
+	-webkit-font-smoothing: antialiased;
 	background: var(--color-bg);
 	color: var(--color-fg);
 	font-size: var(--type-base);
@@ -171,6 +172,9 @@ dd {
 }
 
 img,
+video,
+canvas,
+svg,
 picture {
 	max-width: 100%;
 	display: block;
@@ -181,9 +185,10 @@ picture {
 	html:focus-within {
 		scroll-behavior: auto;
 	}
+
 	*,
-	*::before,
-	*::after {
+*::before,
+*::after {
 		-webkit-animation-duration: 0.01ms !important;
 		animation-duration: 0.01ms !important;
 		-webkit-animation-iteration-count: 1 !important;
@@ -192,7 +197,6 @@ picture {
 		scroll-behavior: auto !important;
 	}
 }
-
 ::target-text {
 	background: var(--color-bg-highlight);
 	color: var(--color-fg-highlight);
@@ -209,7 +213,6 @@ picture {
 		transition-duration: 0.001 !important;
 	}
 }
-
 /* Screen Reader Text: meant only for screen readers. */
 .screen-reader-text {
 	border: 0;
@@ -224,7 +227,6 @@ picture {
 	overflow: hidden;
 	word-wrap: normal !important;
 }
-
 .screen-reader-text:focus {
 	font-weight: bold;
 	clip: auto !important;
@@ -243,72 +245,62 @@ picture {
 .f-fw100 {
 	font-weight: 100;
 }
-
 .f-fw200 {
 	font-weight: 200;
 }
-
 .f-fw300 {
 	font-weight: 300;
 }
-
 .f-fw400 {
 	font-weight: 400;
 }
-
 .f-fw500 {
 	font-weight: 500;
 }
-
 .f-fw600 {
 	font-weight: 600;
 }
-
 .f-fw700 {
 	font-weight: 700;
 }
-
 .f-fw800 {
 	font-weight: 800;
 }
-
 .f-fw900 {
 	font-weight: 900;
 }
-
 .f-s1 {
 	font-size: var(--type-size-1);
 	line-height: var(--type-lh-1);
 }
-
 .f-s2, h1 {
 	font-size: var(--type-size-2);
 	line-height: var(--type-lh-1);
 }
-
 .f-s3, h2 {
 	font-size: var(--type-size-3);
 	line-height: var(--type-lh-1);
 }
-
-.f-s4, .screen-reader-text:focus, h3 {
+.f-s4, h3, .screen-reader-text:focus {
 	font-size: var(--type-size-4);
 	line-height: var(--type-lh-2);
 }
-
 .f-s5, h4 {
 	font-size: var(--type-size-5);
 	line-height: var(--type-lh-2);
 }
-
-.f-s6, h5, h6, small, sub,
-sup {
+.f-s6, sub,
+sup, small, h6, h5 {
 	font-size: var(--type-size-6);
 	line-height: var(--type-lh-2);
 	letter-spacing: var(--type-ls-1);
 }
 
-.outline, .screen-reader-text:focus, a:active, a:focus, .btn:active, .btn:focus,
+.outline, summary:active, summary:focus, input:active, input:focus,
+select:active,
+select:focus,
+textarea:active,
+textarea:focus, .btn:active, .btn:focus,
 button:active,
 button:focus,
 [role=button]:active,
@@ -318,11 +310,7 @@ button:focus,
 [type=reset]:active,
 [type=reset]:focus,
 [type=button]:active,
-[type=button]:focus, input:active, input:focus,
-select:active,
-select:focus,
-textarea:active,
-textarea:focus, summary:active, summary:focus {
+[type=button]:focus, a:active, a:focus, .screen-reader-text:focus {
 	outline: var(--size-1) solid var(--color-bg-highlight);
 	outline-offset: var(--size-1);
 }
@@ -330,46 +318,38 @@ textarea:focus, summary:active, summary:focus {
 .overflow {
 	overflow: auto;
 }
-
 .overflow-truncate {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-
 .overflow-hidden {
 	overflow: hidden;
 }
-
 .overflow-visible {
 	overflow: visible;
 }
-
 .overflow-scroll, pre {
 	overflow: scroll;
 }
-
 .overflow-scroll::-webkit-scrollbar, pre::-webkit-scrollbar {
 	width: var(--size-3);
 	height: var(--size-3);
 }
-
 .overflow-scroll::-webkit-scrollbar-track, pre::-webkit-scrollbar-track {
 	background: var(--color-fg);
 }
-
 .overflow-scroll::-webkit-scrollbar-thumb, pre::-webkit-scrollbar-thumb {
 	background: var(--color-fg-accent);
 	border: 1px solid var(--color-fg);
 }
 
 a {
-	color: var(--color-link);
 	-webkit-text-decoration-skip: ink;
 	text-decoration-skip-ink: auto;
 	text-underline-offset: 0.05em;
 	cursor: pointer;
+	color: var(--color-link);
 }
-
 a:hover {
 	text-decoration: none;
 }
@@ -398,7 +378,6 @@ button,
 	background: var(--color-bg-accent);
 	color: var(--color-fg-accent);
 }
-
 .btn:hover,
 button:hover,
 [role=button]:hover,
@@ -408,7 +387,6 @@ button:hover,
 	cursor: pointer;
 	filter: contrast(1.5);
 }
-
 .btn:disabled,
 button:disabled,
 [role=button]:disabled,
@@ -420,10 +398,10 @@ button:disabled,
 }
 
 h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
 	margin-top: var(--size-5);
 	margin-bottom: var(--size-4);
 }
-
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	-webkit-text-decoration-color: var(--color-link);
 	text-decoration-color: var(--color-link);
@@ -432,29 +410,28 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: inherit;
 }
 
+hr {
+	background: currentColor;
+	border: none;
+	height: var(--size-1);
+	margin: var(--size-3) auto;
+}
+
 input,
+button,
 select,
 textarea {
 	font: inherit;
 	color: inherit;
 	box-shadow: none;
-	width: 100%;
 	border-radius: var(--border-radius);
 	line-height: var(--type-lh-2);
 	padding: var(--size-2);
 	background: var(--color-pop);
 	border: 2px solid var(--color-border);
 }
-
-@media only screen and (min-width: 32em) {
-	input,
-	select,
-	textarea {
-		width: 60%;
-	}
-}
-
 input:disabled,
+button:disabled,
 select:disabled,
 textarea:disabled {
 	opacity: 0.5;
@@ -466,10 +443,15 @@ textarea {
 	width: 100%;
 	resize: vertical;
 }
+@media only screen and (min-width: 32em) {
+	textarea {
+		width: 60%;
+	}
+}
 
 /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
 	width: auto;
 }
 
@@ -492,7 +474,6 @@ legend {
 	padding-right: var(--size-2);
 	font-weight: bold;
 }
-
 legend > * {
 	margin: 0;
 }
@@ -516,16 +497,9 @@ nav ul {
 	list-style-type: none;
 	padding: 0;
 }
-
 nav ul ul {
 	-webkit-padding-start: var(--size-3);
 	padding-inline-start: var(--size-3);
-}
-
-hr {
-	border: none;
-	border-top: var(--size-1) solid var(--color-border);
-	margin: var(--size-3) auto;
 }
 
 mark {
@@ -584,7 +558,6 @@ pre {
 	background: var(--color-pop);
 	border-radius: var(--border-radius);
 }
-
 pre code {
 	background: none;
 	margin: 0;
@@ -594,7 +567,6 @@ pre code {
 summary {
 	font-weight: bold;
 }
-
 summary > * {
 	display: inline;
 }
@@ -604,7 +576,6 @@ table th {
 	text-align: left;
 	font-weight: bold;
 }
-
 table caption,
 table th, table td {
 	padding: var(--size-1);
@@ -613,6 +584,7 @@ table th, table td {
 p {
 	margin-top: var(--size-4);
 	margin-bottom: var(--size-4);
+	overflow-wrap: break-word;
 }
 
 sub,
