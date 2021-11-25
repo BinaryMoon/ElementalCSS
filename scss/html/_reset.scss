@@ -7,6 +7,12 @@
 
 }
 
+* {
+
+	margin: 0;
+
+}
+
 :focus:not(:focus-visible),
 [tabindex="-1"]:focus {
 
@@ -37,9 +43,9 @@ aside {
 
 }
 
-// Set core root defaults
 html {
 
+	height: 100%;
 	font-size: 16px;
 	accent-color: var( --color-fg-accent );
 
@@ -56,6 +62,7 @@ body {
 
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
+	-webkit-font-smoothing: antialiased;
 
 	background: var( --color-bg );
 	color: var( --color-fg );
@@ -79,6 +86,9 @@ dd {
 
 // Make images easier to work with
 img,
+video,
+canvas,
+svg,
 picture {
 
 	max-width: 100%;
