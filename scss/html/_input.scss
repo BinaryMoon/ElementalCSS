@@ -1,23 +1,17 @@
 input,
+button,
 select,
 textarea {
 
 	font: inherit;
 	color: inherit;
 	box-shadow: none;
-	width: 100%;
 
 	border-radius: var( --border-radius );
 	line-height: var( --type-lh-2 );
 	padding: var( --size-2 );
 	background: var( --color-pop );
 	border: 2px solid var( --color-border );
-
-	@include mq-tablet() {
-
-		width: 60%;
-
-	}
 
 	&:active,
 	&:focus {
@@ -41,6 +35,12 @@ textarea {
 
 	width: 100%;
 	resize: vertical;
+
+	@include mq-tablet() {
+
+		width: 60%;
+
+	}
 
 }
 
