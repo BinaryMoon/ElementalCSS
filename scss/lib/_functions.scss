@@ -1,13 +1,13 @@
 // calculate a colour to use for contrast based on the brightness of the background
-@function get_contrast( $color ) {
+@function get_contrast( $color, $light: white, $dark: black ) {
 
 	@if ( get_brightness( $color ) < 65 ) {
 
-		@return white;
+		@return $light;
 
 	} @else {
 
-		@return black;
+		@return $dark;
 
 	}
 
