@@ -1,0 +1,36 @@
+:root {
+
+	// see https://type-scale.com/
+
+	// Major second.
+	--type-scale: 1.125;
+
+	@include mq-tablet() {
+		// Major third.
+		--type-scale: 1.25;
+	}
+
+	@include mq-desktop() {
+		// Perfect fifth.
+		--type-scale: 1.414;
+	}
+
+	// 18px base font size.
+	--type-base: 1rem;
+
+	// Font sizes.
+	--type-size-6: calc( var( --type-base ) / var( --type-scale ) );
+	--type-size-5: var( --type-base );
+	--type-size-4: calc( var( --type-base ) * var( --type-scale ) );
+	--type-size-3: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) );
+	--type-size-2: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
+	--type-size-1: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
+
+	// Line height.
+	--type-lh-1: 1.1;
+	--type-lh-2: 1.618; // Golden ratio!
+
+	// Letter spacing.
+	--type-ls-1: 0.1em;
+
+}
