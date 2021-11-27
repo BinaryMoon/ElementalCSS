@@ -6,7 +6,6 @@ a {
 
 	color: var( --color-link );
 
-	&:active,
 	&:focus {
 
 		@extend .outline;

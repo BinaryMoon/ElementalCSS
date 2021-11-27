@@ -1,8 +1,11 @@
 @include mq-prefix( 'display' ) {
 
-	&-none { display: none; }
 	&-block { display: block; }
 	&-inline-block { display: inline-block; }
 	&-inline { display: inline; }
+
+	// We want this to override display block so put it last.
+	&-none,
+	&-hide-empty:empty { display: none; }
 
 }

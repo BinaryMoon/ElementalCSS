@@ -16,10 +16,7 @@ button,
 
 	font: inherit;
 	border: none;
-	display: inline-block;
-	width: auto;
 	text-decoration: none;
-	border-width: 2px;
 
 	border-radius: var( --border-radius );
 	padding: var( --size-1 ) var( --size-3 );
@@ -29,11 +26,9 @@ button,
 	&:hover {
 
 		cursor: pointer;
-		filter: contrast( 1.5 );
 
 	}
 
-	&:active,
 	&:focus {
 
 		@extend .outline;
