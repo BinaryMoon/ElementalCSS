@@ -106,6 +106,30 @@
 	}
 }
 
+:root {
+	--type-scale: 1.125;
+	--type-base: 1rem;
+	--type-size-6: calc( var( --type-base ) / var( --type-scale ) );
+	--type-size-5: var( --type-base );
+	--type-size-4: calc( var( --type-base ) * var( --type-scale ) );
+	--type-size-3: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) );
+	--type-size-2: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
+	--type-size-1: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
+	--type-lh-1: 1.1;
+	--type-lh-2: 1.618;
+	--type-ls-1: 0.1em;
+}
+@media only screen and (min-width: 32em) {
+	:root {
+		--type-scale: 1.25;
+	}
+}
+@media only screen and (min-width: 64em) {
+	:root {
+		--type-scale: 1.414;
+	}
+}
+
 *,
 *::before,
 *::after {
@@ -1023,9 +1047,6 @@ picture {
 /**
  * Colours
  */
-.bg-current {
-	color: currentColor;
-}
 .bg-black {
 	background-color: var(--color-black);
 	color: white;
@@ -1033,6 +1054,9 @@ picture {
 .bg-black__hover:hover {
 	background-color: var(--color-black);
 	color: white;
+}
+.bg-black a {
+	color: var(--color-yellow);
 }
 .bg-gray4 {
 	background-color: var(--color-gray4);
@@ -1042,6 +1066,9 @@ picture {
 	background-color: var(--color-gray4);
 	color: white;
 }
+.bg-gray4 a {
+	color: var(--color-yellow);
+}
 .bg-gray3 {
 	background-color: var(--color-gray3);
 	color: white;
@@ -1049,6 +1076,9 @@ picture {
 .bg-gray3__hover:hover {
 	background-color: var(--color-gray3);
 	color: white;
+}
+.bg-gray3 a {
+	color: var(--color-yellow);
 }
 .bg-gray2 {
 	background-color: var(--color-gray2);
@@ -1058,6 +1088,9 @@ picture {
 	background-color: var(--color-gray2);
 	color: white;
 }
+.bg-gray2 a {
+	color: var(--color-yellow);
+}
 .bg-gray1 {
 	background-color: var(--color-gray1);
 	color: black;
@@ -1065,6 +1098,9 @@ picture {
 .bg-gray1__hover:hover {
 	background-color: var(--color-gray1);
 	color: black;
+}
+.bg-gray1 a {
+	color: var(--color-blue-dark);
 }
 .bg-white {
 	background-color: var(--color-white);
@@ -1074,6 +1110,9 @@ picture {
 	background-color: var(--color-white);
 	color: black;
 }
+.bg-white a {
+	color: var(--color-blue-dark);
+}
 .bg-tint {
 	background-color: var(--color-tint);
 	color: black;
@@ -1081,6 +1120,9 @@ picture {
 .bg-tint__hover:hover {
 	background-color: var(--color-tint);
 	color: black;
+}
+.bg-tint a {
+	color: var(--color-blue-dark);
 }
 .bg-shade {
 	background-color: var(--color-shade);
@@ -1090,6 +1132,9 @@ picture {
 	background-color: var(--color-shade);
 	color: white;
 }
+.bg-shade a {
+	color: var(--color-yellow);
+}
 .bg-blue-light {
 	background-color: var(--color-blue-light);
 	color: black;
@@ -1097,6 +1142,9 @@ picture {
 .bg-blue-light__hover:hover {
 	background-color: var(--color-blue-light);
 	color: black;
+}
+.bg-blue-light a {
+	color: var(--color-blue-dark);
 }
 .bg-blue {
 	background-color: var(--color-blue);
@@ -1106,6 +1154,9 @@ picture {
 	background-color: var(--color-blue);
 	color: white;
 }
+.bg-blue a {
+	color: var(--color-yellow);
+}
 .bg-blue-dark {
 	background-color: var(--color-blue-dark);
 	color: white;
@@ -1113,6 +1164,9 @@ picture {
 .bg-blue-dark__hover:hover {
 	background-color: var(--color-blue-dark);
 	color: white;
+}
+.bg-blue-dark a {
+	color: var(--color-yellow);
 }
 .bg-red-light {
 	background-color: var(--color-red-light);
@@ -1122,6 +1176,9 @@ picture {
 	background-color: var(--color-red-light);
 	color: black;
 }
+.bg-red-light a {
+	color: var(--color-blue-dark);
+}
 .bg-red {
 	background-color: var(--color-red);
 	color: white;
@@ -1129,6 +1186,9 @@ picture {
 .bg-red__hover:hover {
 	background-color: var(--color-red);
 	color: white;
+}
+.bg-red a {
+	color: var(--color-yellow);
 }
 .bg-red-dark {
 	background-color: var(--color-red-dark);
@@ -1138,6 +1198,9 @@ picture {
 	background-color: var(--color-red-dark);
 	color: white;
 }
+.bg-red-dark a {
+	color: var(--color-yellow);
+}
 .bg-green-light {
 	background-color: var(--color-green-light);
 	color: black;
@@ -1145,6 +1208,9 @@ picture {
 .bg-green-light__hover:hover {
 	background-color: var(--color-green-light);
 	color: black;
+}
+.bg-green-light a {
+	color: var(--color-blue-dark);
 }
 .bg-green {
 	background-color: var(--color-green);
@@ -1154,6 +1220,9 @@ picture {
 	background-color: var(--color-green);
 	color: white;
 }
+.bg-green a {
+	color: var(--color-yellow);
+}
 .bg-green-dark {
 	background-color: var(--color-green-dark);
 	color: white;
@@ -1162,6 +1231,9 @@ picture {
 	background-color: var(--color-green-dark);
 	color: white;
 }
+.bg-green-dark a {
+	color: var(--color-yellow);
+}
 .bg-yellow {
 	background-color: var(--color-yellow);
 	color: black;
@@ -1169,6 +1241,9 @@ picture {
 .bg-yellow__hover:hover {
 	background-color: var(--color-yellow);
 	color: black;
+}
+.bg-yellow a {
+	color: var(--color-blue-dark);
 }
 
 .fg-current {
@@ -1283,9 +1358,6 @@ picture {
 	color: var(--color-yellow);
 }
 
-.display-none {
-	display: none;
-}
 .display-block {
 	display: block;
 }
@@ -1295,11 +1367,11 @@ picture {
 .display-inline {
 	display: inline;
 }
+.display-none, .display-hide-empty:empty {
+	display: none;
+}
 
 @media only screen and (min-width: 32em) {
-	.t\:display-none {
-		display: none;
-	}
 	.t\:display-block {
 		display: block;
 	}
@@ -1309,11 +1381,11 @@ picture {
 	.t\:display-inline {
 		display: inline;
 	}
-}
-@media only screen and (min-width: 64em) {
-	.d\:display-none {
+	.t\:display-none, .t\:display-hide-empty:empty {
 		display: none;
 	}
+}
+@media only screen and (min-width: 64em) {
 	.d\:display-block {
 		display: block;
 	}
@@ -1322,6 +1394,9 @@ picture {
 	}
 	.d\:display-inline {
 		display: inline;
+	}
+	.d\:display-none, .d\:display-hide-empty:empty {
+		display: none;
 	}
 }
 .flex {
@@ -2898,20 +2973,16 @@ sup, small, h6, h5 {
 }
 
 .outline, summary:active, summary:focus, input:active, input:focus,
+button:active,
 select:active,
 select:focus,
 textarea:active,
-textarea:focus, .btn:active, .btn:focus,
-button:active,
+textarea:focus, .btn:focus,
 button:focus,
-[role=button]:active,
 [role=button]:focus,
-[type=submit]:active,
 [type=submit]:focus,
-[type=reset]:active,
 [type=reset]:focus,
-[type=button]:active,
-[type=button]:focus, a:active, a:focus, .screen-reader-text:focus {
+[type=button]:focus, a:focus, .screen-reader-text:focus {
 	outline: var(--size-1) solid var(--color-bg-highlight);
 	outline-offset: var(--size-1);
 }
@@ -3589,30 +3660,6 @@ button:focus,
 		align-items: center;
 	}
 }
-:root {
-	--type-scale: 1.125;
-	--type-base: 1rem;
-	--type-size-6: calc( var( --type-base ) / var( --type-scale ) );
-	--type-size-5: var( --type-base );
-	--type-size-4: calc( var( --type-base ) * var( --type-scale ) );
-	--type-size-3: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) );
-	--type-size-2: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
-	--type-size-1: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
-	--type-lh-1: 1.1;
-	--type-lh-2: 1.618;
-	--type-ls-1: 0.1em;
-}
-@media only screen and (min-width: 32em) {
-	:root {
-		--type-scale: 1.25;
-	}
-}
-@media only screen and (min-width: 64em) {
-	:root {
-		--type-scale: 1.414;
-	}
-}
-
 .t-ta-c {
 	text-align: center;
 }
@@ -4473,10 +4520,7 @@ button,
 [type=button] {
 	font: inherit;
 	border: none;
-	display: inline-block;
-	width: auto;
 	text-decoration: none;
-	border-width: 2px;
 	border-radius: var(--border-radius);
 	padding: var(--size-1) var(--size-3);
 	background: var(--color-bg-accent);
@@ -4489,7 +4533,6 @@ button:hover,
 [type=reset]:hover,
 [type=button]:hover {
 	cursor: pointer;
-	filter: contrast(1.5);
 }
 .btn:disabled,
 button:disabled,

@@ -106,6 +106,30 @@
 	}
 }
 
+:root {
+	--type-scale: 1.125;
+	--type-base: 1rem;
+	--type-size-6: calc( var( --type-base ) / var( --type-scale ) );
+	--type-size-5: var( --type-base );
+	--type-size-4: calc( var( --type-base ) * var( --type-scale ) );
+	--type-size-3: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) );
+	--type-size-2: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
+	--type-size-1: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
+	--type-lh-1: 1.1;
+	--type-lh-2: 1.618;
+	--type-ls-1: 0.1em;
+}
+@media only screen and (min-width: 32em) {
+	:root {
+		--type-scale: 1.25;
+	}
+}
+@media only screen and (min-width: 64em) {
+	:root {
+		--type-scale: 1.414;
+	}
+}
+
 *,
 *::before,
 *::after {
@@ -297,20 +321,16 @@ sup, small, h6, h5 {
 }
 
 .outline, summary:active, summary:focus, input:active, input:focus,
+button:active,
 select:active,
 select:focus,
 textarea:active,
-textarea:focus, .btn:active, .btn:focus,
-button:active,
+textarea:focus, .btn:focus,
 button:focus,
-[role=button]:active,
 [role=button]:focus,
-[type=submit]:active,
 [type=submit]:focus,
-[type=reset]:active,
 [type=reset]:focus,
-[type=button]:active,
-[type=button]:focus, a:active, a:focus, .screen-reader-text:focus {
+[type=button]:focus, a:focus, .screen-reader-text:focus {
 	outline: var(--size-1) solid var(--color-bg-highlight);
 	outline-offset: var(--size-1);
 }
@@ -369,10 +389,7 @@ button,
 [type=button] {
 	font: inherit;
 	border: none;
-	display: inline-block;
-	width: auto;
 	text-decoration: none;
-	border-width: 2px;
 	border-radius: var(--border-radius);
 	padding: var(--size-1) var(--size-3);
 	background: var(--color-bg-accent);
@@ -385,7 +402,6 @@ button:hover,
 [type=reset]:hover,
 [type=button]:hover {
 	cursor: pointer;
-	filter: contrast(1.5);
 }
 .btn:disabled,
 button:disabled,
