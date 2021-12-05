@@ -438,7 +438,6 @@ button,
 select,
 textarea {
 	font: inherit;
-	color: inherit;
 	box-shadow: none;
 	border-radius: var(--border-radius);
 	line-height: var(--type-lh-2);
