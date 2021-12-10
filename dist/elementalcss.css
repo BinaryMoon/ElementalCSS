@@ -4565,6 +4565,13 @@ hr {
 }
 
 input,
+select,
+textarea {
+	background: var(--color-pop);
+	border: var(--border-width) solid var(--color-border);
+}
+
+input,
 button,
 select,
 textarea {
@@ -4572,9 +4579,7 @@ textarea {
 	box-shadow: none;
 	border-radius: var(--border-radius);
 	line-height: var(--type-lh-2);
-	padding: var(--size-2);
-	background: var(--color-pop);
-	border: 2px solid var(--color-border);
+	padding: var(--size-1) var(--size-3);
 }
 input:disabled,
 button:disabled,
