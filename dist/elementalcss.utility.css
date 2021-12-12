@@ -266,6 +266,10 @@ picture {
 	max-width: var(--size-7);
 }
 
+.pe-none {
+	pointer-events: none;
+}
+
 .bg {
 	/**
 	 * Use style="--bg-image: url(/image/url/);" to set the image.
@@ -3462,6 +3466,50 @@ picture {
 	}
 	.d\:p-l6 {
 		padding-left: var(--size-6);
+	}
+}
+.position-a {
+	position: absolute;
+}
+.position-r {
+	position: relative;
+}
+.position-f {
+	position: fixed;
+}
+.position-s {
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+@media only screen and (min-width: 32em) {
+	.t\:position-a {
+		position: absolute;
+	}
+	.t\:position-r {
+		position: relative;
+	}
+	.t\:position-f {
+		position: fixed;
+	}
+	.t\:position-s {
+		position: -webkit-sticky;
+		position: sticky;
+	}
+}
+@media only screen and (min-width: 64em) {
+	.d\:position-a {
+		position: absolute;
+	}
+	.d\:position-r {
+		position: relative;
+	}
+	.d\:position-f {
+		position: fixed;
+	}
+	.d\:position-s {
+		position: -webkit-sticky;
+		position: sticky;
 	}
 }
 .pc-jc-fs {
