@@ -170,6 +170,7 @@ html {
 	height: 100%;
 	font-size: 16px;
 	accent-color: var(--color-fg-accent);
+	scroll-behavior: smooth;
 }
 html:focus-within {
 	scroll-behavior: smooth;
@@ -235,6 +236,7 @@ picture {
 		-webkit-animation-duration: 0.001 !important;
 		animation-duration: 0.001 !important;
 		transition-duration: 0.001 !important;
+		scroll-behavior: auto;
 	}
 }
 /* Screen Reader Text: meant only for screen readers. */
