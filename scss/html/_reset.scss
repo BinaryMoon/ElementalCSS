@@ -48,6 +48,7 @@ html {
 	height: 100%;
 	font-size: 16px;
 	accent-color: var( --color-fg-accent );
+	scroll-behavior: smooth;
 
 	&:focus-within {
 
@@ -142,6 +143,7 @@ picture {
 	* {
 		animation-duration: 0.001 !important;
 		transition-duration: 0.001 !important;
+		scroll-behavior: auto;
 	}
 
 }
