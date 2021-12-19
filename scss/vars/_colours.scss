@@ -33,19 +33,19 @@ $colour_theme: map-merge(
 	(
 		'bg': (
 			white,
-			gray4
+			gray4,
 		),
 		'fg': (
 			gray4,
-			gray1
+			gray1,
 		),
 		'bg-accent': (
 			blue,
-			yellow
+			yellow,
 		),
 		'fg-accent': (
 			white,
-			black
+			black,
 		),
 		'bg-highlight': (
 			yellow,
@@ -67,7 +67,7 @@ $colour_theme: map-merge(
 		),
 		'code': (
 			green,
-			green
+			green,
 		),
 	),
 	$colour_theme
