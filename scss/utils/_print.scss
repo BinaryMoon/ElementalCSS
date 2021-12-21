@@ -1,0 +1,12 @@
+@media print {
+
+	@include mq-prefix( 'print' ) {
+
+		&-hide { display: none; }
+		&-block { display: block; }
+		&-inline { display: inline; }
+
+	}
+
+}
+
