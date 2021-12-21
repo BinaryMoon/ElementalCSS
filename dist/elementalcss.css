@@ -3710,6 +3710,17 @@ button:focus,
 		align-items: center;
 	}
 }
+@media print {
+	.print-hide {
+		display: none;
+	}
+	.print-block {
+		display: block;
+	}
+	.print-inline {
+		display: inline;
+	}
+}
 .t-ta-c {
 	text-align: center;
 }
