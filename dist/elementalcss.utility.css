@@ -171,6 +171,9 @@ html {
 	font-size: 16px;
 	accent-color: var(--color-fg-accent);
 	scroll-behavior: smooth;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
 }
 html:focus-within {
 	scroll-behavior: smooth;

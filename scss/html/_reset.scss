@@ -49,6 +49,7 @@ html {
 	font-size: 16px;
 	accent-color: var( --color-fg-accent );
 	scroll-behavior: smooth;
+	text-size-adjust: none;
 
 	&:focus-within {
 
