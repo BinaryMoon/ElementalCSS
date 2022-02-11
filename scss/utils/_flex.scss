@@ -40,6 +40,14 @@
 
 	&-ai {
 		&-c { align-items: center; }
+		&-s { align-items: start; }
+		&-e { align-items: end; }
+	}
+
+	&-as {
+		&-c { align-self: center; }
+		&-s { align-self: start; }
+		&-e { align-self: end; }
 	}
 
 }
