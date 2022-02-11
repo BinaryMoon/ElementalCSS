@@ -1,5 +1,5 @@
 
-.f {
+@include mq-prefix( 'f' ) {
 
 	// Font weights.
 	@each $w in $font-weights {
