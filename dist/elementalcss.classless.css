@@ -325,6 +325,114 @@ sup, small, h6, h5 {
 	letter-spacing: var(--type-ls-1);
 }
 
+@media only screen and (min-width: 32em) {
+	.t\:f-fw100 {
+		font-weight: 100;
+	}
+	.t\:f-fw200 {
+		font-weight: 200;
+	}
+	.t\:f-fw300 {
+		font-weight: 300;
+	}
+	.t\:f-fw400 {
+		font-weight: 400;
+	}
+	.t\:f-fw500 {
+		font-weight: 500;
+	}
+	.t\:f-fw600 {
+		font-weight: 600;
+	}
+	.t\:f-fw700 {
+		font-weight: 700;
+	}
+	.t\:f-fw800 {
+		font-weight: 800;
+	}
+	.t\:f-fw900 {
+		font-weight: 900;
+	}
+	.t\:f-s1 {
+		font-size: var(--type-size-1);
+		line-height: var(--type-lh-1);
+	}
+	.t\:f-s2 {
+		font-size: var(--type-size-2);
+		line-height: var(--type-lh-1);
+	}
+	.t\:f-s3 {
+		font-size: var(--type-size-3);
+		line-height: var(--type-lh-1);
+	}
+	.t\:f-s4 {
+		font-size: var(--type-size-4);
+		line-height: var(--type-lh-2);
+	}
+	.t\:f-s5 {
+		font-size: var(--type-size-5);
+		line-height: var(--type-lh-2);
+	}
+	.t\:f-s6 {
+		font-size: var(--type-size-6);
+		line-height: var(--type-lh-2);
+		letter-spacing: var(--type-ls-1);
+	}
+}
+@media only screen and (min-width: 64em) {
+	.d\:f-fw100 {
+		font-weight: 100;
+	}
+	.d\:f-fw200 {
+		font-weight: 200;
+	}
+	.d\:f-fw300 {
+		font-weight: 300;
+	}
+	.d\:f-fw400 {
+		font-weight: 400;
+	}
+	.d\:f-fw500 {
+		font-weight: 500;
+	}
+	.d\:f-fw600 {
+		font-weight: 600;
+	}
+	.d\:f-fw700 {
+		font-weight: 700;
+	}
+	.d\:f-fw800 {
+		font-weight: 800;
+	}
+	.d\:f-fw900 {
+		font-weight: 900;
+	}
+	.d\:f-s1 {
+		font-size: var(--type-size-1);
+		line-height: var(--type-lh-1);
+	}
+	.d\:f-s2 {
+		font-size: var(--type-size-2);
+		line-height: var(--type-lh-1);
+	}
+	.d\:f-s3 {
+		font-size: var(--type-size-3);
+		line-height: var(--type-lh-1);
+	}
+	.d\:f-s4 {
+		font-size: var(--type-size-4);
+		line-height: var(--type-lh-2);
+	}
+	.d\:f-s5 {
+		font-size: var(--type-size-5);
+		line-height: var(--type-lh-2);
+	}
+	.d\:f-s6 {
+		font-size: var(--type-size-6);
+		line-height: var(--type-lh-2);
+		letter-spacing: var(--type-ls-1);
+	}
+}
 .outline, summary:active, summary:focus, input:active, input:focus,
 button:active,
 select:active,
