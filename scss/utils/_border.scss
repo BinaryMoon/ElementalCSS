@@ -17,20 +17,11 @@
 		}
 	}
 
-	@each $value in ( 1, 2, 3, 4, 5 ) {
-
-		$s: nth( $sizes, $value );
-		$s_name: nth( $s, 1 );
-		$s_value: nth( $s, 2 );
+	@each $s_name in ( 0, 1, 2, 3 ) {
 
 		// Border Radius on all corners.
 		&-br#{$s_name} {
 			border-radius: var( --size-#{$s_name} );
-		}
-
-		// Border width.
-		&-bw#{$s_name} {
-			border-width: var( --size-#{$s_name} );
 		}
 
 		// Border Radius on specific corners.
@@ -41,6 +32,11 @@
 		}
 
 		// Border width.
+		&-bw#{$s_name} {
+			border-width: var( --size-#{$s_name} );
+		}
+
+		// Border width on different sides.
 		@each $p_name, $p_value in $positions {
 			&-bw-#{$p_name}#{$s_name} {
 				border-#{$p_value}-width: var( --size-#{$s_name} );
