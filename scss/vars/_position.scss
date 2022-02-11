@@ -1,0 +1,29 @@
+$position-content: (
+	'fs': 'flex-start',
+	'fe': 'flex-end',
+	'c': 'center',
+	'sb': 'space-between',
+	'sa': 'space-around',
+	'se': 'space-evenly',
+);
+
+$position-items: (
+	'a': 'auto',
+	's': 'stretch',
+	'e': 'end',
+	'c': 'center',
+);
+
+$positions: (
+	't': 'top',
+	'r': 'right',
+	'b': 'bottom',
+	'l': 'left',
+);
+
+$positions-corner: (
+	'tl': 'top-left',
+	'tr': 'top-right',
+	'bl': 'bottom-left',
+	'br': 'bottom-right',
+);
