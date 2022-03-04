@@ -10,6 +10,9 @@
 	$light-link: nth( map.get( $colour_theme, "link" ), 1 );
 	$dark-link: nth( map.get( $colour_theme, "link" ), 2 );
 
+	&-custom { background-color: var( --bg-custom ) !important; }
+	&-custom__hover:hover { background-color: var( --bg-custom--hover ) !important; }
+
 	@each $c_name, $c_value in $colours {
 		&-#{$c_name} {
 			background-color: var( --color-#{$c_name} );
@@ -32,6 +35,7 @@
 .fg {
 
 	&-current { color: currentColor; }
+	&-custom { color: var( --fg-custom ) !important; }
 
 	@each $c_name, $c_value in $colours {
 		&-#{$c_name} {
