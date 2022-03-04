@@ -3,7 +3,6 @@
 	border: var( --border-width ) solid var( --color-border );
 
 	&-none { border: none; }
-	&-round { border-radius: 999rem; }
 
 	@each $c_name, $c_value in $colours {
 		&-c-#{$c_name} {
@@ -16,6 +15,8 @@
 			border-#{$p_value}: var( --border-width ) solid var( --color-border );
 		}
 	}
+
+	&-br-round { border-radius: 999rem; }
 
 	@each $s_name in ( 0, 1, 2, 3 ) {
 
