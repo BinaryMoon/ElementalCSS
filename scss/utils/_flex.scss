@@ -6,6 +6,7 @@
 	&-auto { flex: 1 1 auto; }
 	&-initial { flex: 0 1 auto; }
 	&-none { flex: none; }
+	&-center { justify-content: center; align-items: center; }
 
 	&-wrap { flex-wrap: wrap; }
 	&-nowrap { flex-wrap: nowrap; }
