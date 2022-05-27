@@ -1,20 +1,47 @@
-@include mq-prefix( 't' ) {
+@include mq-prefix('t') {
 
 	&-ta- {
-		&c { text-align: center; }
-		&l { text-align: left; }
-		&r { text-align: right; }
+		&c {
+			text-align: center;
+		}
+
+		&l {
+			text-align: left;
+		}
+
+		&r {
+			text-align: right;
+		}
 	}
 
 	// @include mq-prefix-hover ( &-td-n ) { text-decoration: none; }
-	&-td-n { text-decoration: none; }
-	&-td-n__hover:hover { text-decoration: none; }
-	&-td-u { text-decoration: underline; }
-	&-td-u__hover:hover { text-decoration: underline; }
+	&-td-n {
+		text-decoration: none;
+	}
 
-	&-tt-n { text-transform: none; }
-	&-tt-u { text-transform: uppercase; }
+	&-td-n__hover:hover {
+		text-decoration: none;
+	}
 
-	&-nowrap { white-space: nowrap; }
+	&-td-u {
+		text-decoration: underline;
+	}
+
+	&-td-u__hover:hover {
+		text-decoration: underline;
+	}
+
+	&-tt-n {
+		text-transform: none;
+	}
+
+	&-tt-u {
+		text-transform: uppercase;
+		letter-spacing: var(--type-ls-1);
+	}
+
+	&-nowrap {
+		white-space: nowrap;
+	}
 
 }
