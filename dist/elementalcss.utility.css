@@ -109,12 +109,12 @@
 :root {
 	--type-scale: 1.125;
 	--type-base: 1rem;
-	--type-size-6: calc( var( --type-base ) / var( --type-scale ) );
-	--type-size-5: var( --type-base );
-	--type-size-4: calc( var( --type-base ) * var( --type-scale ) );
-	--type-size-3: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) );
-	--type-size-2: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
-	--type-size-1: calc( var( --type-base ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) * var( --type-scale ) );
+	--type-size-6: calc(var(--type-base) / var(--type-scale));
+	--type-size-5: var(--type-base);
+	--type-size-4: calc(var(--type-base) * var(--type-scale));
+	--type-size-3: calc(var(--type-base) * var(--type-scale) * var(--type-scale));
+	--type-size-2: calc(var(--type-base) * var(--type-scale) * var(--type-scale) * var(--type-scale));
+	--type-size-1: calc(var(--type-base) * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale));
 	--type-lh-1: 1.1;
 	--type-lh-2: 1.618;
 	--type-ls-1: 0.1em;
@@ -275,6 +275,20 @@ picture {
 	pointer-events: none;
 }
 
+.ar-1 {
+	aspect-ratio: 1;
+}
+
+@media only screen and (min-width: 32em) {
+	.t\:ar-1 {
+		aspect-ratio: 1;
+	}
+}
+@media only screen and (min-width: 64em) {
+	.d\:ar-1 {
+		aspect-ratio: 1;
+	}
+}
 .bg {
 	/**
 	 * Use style="--bg-image: url(/image/url/);" to set the image.
@@ -379,9 +393,6 @@ picture {
 .b-none {
 	border: none;
 }
-.b-round {
-	border-radius: 999rem;
-}
 .b-c-black {
 	border-color: var(--color-black);
 }
@@ -447,6 +458,9 @@ picture {
 }
 .b-l {
 	border-left: var(--border-width) solid var(--color-border);
+}
+.b-br-round {
+	border-radius: 999rem;
 }
 .b-br0 {
 	border-radius: var(--size-0);
@@ -576,9 +590,6 @@ picture {
 	.t\:b-none {
 		border: none;
 	}
-	.t\:b-round {
-		border-radius: 999rem;
-	}
 	.t\:b-c-black {
 		border-color: var(--color-black);
 	}
@@ -644,6 +655,9 @@ picture {
 	}
 	.t\:b-l {
 		border-left: var(--border-width) solid var(--color-border);
+	}
+	.t\:b-br-round {
+		border-radius: 999rem;
 	}
 	.t\:b-br0 {
 		border-radius: var(--size-0);
@@ -773,9 +787,6 @@ picture {
 	.d\:b-none {
 		border: none;
 	}
-	.d\:b-round {
-		border-radius: 999rem;
-	}
 	.d\:b-c-black {
 		border-color: var(--color-black);
 	}
@@ -841,6 +852,9 @@ picture {
 	}
 	.d\:b-l {
 		border-left: var(--border-width) solid var(--color-border);
+	}
+	.d\:b-br-round {
+		border-radius: 999rem;
 	}
 	.d\:b-br0 {
 		border-radius: var(--size-0);
@@ -966,6 +980,12 @@ picture {
 /**
  * Colours
  */
+.bg-custom {
+	background-color: var(--bg-custom) !important;
+}
+.bg-custom__hover:hover {
+	background-color: var(--bg-custom--hover) !important;
+}
 .bg-black {
 	background-color: var(--color-black);
 	color: white;
@@ -1168,6 +1188,9 @@ picture {
 .fg-current {
 	color: currentColor;
 }
+.fg-custom {
+	color: var(--fg-custom) !important;
+}
 .fg-black {
 	color: var(--color-black);
 }
@@ -1333,6 +1356,10 @@ picture {
 .flex-none {
 	flex: none;
 }
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
 .flex-wrap {
 	flex-wrap: wrap;
 }
@@ -1407,6 +1434,10 @@ picture {
 	.t\:flex-none {
 		flex: none;
 	}
+	.t\:flex-center {
+		justify-content: center;
+		align-items: center;
+	}
 	.t\:flex-wrap {
 		flex-wrap: wrap;
 	}
@@ -1480,6 +1511,10 @@ picture {
 	}
 	.d\:flex-none {
 		flex: none;
+	}
+	.d\:flex-center {
+		justify-content: center;
+		align-items: center;
 	}
 	.d\:flex-wrap {
 		flex-wrap: wrap;
@@ -3549,6 +3584,13 @@ picture {
 	position: -webkit-sticky;
 	position: sticky;
 }
+.position-cover {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
 
 @media only screen and (min-width: 32em) {
 	.t\:position-a {
@@ -3564,6 +3606,13 @@ picture {
 		position: -webkit-sticky;
 		position: sticky;
 	}
+	.t\:position-cover {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
 }
 @media only screen and (min-width: 64em) {
 	.d\:position-a {
@@ -3578,6 +3627,13 @@ picture {
 	.d\:position-s {
 		position: -webkit-sticky;
 		position: sticky;
+	}
+	.d\:position-cover {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 	}
 }
 .pc-jc-fs {
@@ -3802,6 +3858,10 @@ picture {
 }
 .t-tt-u {
 	text-transform: uppercase;
+	letter-spacing: var(--type-ls-1);
+}
+.t-nowrap {
+	white-space: nowrap;
 }
 
 @media only screen and (min-width: 32em) {
@@ -3831,6 +3891,10 @@ picture {
 	}
 	.t\:t-tt-u {
 		text-transform: uppercase;
+		letter-spacing: var(--type-ls-1);
+	}
+	.t\:t-nowrap {
+		white-space: nowrap;
 	}
 }
 @media only screen and (min-width: 64em) {
@@ -3860,6 +3924,10 @@ picture {
 	}
 	.d\:t-tt-u {
 		text-transform: uppercase;
+		letter-spacing: var(--type-ls-1);
+	}
+	.d\:t-nowrap {
+		white-space: nowrap;
 	}
 }
 .visible {
