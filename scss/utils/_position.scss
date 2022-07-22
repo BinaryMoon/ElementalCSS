@@ -1,9 +1,21 @@
-@include mq-prefix( 'position-' ) {
+@include mq-prefix('position-') {
 
-	&a { position: absolute; }
-	&r { position: relative; }
-	&f { position: fixed; }
-	&s { position: sticky; }
+	&a {
+		position: absolute;
+	}
+
+	&r {
+		position: relative;
+	}
+
+	&f {
+		position: fixed;
+	}
+
+	&s {
+		position: sticky;
+		top: 0;
+	}
 
 	&cover {
 		position: absolute;
