@@ -213,7 +213,6 @@ picture {
 	html:focus-within {
 		scroll-behavior: auto;
 	}
-
 	*,
 *::before,
 *::after {
@@ -734,4 +733,8 @@ sub {
 
 sup {
 	top: -0.5em;
+}
+
+strong {
+	font-weight: 700;
 }

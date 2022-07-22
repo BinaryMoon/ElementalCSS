@@ -213,7 +213,6 @@ picture {
 	html:focus-within {
 		scroll-behavior: auto;
 	}
-
 	*,
 *::before,
 *::after {
@@ -3594,6 +3593,7 @@ button:focus,
 .position-s {
 	position: -webkit-sticky;
 	position: sticky;
+	top: 0;
 }
 .position-cover {
 	position: absolute;
@@ -3616,6 +3616,7 @@ button:focus,
 	.t\:position-s {
 		position: -webkit-sticky;
 		position: sticky;
+		top: 0;
 	}
 	.t\:position-cover {
 		position: absolute;
@@ -3638,6 +3639,7 @@ button:focus,
 	.d\:position-s {
 		position: -webkit-sticky;
 		position: sticky;
+		top: 0;
 	}
 	.d\:position-cover {
 		position: absolute;
@@ -4947,6 +4949,10 @@ sub {
 
 sup {
 	top: -0.5em;
+}
+
+strong {
+	font-weight: 700;
 }
 
 .shadow-low {
