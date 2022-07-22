@@ -1,7 +1,7 @@
 p {
 
-	margin-top: var( --size-4 );
-	margin-bottom: var( --size-4 );
+	margin-top: var(--size-4);
+	margin-bottom: var(--size-4);
 	overflow-wrap: break-word;
 
 }
@@ -32,5 +32,11 @@ sub {
 sup {
 
 	top: -0.5em;
+
+}
+
+strong {
+
+	font-weight: 700;
 
 }
