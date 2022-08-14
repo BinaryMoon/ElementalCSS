@@ -1815,6 +1815,9 @@ sup, small, h6, h5 {
 .grid-auto {
 	grid-auto-flow: row;
 }
+.grid-fullwidth {
+	grid-column: 1/-1;
+}
 .grid-col-all {
 	grid-column: 1/-1;
 }
@@ -1899,6 +1902,9 @@ sup, small, h6, h5 {
 	.t\:grid-auto {
 		grid-auto-flow: row;
 	}
+	.t\:grid-fullwidth {
+		grid-column: 1/-1;
+	}
 	.t\:grid-col-all {
 		grid-column: 1/-1;
 	}
@@ -1982,6 +1988,9 @@ sup, small, h6, h5 {
 	}
 	.d\:grid-auto {
 		grid-auto-flow: row;
+	}
+	.d\:grid-fullwidth {
+		grid-column: 1/-1;
 	}
 	.d\:grid-col-all {
 		grid-column: 1/-1;
