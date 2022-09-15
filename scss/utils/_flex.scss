@@ -1,34 +1,62 @@
-@include mq-prefix( 'flex' ) {
+@include mq-prefix('flex') {
 
 	display: flex;
 
-	&-1 { flex: 1 1 0%; }
-	&-auto { flex: 1 1 auto; }
-	&-initial { flex: 0 1 auto; }
-	&-none { flex: none; }
-	&-center { justify-content: center; align-items: center; }
+	&-1 {
+		flex: 1 1 0%;
+	}
 
-	&-wrap { flex-wrap: wrap; }
-	&-nowrap { flex-wrap: nowrap; }
+	&-auto {
+		flex: 1 1 auto;
+	}
 
-	&-grow { flex-grow: 1; }
-	&-grow-0 { flex-grow: 0; }
+	&-initial {
+		flex: 0 1 auto;
+	}
 
-	&-row { flex-direction: row; }
-	&-col { flex-direction: column; }
+	&-none {
+		flex: none;
+	}
+
+	&-center {
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-wrap {
+		flex-wrap: wrap;
+	}
+
+	&-nowrap {
+		flex-wrap: nowrap;
+	}
+
+	&-row {
+		flex-direction: row;
+	}
+
+	&-col {
+		flex-direction: column;
+	}
 
 	// Direction.
 	&-d {
 
-		&-c { flex-direction: column; }
-		&-r { flex-direction: row; }
+		&-c {
+			flex-direction: column;
+		}
+
+		&-r {
+			flex-direction: row;
+		}
 
 	}
 
-	@each $s_value in (0,1) {
+	@each $s_value in (0, 1) {
 		&-g#{$s_value} {
 			flex-grow: $s_value;
 		}
+
 		&-s#{$s_value} {
 			flex-shrink: $s_value;
 		}
@@ -36,19 +64,37 @@
 
 	// Justify.
 	&-jc {
-		&-sb { justify-content: space-between; }
+		&-sb {
+			justify-content: space-between;
+		}
 	}
 
 	&-ai {
-		&-c { align-items: center; }
-		&-s { align-items: start; }
-		&-e { align-items: end; }
+		&-c {
+			align-items: center;
+		}
+
+		&-s {
+			align-items: start;
+		}
+
+		&-e {
+			align-items: end;
+		}
 	}
 
 	&-as {
-		&-c { align-self: center; }
-		&-s { align-self: start; }
-		&-e { align-self: end; }
+		&-c {
+			align-self: center;
+		}
+
+		&-s {
+			align-self: start;
+		}
+
+		&-e {
+			align-self: end;
+		}
 	}
 
 }
