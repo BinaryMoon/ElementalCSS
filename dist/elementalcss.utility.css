@@ -216,9 +216,7 @@ picture {
 	*,
 *::before,
 *::after {
-		-webkit-animation-duration: 0.01ms !important;
 		animation-duration: 0.01ms !important;
-		-webkit-animation-iteration-count: 1 !important;
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
@@ -235,7 +233,6 @@ picture {
 
 @media (prefers-reduced-motion: reduce) {
 	* {
-		-webkit-animation-duration: 0.001 !important;
 		animation-duration: 0.001 !important;
 		transition-duration: 0.001 !important;
 		scroll-behavior: auto;
@@ -993,7 +990,7 @@ picture {
 	background-color: var(--color-black);
 	color: white;
 }
-.bg-black a {
+.bg-black a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-gray4 {
@@ -1004,7 +1001,7 @@ picture {
 	background-color: var(--color-gray4);
 	color: white;
 }
-.bg-gray4 a {
+.bg-gray4 a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-gray3 {
@@ -1015,7 +1012,7 @@ picture {
 	background-color: var(--color-gray3);
 	color: white;
 }
-.bg-gray3 a {
+.bg-gray3 a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-gray2 {
@@ -1026,7 +1023,7 @@ picture {
 	background-color: var(--color-gray2);
 	color: white;
 }
-.bg-gray2 a {
+.bg-gray2 a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-gray1 {
@@ -1037,7 +1034,7 @@ picture {
 	background-color: var(--color-gray1);
 	color: black;
 }
-.bg-gray1 a {
+.bg-gray1 a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-white {
@@ -1048,7 +1045,7 @@ picture {
 	background-color: var(--color-white);
 	color: black;
 }
-.bg-white a {
+.bg-white a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-tint {
@@ -1059,7 +1056,7 @@ picture {
 	background-color: var(--color-tint);
 	color: black;
 }
-.bg-tint a {
+.bg-tint a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-shade {
@@ -1070,7 +1067,7 @@ picture {
 	background-color: var(--color-shade);
 	color: white;
 }
-.bg-shade a {
+.bg-shade a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-blue-light {
@@ -1081,7 +1078,7 @@ picture {
 	background-color: var(--color-blue-light);
 	color: black;
 }
-.bg-blue-light a {
+.bg-blue-light a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-blue {
@@ -1092,7 +1089,7 @@ picture {
 	background-color: var(--color-blue);
 	color: white;
 }
-.bg-blue a {
+.bg-blue a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-blue-dark {
@@ -1103,7 +1100,7 @@ picture {
 	background-color: var(--color-blue-dark);
 	color: white;
 }
-.bg-blue-dark a {
+.bg-blue-dark a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-red-light {
@@ -1114,7 +1111,7 @@ picture {
 	background-color: var(--color-red-light);
 	color: black;
 }
-.bg-red-light a {
+.bg-red-light a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-red {
@@ -1125,7 +1122,7 @@ picture {
 	background-color: var(--color-red);
 	color: white;
 }
-.bg-red a {
+.bg-red a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-red-dark {
@@ -1136,7 +1133,7 @@ picture {
 	background-color: var(--color-red-dark);
 	color: white;
 }
-.bg-red-dark a {
+.bg-red-dark a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-green-light {
@@ -1147,7 +1144,7 @@ picture {
 	background-color: var(--color-green-light);
 	color: black;
 }
-.bg-green-light a {
+.bg-green-light a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-green {
@@ -1158,7 +1155,7 @@ picture {
 	background-color: var(--color-green);
 	color: white;
 }
-.bg-green a {
+.bg-green a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-green-dark {
@@ -1169,7 +1166,7 @@ picture {
 	background-color: var(--color-green-dark);
 	color: white;
 }
-.bg-green-dark a {
+.bg-green-dark a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-yellow {
@@ -1180,7 +1177,7 @@ picture {
 	background-color: var(--color-yellow);
 	color: black;
 }
-.bg-yellow a {
+.bg-yellow a:not([class]) {
 	color: var(--color-blue-dark);
 }
 
@@ -1365,12 +1362,6 @@ picture {
 .flex-nowrap {
 	flex-wrap: nowrap;
 }
-.flex-grow {
-	flex-grow: 1;
-}
-.flex-grow-0 {
-	flex-grow: 0;
-}
 .flex-row {
 	flex-direction: row;
 }
@@ -1443,12 +1434,6 @@ picture {
 	.t\:flex-nowrap {
 		flex-wrap: nowrap;
 	}
-	.t\:flex-grow {
-		flex-grow: 1;
-	}
-	.t\:flex-grow-0 {
-		flex-grow: 0;
-	}
 	.t\:flex-row {
 		flex-direction: row;
 	}
@@ -1520,12 +1505,6 @@ picture {
 	}
 	.d\:flex-nowrap {
 		flex-wrap: nowrap;
-	}
-	.d\:flex-grow {
-		flex-grow: 1;
-	}
-	.d\:flex-grow-0 {
-		flex-grow: 0;
 	}
 	.d\:flex-row {
 		flex-direction: row;
@@ -3589,7 +3568,6 @@ picture {
 	position: fixed;
 }
 .position-s {
-	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 }
@@ -3612,7 +3590,6 @@ picture {
 		position: fixed;
 	}
 	.t\:position-s {
-		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
 	}
@@ -3635,7 +3612,6 @@ picture {
 		position: fixed;
 	}
 	.d\:position-s {
-		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
 	}

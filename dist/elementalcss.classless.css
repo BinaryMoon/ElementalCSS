@@ -216,9 +216,7 @@ picture {
 	*,
 *::before,
 *::after {
-		-webkit-animation-duration: 0.01ms !important;
 		animation-duration: 0.01ms !important;
-		-webkit-animation-iteration-count: 1 !important;
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
@@ -235,7 +233,6 @@ picture {
 
 @media (prefers-reduced-motion: reduce) {
 	* {
-		-webkit-animation-duration: 0.001 !important;
 		animation-duration: 0.001 !important;
 		transition-duration: 0.001 !important;
 		scroll-behavior: auto;
@@ -531,7 +528,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: var(--size-4);
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	-webkit-text-decoration-color: var(--color-link);
 	text-decoration-color: var(--color-link);
 	-webkit-text-decoration-skip-ink: none;
 	text-decoration-skip-ink: none;
