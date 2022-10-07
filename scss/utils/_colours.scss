@@ -7,24 +7,30 @@
 // colour set by the background property,
 .bg {
 
-	$light-link: nth( map.get( $colour_theme, "link" ), 1 );
-	$dark-link: nth( map.get( $colour_theme, "link" ), 2 );
+	$light-link: nth(map.get($colour_theme, "link"), 1);
+	$dark-link: nth(map.get($colour_theme, "link"), 2);
 
-	&-custom { background-color: var( --bg-custom ) !important; }
-	&-custom__hover:hover { background-color: var( --bg-custom--hover ) !important; }
+	&-custom {
+		background-color: var(--bg-custom) !important;
+	}
 
-	@each $c_name, $c_value in $colours {
+	&-custom__hover:hover {
+		background-color: var(--bg-custom--hover) !important;
+	}
+
+	@each $c_name,
+	$c_value in $colours {
 		&-#{$c_name} {
-			background-color: var( --color-#{$c_name} );
-			color: get_contrast( $c_value );
+			background-color: var(--color-#{$c_name});
+			color: get_contrast($c_value );
 
 			&__hover:hover {
-				background-color: var( --color-#{$c_name} );
-				color: get_contrast( $c_value );
+				background-color: var(--color-#{$c_name});
+				color: get_contrast($c_value );
 			}
 
-			a {
-				color: get_contrast( $c_value, var( --color-#{$dark-link} ), var( --color-#{$light-link} ) );
+			a:not([class]) {
+				color: get_contrast($c_value, var(--color-#{$dark-link}), var(--color-#{$light-link}));
 			}
 		}
 	}
@@ -34,14 +40,22 @@
 // Foreground colours.
 .fg {
 
-	&-current { color: currentColor; }
-	&-custom { color: var( --fg-custom ) !important; }
+	&-current {
+		color: currentColor;
+	}
 
-	@each $c_name, $c_value in $colours {
+	&-custom {
+		color: var(--fg-custom) !important;
+	}
+
+	@each $c_name,
+	$c_value in $colours {
 		&-#{$c_name} {
-			color: var( --color-#{$c_name} );
+			color: var(--color-#{$c_name});
 
-			&__hover:hover { color: var( --color-#{$c_name} ); }
+			&__hover:hover {
+				color: var(--color-#{$c_name});
+			}
 		}
 	}
 
