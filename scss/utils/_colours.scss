@@ -29,7 +29,7 @@
 				color: get_contrast($c_value );
 			}
 
-			a:not([class]) {
+			a {
 				color: get_contrast($c_value, var(--color-#{$dark-link}), var(--color-#{$light-link}));
 			}
 		}
