@@ -692,8 +692,15 @@ pre code {
 	padding: 0;
 }
 
+details *:last-child {
+	margin-bottom: 0;
+}
+
 summary {
 	font-weight: bold;
+}
+summary:hover {
+	cursor: pointer;
 }
 summary > * {
 	display: inline;
