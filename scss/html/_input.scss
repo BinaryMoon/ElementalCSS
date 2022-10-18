@@ -23,6 +23,12 @@ textarea {
 
 		@extend .outline;
 
+		&:invalid {
+
+			outline: 0.2rem red solid;
+
+		}
+
 	}
 
 	&:disabled {
