@@ -558,6 +558,15 @@ textarea {
 	line-height: var(--type-lh-2);
 	padding: var(--size-1) var(--size-3);
 }
+input:active:invalid, input:focus:invalid,
+button:active:invalid,
+button:focus:invalid,
+select:active:invalid,
+select:focus:invalid,
+textarea:active:invalid,
+textarea:focus:invalid {
+	outline: 0.2rem red solid;
+}
 input:disabled,
 button:disabled,
 select:disabled,
