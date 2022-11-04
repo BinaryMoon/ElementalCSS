@@ -2,8 +2,8 @@ input,
 select,
 textarea {
 
-	background: var( --color-pop );
-	border: var( --border-width ) solid var( --color-border );
+	background: var(--color-pop);
+	border: var(--border-width) solid var(--color-border);
 
 }
 
@@ -14,9 +14,9 @@ textarea {
 
 	font: inherit;
 	box-shadow: none;
-	border-radius: var( --border-radius );
-	line-height: var( --type-lh-2 );
-	padding: var( --size-1 ) var( --size-3 );
+	border-radius: var(--border-radius);
+	line-height: var(--type-lh-2);
+	padding: var(--size-1) var(--size-3);
 
 	&:active,
 	&:focus {
@@ -57,9 +57,23 @@ textarea {
 
 /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
 [type="checkbox"],
-[type="radio"]{
+[type="radio"] {
 
 	width: auto;
+
+}
+
+[type="search"] {
+
+	&:before {
+
+		display: block;
+		content: ' ';
+		background: green;
+		width: 10px;
+		height: 10px;
+
+	}
 
 }
 
@@ -68,27 +82,27 @@ label {
 	font-weight: bold;
 	display: block;
 
-	margin-top: var( --size-1 );
-	margin-bottom: var( --size-1 );
+	margin-top: var(--size-1);
+	margin-bottom: var(--size-1);
 
 }
 
 fieldset {
 
-	margin-top: var( --size-4 );
-	margin-bottom: var( --size-4 );
-	padding: var( --size-3 );
-	border: var( --border-width ) solid var( --color-border );
+	margin-top: var(--size-4);
+	margin-bottom: var(--size-4);
+	padding: var(--size-3);
+	border: var(--border-width) solid var(--color-border);
 
 }
 
 legend {
 
-	padding-left: var( --size-2 );
-	padding-right: var( --size-2 );
+	padding-left: var(--size-2);
+	padding-right: var(--size-2);
 	font-weight: bold;
 
-	> * {
+	>* {
 
 		margin: 0;
 
