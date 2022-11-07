@@ -1652,6 +1652,12 @@ picture {
 .f-fw900 {
 	font-weight: 900;
 }
+.f-fs-i {
+	font-style: italic;
+}
+.f-fs-n {
+	font-style: normal;
+}
 .f-s1 {
 	font-size: var(--type-size-1);
 	line-height: var(--type-lh-1);
@@ -1707,6 +1713,12 @@ sup, small, h6, h5 {
 	.t\:f-fw900 {
 		font-weight: 900;
 	}
+	.t\:f-fs-i {
+		font-style: italic;
+	}
+	.t\:f-fs-n {
+		font-style: normal;
+	}
 	.t\:f-s1 {
 		font-size: var(--type-size-1);
 		line-height: var(--type-lh-1);
@@ -1760,6 +1772,12 @@ sup, small, h6, h5 {
 	}
 	.d\:f-fw900 {
 		font-weight: 900;
+	}
+	.d\:f-fs-i {
+		font-style: italic;
+	}
+	.d\:f-fs-n {
+		font-style: normal;
 	}
 	.d\:f-s1 {
 		font-size: var(--type-size-1);
