@@ -7,6 +7,15 @@
 		}
 	}
 
+	// Font styles.
+	&-fs-i {
+		font-style: italic;
+	}
+
+	&-fs-n {
+		font-style: normal;
+	}
+
 	// Font size.
 	@each $s_name,
 	$s_value in $font-sizes {
