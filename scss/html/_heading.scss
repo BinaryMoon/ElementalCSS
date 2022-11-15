@@ -1,19 +1,34 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 
 	overflow-wrap: break-word;
 
-	margin-top: var( --size-5 );
-	margin-bottom: var( --size-4 );
+	margin-top: var(--size-5);
+	margin-bottom: var(--size-4);
 
 	a {
 
-		text-decoration-color: var( --color-link );
+		text-decoration-color: var(--color-link);
 		text-decoration-skip-ink: none;
 		color: inherit;
 
 	}
 
 }
+
+h3,
+h4,
+h5,
+h6 {
+
+	margin-top: var(--size-4);
+
+}
+
 
 h1 {
 	@extend .f-s2;
