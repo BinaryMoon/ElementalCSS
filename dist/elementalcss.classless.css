@@ -540,16 +540,34 @@ button:disabled,
 	cursor: not-allowed;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	overflow-wrap: break-word;
 	margin-top: var(--size-5);
 	margin-bottom: var(--size-4);
 }
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
 	text-decoration-color: var(--color-link);
 	-webkit-text-decoration-skip-ink: none;
 	text-decoration-skip-ink: none;
 	color: inherit;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	margin-top: var(--size-4);
+	margin-bottom: var(--size-3);
 }
 
 hr {
