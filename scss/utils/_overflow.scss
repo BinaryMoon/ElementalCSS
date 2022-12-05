@@ -7,28 +7,40 @@
 		text-overflow: ellipsis;
 	}
 
-	&-hidden { overflow: hidden; }
-	&-visible { overflow: visible; }
+	&-hidden {
+		overflow: hidden;
+	}
+
+	&-visible {
+		overflow: visible;
+	}
 
 	&-scroll {
-
 		overflow: scroll;
+	}
+
+	&-auto {
+		overflow: auto;
+	}
+
+	&-auto,
+	&-scroll {
 
 		// Size.
 		&::-webkit-scrollbar {
-			width: var( --size-3 );
-			height: var( --size-3 );
+			width: var(--size-3);
+			height: var(--size-3);
 		}
 
 		// Track.
 		&::-webkit-scrollbar-track {
-			background: var( --color-fg );
+			background: var(--color-fg);
 		}
 
 		// Handle.
 		&::-webkit-scrollbar-thumb {
-			background: var( --color-fg-accent );
-			border: 1px solid var( --color-fg );
+			background: var(--color-fg-accent);
+			border: 1px solid var(--color-fg);
 		}
 
 	}
