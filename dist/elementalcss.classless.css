@@ -478,14 +478,17 @@ button:focus,
 .overflow-scroll, pre {
 	overflow: scroll;
 }
-.overflow-scroll::-webkit-scrollbar, pre::-webkit-scrollbar {
+.overflow-auto {
+	overflow: auto;
+}
+.overflow-auto::-webkit-scrollbar, .overflow-scroll::-webkit-scrollbar, pre::-webkit-scrollbar {
 	width: var(--size-3);
 	height: var(--size-3);
 }
-.overflow-scroll::-webkit-scrollbar-track, pre::-webkit-scrollbar-track {
+.overflow-auto::-webkit-scrollbar-track, .overflow-scroll::-webkit-scrollbar-track, pre::-webkit-scrollbar-track {
 	background: var(--color-fg);
 }
-.overflow-scroll::-webkit-scrollbar-thumb, pre::-webkit-scrollbar-thumb {
+.overflow-auto::-webkit-scrollbar-thumb, .overflow-scroll::-webkit-scrollbar-thumb, pre::-webkit-scrollbar-thumb {
 	background: var(--color-fg-accent);
 	border: 1px solid var(--color-fg);
 }
@@ -567,7 +570,6 @@ h4,
 h5,
 h6 {
 	margin-top: var(--size-4);
-	margin-bottom: var(--size-3);
 }
 
 hr {

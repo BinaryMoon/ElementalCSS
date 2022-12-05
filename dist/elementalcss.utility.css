@@ -3071,14 +3071,17 @@ picture {
 .overflow-scroll {
 	overflow: scroll;
 }
-.overflow-scroll::-webkit-scrollbar {
+.overflow-auto {
+	overflow: auto;
+}
+.overflow-auto::-webkit-scrollbar, .overflow-scroll::-webkit-scrollbar {
 	width: var(--size-3);
 	height: var(--size-3);
 }
-.overflow-scroll::-webkit-scrollbar-track {
+.overflow-auto::-webkit-scrollbar-track, .overflow-scroll::-webkit-scrollbar-track {
 	background: var(--color-fg);
 }
-.overflow-scroll::-webkit-scrollbar-thumb {
+.overflow-auto::-webkit-scrollbar-thumb, .overflow-scroll::-webkit-scrollbar-thumb {
 	background: var(--color-fg-accent);
 	border: 1px solid var(--color-fg);
 }
