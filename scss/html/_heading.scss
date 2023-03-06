@@ -9,11 +9,12 @@ h6 {
 
 	margin-top: var(--size-5);
 	margin-bottom: var(--size-4);
+	text-wrap: balance;
 
 	a {
 
 		text-decoration-color: var(--color-link);
-		text-decoration-skip-ink: none;
+		text-decoration-skip-ink: all;
 		color: inherit;
 
 	}
