@@ -552,6 +552,7 @@ h6 {
 	overflow-wrap: break-word;
 	margin-top: var(--size-5);
 	margin-bottom: var(--size-4);
+	text-wrap: balance;
 }
 h1 a,
 h2 a,
@@ -560,8 +561,8 @@ h4 a,
 h5 a,
 h6 a {
 	text-decoration-color: var(--color-link);
-	-webkit-text-decoration-skip-ink: none;
-	text-decoration-skip-ink: none;
+	-webkit-text-decoration-skip-ink: all;
+	text-decoration-skip-ink: all;
 	color: inherit;
 }
 
