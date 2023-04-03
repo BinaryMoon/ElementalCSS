@@ -1,4 +1,4 @@
-@include mq-prefix( 'm' ) {
+@include mq-prefix('m') {
 
 	// Center content horizontally.
 	&-auto {
@@ -6,33 +6,35 @@
 		margin-right: auto;
 	}
 
-	@each $value in ( 1, 2, 3, 4, 5, 6, 7 ) {
+	@each $value in (1, 2, 3, 4, 5, 6, 7) {
 
-		$s: nth( $sizes, $value );
-		$s_name: nth( $s, 1 );
-		$s_value: nth( $s, 2 );
+		$s: nth($sizes, $value );
+		$s_name: nth($s, 1);
+		$s_value: nth($s, 2);
 
 		// Margin on all sides.
 		&#{$s_name} {
-			margin: var( --size-#{$s_name} );
+			margin: var(--size-#{$s_name});
 		}
+
 		&-x#{$s_name} {
-			margin-left: var( --size-#{$s_name} );
-			margin-right: var( --size-#{$s_name} );
+			margin-left: var(--size-#{$s_name});
+			margin-right: var(--size-#{$s_name});
 		}
+
 		&-y#{$s_name} {
-			margin-top: var( --size-#{$s_name} );
-			margin-bottom: var( --size-#{$s_name} );
+			margin-top: var(--size-#{$s_name});
+			margin-bottom: var(--size-#{$s_name});
 		}
 
 		// Margin in specific direction.
-		@each $p_name, $p_value in $positions {
+		@each $p_name,
+		$p_value in $positions {
 			&-#{$p_name}#{$s_name} {
-				margin-#{$p_value}: var( --size-#{$s_name} );
+				margin-#{$p_value}: var(--size-#{$s_name});
 			}
 		}
 
 	}
-
 
 }
