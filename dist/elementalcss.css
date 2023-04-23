@@ -36,7 +36,7 @@
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root body:not(.disable-dark-mode) {
 		--color-bg: var( --color-gray4 );
 		--color-fg: var( --color-gray1 );
 		--color-bg-accent: var( --color-yellow );
@@ -4824,6 +4824,7 @@ input,
 select,
 textarea {
 	background: var(--color-pop);
+	color: inherit;
 	border: var(--border-width) solid var(--color-border);
 }
 
@@ -5036,6 +5037,10 @@ sup {
 
 strong {
 	font-weight: 700;
+}
+
+.scroll-smooth {
+	scroll-behavior: smooth;
 }
 
 .shadow-low {

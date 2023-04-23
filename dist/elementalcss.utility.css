@@ -36,7 +36,7 @@
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root body:not(.disable-dark-mode) {
 		--color-bg: var( --color-gray4 );
 		--color-fg: var( --color-gray1 );
 		--color-bg-accent: var( --color-yellow );
