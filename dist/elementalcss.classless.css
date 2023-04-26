@@ -629,7 +629,12 @@ textarea {
 /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
 [type=checkbox],
 [type=radio] {
-	width: auto;
+	width: 1.5em;
+	height: 1.5em;
+}
+[type=checkbox]:hover,
+[type=radio]:hover {
+	cursor: pointer;
 }
 
 [type=search]:before {
