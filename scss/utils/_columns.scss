@@ -1,0 +1,9 @@
+@include mq-prefix( 'col' ) {
+
+	@each $v in ( 0, 1, 2, 3, 4, 5 ) {
+		&s#{$v} { column-count: $v; }
+		&-w#{$v} { column-width: var( --size-#{$v+2} ); }
+		&-gap#{$v} { column-gap: var( --size-#{$v} ); }
+	}
+
+}
