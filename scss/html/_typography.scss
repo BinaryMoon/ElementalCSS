@@ -8,14 +8,14 @@ p {
 
 small {
 
-	@extend .f-s6;
+	@extend .f6;
 
 }
 
 sub,
 sup {
 
-	@extend .f-s6;
+	@extend .f6;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
