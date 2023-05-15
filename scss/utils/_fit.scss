@@ -1,0 +1,15 @@
+@include mq-prefix('fit') {
+
+	&-contain {
+		object-fit: contain;
+	}
+
+	&-cover {
+		object-fit: cover;
+	}
+
+	&-none {
+		object-fit: none;
+	}
+
+}
