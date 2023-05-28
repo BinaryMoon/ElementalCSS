@@ -21,7 +21,8 @@
 	$s_value in $font-sizes {
 		&-s#{$s_name},
 		&#{$s_name} {
-				font-size: var(--type-size-#{$s_name});
+
+			font-size: var(--type-size-#{$s_name});
 
 			@if nth($s_value, 1) {
 				line-height: #{nth( $s_value, 1 )};
