@@ -30,6 +30,7 @@ $font-families: (
 	'gill-sans': ( Gill Sans, Gill Sans MT, Century Gothic, Calibri, sans-serif ),
 	'helvetica': ( Helvetica Neue, Helvetica, Arial, sans-serif ),
 	'hoefler': ( Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif ),
+	'impact':  ( Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ),
 	'lucida-bright': ( Lucida Bright, Georgia, serif ),
 	'lucida-grande': ( Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif ),
 	'lucida-console': ( Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, Liberation Mono, monospace ),
@@ -52,4 +53,10 @@ $font-families: (
 	--font-main: var( --font-system );
 	--font-monospace: var( --font-system-monospace );
 
+}
+
+@each $f_name, $f_value in $font-families {
+	.font-#{$f_name} {
+		font-family: var( --font-#{$f_name} );
+	}
 }
