@@ -68,6 +68,7 @@
 	--font-gill-sans: Gill Sans, Gill Sans MT, Century Gothic, Calibri, sans-serif;
 	--font-helvetica: Helvetica Neue, Helvetica, Arial, sans-serif;
 	--font-hoefler: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+	--font-impact: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
 	--font-lucida-bright: Lucida Bright, Georgia, serif;
 	--font-lucida-grande: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
 	--font-lucida-console: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, Liberation Mono, monospace;
@@ -80,6 +81,130 @@
 	--font-verdana: Verdana, Geneva, DejaVu Sans, sans-serif;
 	--font-main: var( --font-system );
 	--font-monospace: var( --font-system-monospace );
+}
+
+.font-arial {
+	font-family: var(--font-arial);
+}
+
+.font-arial-black {
+	font-family: var(--font-arial-black);
+}
+
+.font-arial-narrow {
+	font-family: var(--font-arial-narrow);
+}
+
+.font-arial-rounded {
+	font-family: var(--font-arial-rounded);
+}
+
+.font-baskerville {
+	font-family: var(--font-baskerville);
+}
+
+.font-book-antiqua {
+	font-family: var(--font-book-antiqua);
+}
+
+.font-bookman {
+	font-family: var(--font-bookman);
+}
+
+.font-calibri {
+	font-family: var(--font-calibri);
+}
+
+.font-cambria {
+	font-family: var(--font-cambria);
+}
+
+.font-century-gothic {
+	font-family: var(--font-century-gothic);
+}
+
+.font-consolas {
+	font-family: var(--font-consolas);
+}
+
+.font-courier-new {
+	font-family: var(--font-courier-new);
+}
+
+.font-franklin-gothic {
+	font-family: var(--font-franklin-gothic);
+}
+
+.font-futura {
+	font-family: var(--font-futura);
+}
+
+.font-garamond {
+	font-family: var(--font-garamond);
+}
+
+.font-geneva {
+	font-family: var(--font-geneva);
+}
+
+.font-georgia {
+	font-family: var(--font-georgia);
+}
+
+.font-gill-sans {
+	font-family: var(--font-gill-sans);
+}
+
+.font-helvetica {
+	font-family: var(--font-helvetica);
+}
+
+.font-hoefler {
+	font-family: var(--font-hoefler);
+}
+
+.font-impact {
+	font-family: var(--font-impact);
+}
+
+.font-lucida-bright {
+	font-family: var(--font-lucida-bright);
+}
+
+.font-lucida-grande {
+	font-family: var(--font-lucida-grande);
+}
+
+.font-lucida-console {
+	font-family: var(--font-lucida-console);
+}
+
+.font-palatino {
+	font-family: var(--font-palatino);
+}
+
+.font-system {
+	font-family: var(--font-system);
+}
+
+.font-system-monospace {
+	font-family: var(--font-system-monospace);
+}
+
+.font-tahoma {
+	font-family: var(--font-tahoma);
+}
+
+.font-times-new-roman {
+	font-family: var(--font-times-new-roman);
+}
+
+.font-trebuchet {
+	font-family: var(--font-trebuchet);
+}
+
+.font-verdana {
+	font-family: var(--font-verdana);
 }
 
 :root {
@@ -152,7 +277,9 @@ article > :first-child,
 blockquote > :first-child,
 header > :first-child,
 footer > :first-child,
-aside > :first-child {
+aside > :first-child,
+figure > :first-child,
+figcaption > :first-child {
 	margin-top: 0;
 }
 div > :last-child,
@@ -162,7 +289,9 @@ article > :last-child,
 blockquote > :last-child,
 header > :last-child,
 footer > :last-child,
-aside > :last-child {
+aside > :last-child,
+figure > :last-child,
+figcaption > :last-child {
 	margin-bottom: 0;
 }
 
@@ -705,7 +834,6 @@ figure {
 figcaption {
 	text-align: center;
 	font-size: var(--type-size-6);
-	margin-bottom: var(--size-3);
 }
 
 blockquote {
