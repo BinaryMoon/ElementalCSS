@@ -19,7 +19,7 @@
 	--color-red: #d63638;
 	--color-red-dark: #691c1c;
 	--color-green-light: #1ed14b;
-	--color-green: #008a20;
+	--color-green: #06ae2d;
 	--color-green-dark: #00450c;
 	--color-yellow: #f0c33c;
 	--color-bg: var( --color-white );
@@ -58,6 +58,7 @@
 	--font-calibri: Calibri, Candara, Segoe, Segoe UI, Carlito, Roboto, Ubuntu, Optima, Arial, sans-serif;
 	--font-cambria: Cambria, Caladea, Roboto Slab, Georgia, serif;
 	--font-century-gothic: Century Gothic, CenturyGothic, URW Gothic, AppleGothic, sans-serif;
+	--font-comic-sans: Comic Sans, Comic Sans MS, cursive, sans-serif;
 	--font-consolas: Consolas, monaco, Liberation Mono, monospace;
 	--font-courier-new: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
 	--font-franklin-gothic: Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif;
@@ -121,6 +122,10 @@
 
 .font-century-gothic {
 	font-family: var(--font-century-gothic);
+}
+
+.font-comic-sans {
+	font-family: var(--font-comic-sans);
 }
 
 .font-consolas {
@@ -706,7 +711,9 @@ hr {
 	background: currentColor;
 	border: none;
 	height: var(--size-1);
-	margin: var(--size-3) auto;
+	margin: var(--size-5) auto;
+	color: inherit;
+	opacity: 0.25;
 }
 
 input,
@@ -838,12 +845,11 @@ figcaption {
 
 blockquote {
 	font-style: italic;
-	background: var(--color-pop);
+	padding-left: var(--size-4);
 	font-size: var(--type-size-4);
 	margin-top: var(--size-4);
 	margin-bottom: var(--size-4);
-	padding: var(--size-4) var(--size-4);
-	border-left: var(--size-2) solid var(--color-bg-accent);
+	border-left: var(--size-2) solid currentColor;
 }
 
 cite {
@@ -858,6 +864,9 @@ kbd,
 samp {
 	font-family: var(--font-monospace);
 	color: var(--color-code);
+	background: white;
+	padding: var(--size-1) var(--size-2);
+	border-radius: var(--size-1);
 }
 
 kbd {
@@ -873,7 +882,7 @@ pre {
 	max-width: 100%;
 	overflow: auto;
 	padding: var(--size-3) var(--size-4);
-	background: var(--color-pop);
+	background: var(--color-gray4);
 	border-radius: var(--border-radius);
 }
 pre code {
