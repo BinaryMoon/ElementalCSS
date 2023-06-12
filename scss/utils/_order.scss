@@ -1,5 +1,6 @@
 @include mq-prefix( 'order' ) {
 
+	&-none { order: 0; }
 	&-first { order: -1; }
 	&-last { order: 9999; }
 
