@@ -3,6 +3,8 @@ hr {
 	background: currentColor;
 	border: none;
 	height: var( --size-1 );
-	margin: var( --size-3 ) auto;
+	margin: var( --size-5 ) auto;
+	color: inherit;
+	opacity: 0.25;
 
 }
