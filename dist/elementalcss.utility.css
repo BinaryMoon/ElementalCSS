@@ -4443,6 +4443,10 @@ picture {
 		display: inline;
 	}
 }
+.table-zebra tr:nth-child(odd) {
+	background-color: var(--color-pop);
+}
+
 .t-ta-c {
 	text-align: center;
 }

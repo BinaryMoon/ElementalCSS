@@ -4454,6 +4454,10 @@ button:focus,
 		display: inline;
 	}
 }
+.table-zebra tr:nth-child(odd) {
+	background-color: var(--color-pop);
+}
+
 .t-ta-c {
 	text-align: center;
 }
@@ -5312,7 +5316,8 @@ button:focus,
 a {
 	-webkit-text-decoration-skip: ink;
 	text-decoration-skip-ink: auto;
-	text-underline-offset: 0.05em;
+	text-underline-offset: 0.1em;
+	text-decoration-thickness: 0.15em;
 	cursor: pointer;
 	color: var(--color-link);
 }
@@ -5595,6 +5600,17 @@ table th {
 table caption,
 table th, table td {
 	padding: var(--size-1);
+	display: block;
+	vertical-align: top;
+	word-break: break-word;
+	min-width: var(--size-5);
+	overflow-x: auto;
+}
+@media only screen and (min-width: 32em) {
+	table caption,
+	table th, table td {
+		display: table-cell;
+	}
 }
 
 p {
