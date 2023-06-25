@@ -12,6 +12,17 @@ table {
 	th, td {
 
 		padding: var( --size-1 );
+		display: block;
+		vertical-align: top;
+		word-break: break-word;
+		min-width: var( --size-5 );
+		overflow-x: auto;
+
+		@include mq-tablet() {
+
+			display: table-cell;
+
+		}
 
 	}
 
