@@ -1,0 +1,10 @@
+.table {
+
+	&-zebra tr:nth-child(odd) {
+
+		background-color: var( --color-pop );
+
+	}
+
+}
+
