@@ -1,7 +1,8 @@
 a {
 
 	text-decoration-skip-ink: auto;
-	text-underline-offset: 0.05em;
+	text-underline-offset: 0.1em;
+	text-decoration-thickness: 0.15em;
 	cursor: pointer;
 
 	color: var( --color-link );
