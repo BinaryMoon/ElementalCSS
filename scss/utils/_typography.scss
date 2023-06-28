@@ -1,5 +1,13 @@
 @include mq-prefix('t') {
 
+	&-ideal-length {
+
+		> * {
+			max-width: 55ch;
+		}
+
+	}
+
 	&-ta- {
 		&c {
 			text-align: center;
