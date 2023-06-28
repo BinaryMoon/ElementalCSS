@@ -20,8 +20,13 @@ button,
 
 	border-radius: var( --border-radius );
 	padding: var( --size-1 ) var( --size-3 );
-	background: var( --color-bg-accent );
-	color: var( --color-fg-accent );
+
+	&:not([class*="bg-"]) {
+
+		background: var( --color-bg-accent );
+		color: var( --color-fg-accent );
+
+	}
 
 	&:hover {
 
