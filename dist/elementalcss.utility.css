@@ -2315,6 +2315,15 @@ picture {
 .grid-col-e8 {
 	grid-column-end: 8;
 }
+.grid-cols9 {
+	grid-template-columns: repeat(9, minmax(10px, 1fr));
+}
+.grid-col-s9 {
+	grid-column-start: 9;
+}
+.grid-col-e9 {
+	grid-column-end: 9;
+}
 .grid-col-span1 {
 	grid-column: span 1;
 }
@@ -2423,6 +2432,15 @@ picture {
 	.t\:grid-col-e8 {
 		grid-column-end: 8;
 	}
+	.t\:grid-cols9 {
+		grid-template-columns: repeat(9, minmax(10px, 1fr));
+	}
+	.t\:grid-col-s9 {
+		grid-column-start: 9;
+	}
+	.t\:grid-col-e9 {
+		grid-column-end: 9;
+	}
 	.t\:grid-col-span1 {
 		grid-column: span 1;
 	}
@@ -2530,6 +2548,15 @@ picture {
 	}
 	.d\:grid-col-e8 {
 		grid-column-end: 8;
+	}
+	.d\:grid-cols9 {
+		grid-template-columns: repeat(9, minmax(10px, 1fr));
+	}
+	.d\:grid-col-s9 {
+		grid-column-start: 9;
+	}
+	.d\:grid-col-e9 {
+		grid-column-end: 9;
 	}
 	.d\:grid-col-span1 {
 		grid-column: span 1;
@@ -4447,6 +4474,9 @@ picture {
 	background-color: var(--color-pop);
 }
 
+.t-ideal-length > * {
+	max-width: 55ch;
+}
 .t-ta-c {
 	text-align: center;
 }
@@ -4483,6 +4513,9 @@ picture {
 }
 
 @media only screen and (min-width: 32em) {
+	.t\:t-ideal-length > * {
+		max-width: 55ch;
+	}
 	.t\:t-ta-c {
 		text-align: center;
 	}
@@ -4519,6 +4552,9 @@ picture {
 	}
 }
 @media only screen and (min-width: 64em) {
+	.d\:t-ideal-length > * {
+		max-width: 55ch;
+	}
 	.d\:t-ta-c {
 		text-align: center;
 	}

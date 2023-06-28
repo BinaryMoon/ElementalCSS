@@ -657,6 +657,13 @@ button,
 	text-decoration: none;
 	border-radius: var(--border-radius);
 	padding: var(--size-1) var(--size-3);
+}
+.btn:not([class*=bg-]),
+button:not([class*=bg-]),
+[role=button]:not([class*=bg-]),
+[type=submit]:not([class*=bg-]),
+[type=reset]:not([class*=bg-]),
+[type=button]:not([class*=bg-]) {
 	background: var(--color-bg-accent);
 	color: var(--color-fg-accent);
 }
