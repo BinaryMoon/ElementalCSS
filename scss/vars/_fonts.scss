@@ -30,11 +30,13 @@ $font-families: (
 	'georgia': ( Georgia, Times, Times New Roman, serif ),
 	'gill-sans': ( Gill Sans, Gill Sans MT, Century Gothic, Calibri, sans-serif ),
 	'helvetica': ( Helvetica Neue, Helvetica, Arial, sans-serif ),
+	'haettenschweiler': ( Haettenschweiler, 'Arial Narrow Bold', sans-serif ),
 	'hoefler': ( Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif ),
 	'impact':  ( Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ),
 	'lucida-bright': ( Lucida Bright, Georgia, serif ),
 	'lucida-grande': ( Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif ),
 	'lucida-console': ( Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, Liberation Mono, monospace ),
+	'oswald': ( Oswald, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ),
 	'palatino': ( Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, URW Palladio, Georgia, serif ),
 	'system': ( -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ),
 	'system-monospace': ( SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace ),
@@ -53,6 +55,7 @@ $font-families: (
 
 	--font-main: var( --font-system );
 	--font-monospace: var( --font-system-monospace );
+	--line-length: 55ch;
 
 }
 
