@@ -2,8 +2,8 @@
 
 	&-ideal-length {
 
-		> * {
-			max-width: 55ch;
+		> p, h1, h2, h3, h4, h5, h6, ul, ol, dl {
+			max-width: var( --line-length );
 		}
 
 	}
