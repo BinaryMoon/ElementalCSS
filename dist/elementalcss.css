@@ -10,18 +10,18 @@
 	--color-gray2: #6B7280;
 	--color-gray1: #D7DAE0;
 	--color-white: #FFFFFF;
-	--color-tint: rgba(215, 218, 224, 0.2);
-	--color-shade: rgba(17, 24, 39, 0.2);
 	--color-blue-light: #72aee6;
 	--color-blue: #2271b1;
 	--color-blue-dark: #043959;
 	--color-red-light: #ff8085;
 	--color-red: #d63638;
-	--color-red-dark: #691c1c;
-	--color-green-light: #1ed14b;
+	--color-red-dark: #631919;
+	--color-green-light: #2fdc5b;
 	--color-green: #06ae2d;
 	--color-green-dark: #00450c;
+	--color-yellow-light: #ecd8a2;
 	--color-yellow: #f0c33c;
+	--color-yellow-dark: #9d7e20;
 	--color-bg: var( --color-white );
 	--color-fg: var( --color-gray4 );
 	--color-bg-accent: var( --color-blue );
@@ -68,11 +68,13 @@
 	--font-georgia: Georgia, Times, Times New Roman, serif;
 	--font-gill-sans: Gill Sans, Gill Sans MT, Century Gothic, Calibri, sans-serif;
 	--font-helvetica: Helvetica Neue, Helvetica, Arial, sans-serif;
+	--font-haettenschweiler: Haettenschweiler, Arial Narrow Bold, sans-serif;
 	--font-hoefler: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
 	--font-impact: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
 	--font-lucida-bright: Lucida Bright, Georgia, serif;
 	--font-lucida-grande: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
 	--font-lucida-console: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, Liberation Mono, monospace;
+	--font-oswald: Oswald, Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
 	--font-palatino: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, URW Palladio, Georgia, serif;
 	--font-system: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 	--font-system-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
@@ -82,6 +84,7 @@
 	--font-verdana: Verdana, Geneva, DejaVu Sans, sans-serif;
 	--font-main: var( --font-system );
 	--font-monospace: var( --font-system-monospace );
+	--line-length: 55ch;
 }
 
 .font-arial {
@@ -164,6 +167,10 @@
 	font-family: var(--font-helvetica);
 }
 
+.font-haettenschweiler {
+	font-family: var(--font-haettenschweiler);
+}
+
 .font-hoefler {
 	font-family: var(--font-hoefler);
 }
@@ -182,6 +189,10 @@
 
 .font-lucida-console {
 	font-family: var(--font-lucida-console);
+}
+
+.font-oswald {
+	font-family: var(--font-oswald);
 }
 
 .font-palatino {
@@ -559,12 +570,6 @@ picture {
 .b-c-white {
 	border-color: var(--color-white);
 }
-.b-c-tint {
-	border-color: var(--color-tint);
-}
-.b-c-shade {
-	border-color: var(--color-shade);
-}
 .b-c-blue-light {
 	border-color: var(--color-blue-light);
 }
@@ -592,8 +597,14 @@ picture {
 .b-c-green-dark {
 	border-color: var(--color-green-dark);
 }
+.b-c-yellow-light {
+	border-color: var(--color-yellow-light);
+}
 .b-c-yellow {
 	border-color: var(--color-yellow);
+}
+.b-c-yellow-dark {
+	border-color: var(--color-yellow-dark);
 }
 .b-t {
 	border-top: var(--border-width) solid var(--color-border);
@@ -756,12 +767,6 @@ picture {
 	.t\:b-c-white {
 		border-color: var(--color-white);
 	}
-	.t\:b-c-tint {
-		border-color: var(--color-tint);
-	}
-	.t\:b-c-shade {
-		border-color: var(--color-shade);
-	}
 	.t\:b-c-blue-light {
 		border-color: var(--color-blue-light);
 	}
@@ -789,8 +794,14 @@ picture {
 	.t\:b-c-green-dark {
 		border-color: var(--color-green-dark);
 	}
+	.t\:b-c-yellow-light {
+		border-color: var(--color-yellow-light);
+	}
 	.t\:b-c-yellow {
 		border-color: var(--color-yellow);
+	}
+	.t\:b-c-yellow-dark {
+		border-color: var(--color-yellow-dark);
 	}
 	.t\:b-t {
 		border-top: var(--border-width) solid var(--color-border);
@@ -953,12 +964,6 @@ picture {
 	.d\:b-c-white {
 		border-color: var(--color-white);
 	}
-	.d\:b-c-tint {
-		border-color: var(--color-tint);
-	}
-	.d\:b-c-shade {
-		border-color: var(--color-shade);
-	}
 	.d\:b-c-blue-light {
 		border-color: var(--color-blue-light);
 	}
@@ -986,8 +991,14 @@ picture {
 	.d\:b-c-green-dark {
 		border-color: var(--color-green-dark);
 	}
+	.d\:b-c-yellow-light {
+		border-color: var(--color-yellow-light);
+	}
 	.d\:b-c-yellow {
 		border-color: var(--color-yellow);
+	}
+	.d\:b-c-yellow-dark {
+		border-color: var(--color-yellow-dark);
 	}
 	.d\:b-t {
 		border-top: var(--border-width) solid var(--color-border);
@@ -1200,28 +1211,6 @@ picture {
 .bg-white a {
 	color: var(--color-blue-dark);
 }
-.bg-tint {
-	background-color: var(--color-tint);
-	color: black;
-}
-.bg-tint__hover:hover {
-	background-color: var(--color-tint);
-	color: black;
-}
-.bg-tint a {
-	color: var(--color-blue-dark);
-}
-.bg-shade {
-	background-color: var(--color-shade);
-	color: white;
-}
-.bg-shade__hover:hover {
-	background-color: var(--color-shade);
-	color: white;
-}
-.bg-shade a {
-	color: var(--color-yellow);
-}
 .bg-blue-light {
 	background-color: var(--color-blue-light);
 	color: black;
@@ -1321,6 +1310,17 @@ picture {
 .bg-green-dark a {
 	color: var(--color-yellow);
 }
+.bg-yellow-light {
+	background-color: var(--color-yellow-light);
+	color: black;
+}
+.bg-yellow-light__hover:hover {
+	background-color: var(--color-yellow-light);
+	color: black;
+}
+.bg-yellow-light a {
+	color: var(--color-blue-dark);
+}
 .bg-yellow {
 	background-color: var(--color-yellow);
 	color: black;
@@ -1331,6 +1331,17 @@ picture {
 }
 .bg-yellow a {
 	color: var(--color-blue-dark);
+}
+.bg-yellow-dark {
+	background-color: var(--color-yellow-dark);
+	color: white;
+}
+.bg-yellow-dark__hover:hover {
+	background-color: var(--color-yellow-dark);
+	color: white;
+}
+.bg-yellow-dark a {
+	color: var(--color-yellow);
 }
 
 .fg-current {
@@ -1374,18 +1385,6 @@ picture {
 }
 .fg-white__hover:hover {
 	color: var(--color-white);
-}
-.fg-tint {
-	color: var(--color-tint);
-}
-.fg-tint__hover:hover {
-	color: var(--color-tint);
-}
-.fg-shade {
-	color: var(--color-shade);
-}
-.fg-shade__hover:hover {
-	color: var(--color-shade);
 }
 .fg-blue-light {
 	color: var(--color-blue-light);
@@ -1441,11 +1440,23 @@ picture {
 .fg-green-dark__hover:hover {
 	color: var(--color-green-dark);
 }
+.fg-yellow-light {
+	color: var(--color-yellow-light);
+}
+.fg-yellow-light__hover:hover {
+	color: var(--color-yellow-light);
+}
 .fg-yellow {
 	color: var(--color-yellow);
 }
 .fg-yellow__hover:hover {
 	color: var(--color-yellow);
+}
+.fg-yellow-dark {
+	color: var(--color-yellow-dark);
+}
+.fg-yellow-dark__hover:hover {
+	color: var(--color-yellow-dark);
 }
 
 .cols0 {
@@ -4485,8 +4496,8 @@ button:focus,
 	background-color: var(--color-pop);
 }
 
-.t-ideal-length > * {
-	max-width: 55ch;
+.t-ideal-length > p, .t-ideal-length h1, .t-ideal-length h2, .t-ideal-length h3, .t-ideal-length h4, .t-ideal-length h5, .t-ideal-length h6, .t-ideal-length ul, .t-ideal-length ol, .t-ideal-length dl {
+	max-width: var(--line-length);
 }
 .t-ta-c {
 	text-align: center;
@@ -4524,8 +4535,8 @@ button:focus,
 }
 
 @media only screen and (min-width: 32em) {
-	.t\:t-ideal-length > * {
-		max-width: 55ch;
+	.t\:t-ideal-length > p, .t\:t-ideal-length h1, .t\:t-ideal-length h2, .t\:t-ideal-length h3, .t\:t-ideal-length h4, .t\:t-ideal-length h5, .t\:t-ideal-length h6, .t\:t-ideal-length ul, .t\:t-ideal-length ol, .t\:t-ideal-length dl {
+		max-width: var(--line-length);
 	}
 	.t\:t-ta-c {
 		text-align: center;
@@ -4563,8 +4574,8 @@ button:focus,
 	}
 }
 @media only screen and (min-width: 64em) {
-	.d\:t-ideal-length > * {
-		max-width: 55ch;
+	.d\:t-ideal-length > p, .d\:t-ideal-length h1, .d\:t-ideal-length h2, .d\:t-ideal-length h3, .d\:t-ideal-length h4, .d\:t-ideal-length h5, .d\:t-ideal-length h6, .d\:t-ideal-length ul, .d\:t-ideal-length ol, .d\:t-ideal-length dl {
+		max-width: var(--line-length);
 	}
 	.d\:t-ta-c {
 		text-align: center;
@@ -5377,6 +5388,7 @@ button,
 	font: inherit;
 	border: none;
 	text-decoration: none;
+	display: inline-block;
 	border-radius: var(--border-radius);
 	padding: var(--size-1) var(--size-3);
 }
@@ -5686,6 +5698,21 @@ strong {
 	scroll-behavior: smooth;
 }
 
+.pulse {
+	animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
 .loader {
 	width: 100%;
 	max-width: var(--size-6);
