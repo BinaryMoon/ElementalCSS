@@ -9,19 +9,18 @@ $colours: map-merge(
 		'gray1': #D7DAE0,
 		'white': #FFFFFF,
 
-		'tint': rgba( #D7DAE0, 0.2 ),
-		'shade': rgba( #111827, 0.2 ),
-
 		'blue-light': #72aee6, // 20
 		'blue': #2271b1, // 50
 		'blue-dark': #043959, // 80
 		'red-light': #ff8085,
 		'red': #d63638,
-		'red-dark': #691c1c,
-		'green-light': #1ed14b,
+		'red-dark': #631919,
+		'green-light': #2fdc5b,
 		'green': #06ae2d,
 		'green-dark': #00450c,
+		'yellow-light': #ecd8a2,
 		'yellow': #f0c33c,
+		'yellow-dark': #9d7e20,
 	),
 	$colours
 );
