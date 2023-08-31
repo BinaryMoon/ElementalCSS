@@ -552,58 +552,58 @@ picture {
 .b-none {
 	border: none;
 }
-.b-c-black {
+.b-black {
 	border-color: var(--color-black);
 }
-.b-c-gray4 {
+.b-gray4 {
 	border-color: var(--color-gray4);
 }
-.b-c-gray3 {
+.b-gray3 {
 	border-color: var(--color-gray3);
 }
-.b-c-gray2 {
+.b-gray2 {
 	border-color: var(--color-gray2);
 }
-.b-c-gray1 {
+.b-gray1 {
 	border-color: var(--color-gray1);
 }
-.b-c-white {
+.b-white {
 	border-color: var(--color-white);
 }
-.b-c-blue-light {
+.b-blue-light {
 	border-color: var(--color-blue-light);
 }
-.b-c-blue {
+.b-blue {
 	border-color: var(--color-blue);
 }
-.b-c-blue-dark {
+.b-blue-dark {
 	border-color: var(--color-blue-dark);
 }
-.b-c-red-light {
+.b-red-light {
 	border-color: var(--color-red-light);
 }
-.b-c-red {
+.b-red {
 	border-color: var(--color-red);
 }
-.b-c-red-dark {
+.b-red-dark {
 	border-color: var(--color-red-dark);
 }
-.b-c-green-light {
+.b-green-light {
 	border-color: var(--color-green-light);
 }
-.b-c-green {
+.b-green {
 	border-color: var(--color-green);
 }
-.b-c-green-dark {
+.b-green-dark {
 	border-color: var(--color-green-dark);
 }
-.b-c-yellow-light {
+.b-yellow-light {
 	border-color: var(--color-yellow-light);
 }
-.b-c-yellow {
+.b-yellow {
 	border-color: var(--color-yellow);
 }
-.b-c-yellow-dark {
+.b-yellow-dark {
 	border-color: var(--color-yellow-dark);
 }
 .b-t {
@@ -749,58 +749,58 @@ picture {
 	.t\:b-none {
 		border: none;
 	}
-	.t\:b-c-black {
+	.t\:b-black {
 		border-color: var(--color-black);
 	}
-	.t\:b-c-gray4 {
+	.t\:b-gray4 {
 		border-color: var(--color-gray4);
 	}
-	.t\:b-c-gray3 {
+	.t\:b-gray3 {
 		border-color: var(--color-gray3);
 	}
-	.t\:b-c-gray2 {
+	.t\:b-gray2 {
 		border-color: var(--color-gray2);
 	}
-	.t\:b-c-gray1 {
+	.t\:b-gray1 {
 		border-color: var(--color-gray1);
 	}
-	.t\:b-c-white {
+	.t\:b-white {
 		border-color: var(--color-white);
 	}
-	.t\:b-c-blue-light {
+	.t\:b-blue-light {
 		border-color: var(--color-blue-light);
 	}
-	.t\:b-c-blue {
+	.t\:b-blue {
 		border-color: var(--color-blue);
 	}
-	.t\:b-c-blue-dark {
+	.t\:b-blue-dark {
 		border-color: var(--color-blue-dark);
 	}
-	.t\:b-c-red-light {
+	.t\:b-red-light {
 		border-color: var(--color-red-light);
 	}
-	.t\:b-c-red {
+	.t\:b-red {
 		border-color: var(--color-red);
 	}
-	.t\:b-c-red-dark {
+	.t\:b-red-dark {
 		border-color: var(--color-red-dark);
 	}
-	.t\:b-c-green-light {
+	.t\:b-green-light {
 		border-color: var(--color-green-light);
 	}
-	.t\:b-c-green {
+	.t\:b-green {
 		border-color: var(--color-green);
 	}
-	.t\:b-c-green-dark {
+	.t\:b-green-dark {
 		border-color: var(--color-green-dark);
 	}
-	.t\:b-c-yellow-light {
+	.t\:b-yellow-light {
 		border-color: var(--color-yellow-light);
 	}
-	.t\:b-c-yellow {
+	.t\:b-yellow {
 		border-color: var(--color-yellow);
 	}
-	.t\:b-c-yellow-dark {
+	.t\:b-yellow-dark {
 		border-color: var(--color-yellow-dark);
 	}
 	.t\:b-t {
@@ -946,58 +946,58 @@ picture {
 	.d\:b-none {
 		border: none;
 	}
-	.d\:b-c-black {
+	.d\:b-black {
 		border-color: var(--color-black);
 	}
-	.d\:b-c-gray4 {
+	.d\:b-gray4 {
 		border-color: var(--color-gray4);
 	}
-	.d\:b-c-gray3 {
+	.d\:b-gray3 {
 		border-color: var(--color-gray3);
 	}
-	.d\:b-c-gray2 {
+	.d\:b-gray2 {
 		border-color: var(--color-gray2);
 	}
-	.d\:b-c-gray1 {
+	.d\:b-gray1 {
 		border-color: var(--color-gray1);
 	}
-	.d\:b-c-white {
+	.d\:b-white {
 		border-color: var(--color-white);
 	}
-	.d\:b-c-blue-light {
+	.d\:b-blue-light {
 		border-color: var(--color-blue-light);
 	}
-	.d\:b-c-blue {
+	.d\:b-blue {
 		border-color: var(--color-blue);
 	}
-	.d\:b-c-blue-dark {
+	.d\:b-blue-dark {
 		border-color: var(--color-blue-dark);
 	}
-	.d\:b-c-red-light {
+	.d\:b-red-light {
 		border-color: var(--color-red-light);
 	}
-	.d\:b-c-red {
+	.d\:b-red {
 		border-color: var(--color-red);
 	}
-	.d\:b-c-red-dark {
+	.d\:b-red-dark {
 		border-color: var(--color-red-dark);
 	}
-	.d\:b-c-green-light {
+	.d\:b-green-light {
 		border-color: var(--color-green-light);
 	}
-	.d\:b-c-green {
+	.d\:b-green {
 		border-color: var(--color-green);
 	}
-	.d\:b-c-green-dark {
+	.d\:b-green-dark {
 		border-color: var(--color-green-dark);
 	}
-	.d\:b-c-yellow-light {
+	.d\:b-yellow-light {
 		border-color: var(--color-yellow-light);
 	}
-	.d\:b-c-yellow {
+	.d\:b-yellow {
 		border-color: var(--color-yellow);
 	}
-	.d\:b-c-yellow-dark {
+	.d\:b-yellow-dark {
 		border-color: var(--color-yellow-dark);
 	}
 	.d\:b-t {
@@ -2255,7 +2255,7 @@ picture {
 	grid-column: auto;
 }
 .grid-cols1 {
-	grid-template-columns: repeat(1, minmax(10px, 1fr));
+	grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .grid-col-s1 {
 	grid-column-start: 1;
@@ -2264,7 +2264,7 @@ picture {
 	grid-column-end: 1;
 }
 .grid-cols2 {
-	grid-template-columns: repeat(2, minmax(10px, 1fr));
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-col-s2 {
 	grid-column-start: 2;
@@ -2273,7 +2273,7 @@ picture {
 	grid-column-end: 2;
 }
 .grid-cols3 {
-	grid-template-columns: repeat(3, minmax(10px, 1fr));
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-col-s3 {
 	grid-column-start: 3;
@@ -2282,7 +2282,7 @@ picture {
 	grid-column-end: 3;
 }
 .grid-cols4 {
-	grid-template-columns: repeat(4, minmax(10px, 1fr));
+	grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .grid-col-s4 {
 	grid-column-start: 4;
@@ -2291,7 +2291,7 @@ picture {
 	grid-column-end: 4;
 }
 .grid-cols5 {
-	grid-template-columns: repeat(5, minmax(10px, 1fr));
+	grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .grid-col-s5 {
 	grid-column-start: 5;
@@ -2300,7 +2300,7 @@ picture {
 	grid-column-end: 5;
 }
 .grid-cols6 {
-	grid-template-columns: repeat(6, minmax(10px, 1fr));
+	grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .grid-col-s6 {
 	grid-column-start: 6;
@@ -2309,7 +2309,7 @@ picture {
 	grid-column-end: 6;
 }
 .grid-cols7 {
-	grid-template-columns: repeat(7, minmax(10px, 1fr));
+	grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 .grid-col-s7 {
 	grid-column-start: 7;
@@ -2318,7 +2318,7 @@ picture {
 	grid-column-end: 7;
 }
 .grid-cols8 {
-	grid-template-columns: repeat(8, minmax(10px, 1fr));
+	grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 .grid-col-s8 {
 	grid-column-start: 8;
@@ -2327,7 +2327,7 @@ picture {
 	grid-column-end: 8;
 }
 .grid-cols9 {
-	grid-template-columns: repeat(9, minmax(10px, 1fr));
+	grid-template-columns: repeat(9, minmax(0, 1fr));
 }
 .grid-col-s9 {
 	grid-column-start: 9;
@@ -2353,6 +2353,18 @@ picture {
 .grid-col-span6 {
 	grid-column: span 6;
 }
+.grid-hydrogen {
+	grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
+}
+.grid-helium {
+	grid-template-columns: 3fr 1fr 2fr 2fr 1fr 3fr;
+}
+.grid-lithium {
+	grid-template-columns: 4fr 1fr 3fr 2fr 2fr 3fr 1fr 4fr;
+}
+.grid-berilium {
+	grid-template-columns: 3fr 2fr 1fr 3fr 1fr 2fr 3fr;
+}
 
 @media only screen and (min-width: 32em) {
 	.t\:grid {
@@ -2372,7 +2384,7 @@ picture {
 		grid-column: auto;
 	}
 	.t\:grid-cols1 {
-		grid-template-columns: repeat(1, minmax(10px, 1fr));
+		grid-template-columns: repeat(1, minmax(0, 1fr));
 	}
 	.t\:grid-col-s1 {
 		grid-column-start: 1;
@@ -2381,7 +2393,7 @@ picture {
 		grid-column-end: 1;
 	}
 	.t\:grid-cols2 {
-		grid-template-columns: repeat(2, minmax(10px, 1fr));
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 	.t\:grid-col-s2 {
 		grid-column-start: 2;
@@ -2390,7 +2402,7 @@ picture {
 		grid-column-end: 2;
 	}
 	.t\:grid-cols3 {
-		grid-template-columns: repeat(3, minmax(10px, 1fr));
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 	.t\:grid-col-s3 {
 		grid-column-start: 3;
@@ -2399,7 +2411,7 @@ picture {
 		grid-column-end: 3;
 	}
 	.t\:grid-cols4 {
-		grid-template-columns: repeat(4, minmax(10px, 1fr));
+		grid-template-columns: repeat(4, minmax(0, 1fr));
 	}
 	.t\:grid-col-s4 {
 		grid-column-start: 4;
@@ -2408,7 +2420,7 @@ picture {
 		grid-column-end: 4;
 	}
 	.t\:grid-cols5 {
-		grid-template-columns: repeat(5, minmax(10px, 1fr));
+		grid-template-columns: repeat(5, minmax(0, 1fr));
 	}
 	.t\:grid-col-s5 {
 		grid-column-start: 5;
@@ -2417,7 +2429,7 @@ picture {
 		grid-column-end: 5;
 	}
 	.t\:grid-cols6 {
-		grid-template-columns: repeat(6, minmax(10px, 1fr));
+		grid-template-columns: repeat(6, minmax(0, 1fr));
 	}
 	.t\:grid-col-s6 {
 		grid-column-start: 6;
@@ -2426,7 +2438,7 @@ picture {
 		grid-column-end: 6;
 	}
 	.t\:grid-cols7 {
-		grid-template-columns: repeat(7, minmax(10px, 1fr));
+		grid-template-columns: repeat(7, minmax(0, 1fr));
 	}
 	.t\:grid-col-s7 {
 		grid-column-start: 7;
@@ -2435,7 +2447,7 @@ picture {
 		grid-column-end: 7;
 	}
 	.t\:grid-cols8 {
-		grid-template-columns: repeat(8, minmax(10px, 1fr));
+		grid-template-columns: repeat(8, minmax(0, 1fr));
 	}
 	.t\:grid-col-s8 {
 		grid-column-start: 8;
@@ -2444,7 +2456,7 @@ picture {
 		grid-column-end: 8;
 	}
 	.t\:grid-cols9 {
-		grid-template-columns: repeat(9, minmax(10px, 1fr));
+		grid-template-columns: repeat(9, minmax(0, 1fr));
 	}
 	.t\:grid-col-s9 {
 		grid-column-start: 9;
@@ -2470,6 +2482,18 @@ picture {
 	.t\:grid-col-span6 {
 		grid-column: span 6;
 	}
+	.t\:grid-hydrogen {
+		grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
+	}
+	.t\:grid-helium {
+		grid-template-columns: 3fr 1fr 2fr 2fr 1fr 3fr;
+	}
+	.t\:grid-lithium {
+		grid-template-columns: 4fr 1fr 3fr 2fr 2fr 3fr 1fr 4fr;
+	}
+	.t\:grid-berilium {
+		grid-template-columns: 3fr 2fr 1fr 3fr 1fr 2fr 3fr;
+	}
 }
 @media only screen and (min-width: 64em) {
 	.d\:grid {
@@ -2489,7 +2513,7 @@ picture {
 		grid-column: auto;
 	}
 	.d\:grid-cols1 {
-		grid-template-columns: repeat(1, minmax(10px, 1fr));
+		grid-template-columns: repeat(1, minmax(0, 1fr));
 	}
 	.d\:grid-col-s1 {
 		grid-column-start: 1;
@@ -2498,7 +2522,7 @@ picture {
 		grid-column-end: 1;
 	}
 	.d\:grid-cols2 {
-		grid-template-columns: repeat(2, minmax(10px, 1fr));
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 	.d\:grid-col-s2 {
 		grid-column-start: 2;
@@ -2507,7 +2531,7 @@ picture {
 		grid-column-end: 2;
 	}
 	.d\:grid-cols3 {
-		grid-template-columns: repeat(3, minmax(10px, 1fr));
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 	.d\:grid-col-s3 {
 		grid-column-start: 3;
@@ -2516,7 +2540,7 @@ picture {
 		grid-column-end: 3;
 	}
 	.d\:grid-cols4 {
-		grid-template-columns: repeat(4, minmax(10px, 1fr));
+		grid-template-columns: repeat(4, minmax(0, 1fr));
 	}
 	.d\:grid-col-s4 {
 		grid-column-start: 4;
@@ -2525,7 +2549,7 @@ picture {
 		grid-column-end: 4;
 	}
 	.d\:grid-cols5 {
-		grid-template-columns: repeat(5, minmax(10px, 1fr));
+		grid-template-columns: repeat(5, minmax(0, 1fr));
 	}
 	.d\:grid-col-s5 {
 		grid-column-start: 5;
@@ -2534,7 +2558,7 @@ picture {
 		grid-column-end: 5;
 	}
 	.d\:grid-cols6 {
-		grid-template-columns: repeat(6, minmax(10px, 1fr));
+		grid-template-columns: repeat(6, minmax(0, 1fr));
 	}
 	.d\:grid-col-s6 {
 		grid-column-start: 6;
@@ -2543,7 +2567,7 @@ picture {
 		grid-column-end: 6;
 	}
 	.d\:grid-cols7 {
-		grid-template-columns: repeat(7, minmax(10px, 1fr));
+		grid-template-columns: repeat(7, minmax(0, 1fr));
 	}
 	.d\:grid-col-s7 {
 		grid-column-start: 7;
@@ -2552,7 +2576,7 @@ picture {
 		grid-column-end: 7;
 	}
 	.d\:grid-cols8 {
-		grid-template-columns: repeat(8, minmax(10px, 1fr));
+		grid-template-columns: repeat(8, minmax(0, 1fr));
 	}
 	.d\:grid-col-s8 {
 		grid-column-start: 8;
@@ -2561,7 +2585,7 @@ picture {
 		grid-column-end: 8;
 	}
 	.d\:grid-cols9 {
-		grid-template-columns: repeat(9, minmax(10px, 1fr));
+		grid-template-columns: repeat(9, minmax(0, 1fr));
 	}
 	.d\:grid-col-s9 {
 		grid-column-start: 9;
@@ -2586,6 +2610,18 @@ picture {
 	}
 	.d\:grid-col-span6 {
 		grid-column: span 6;
+	}
+	.d\:grid-hydrogen {
+		grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
+	}
+	.d\:grid-helium {
+		grid-template-columns: 3fr 1fr 2fr 2fr 1fr 3fr;
+	}
+	.d\:grid-lithium {
+		grid-template-columns: 4fr 1fr 3fr 2fr 2fr 3fr 1fr 4fr;
+	}
+	.d\:grid-berilium {
+		grid-template-columns: 3fr 2fr 1fr 3fr 1fr 2fr 3fr;
 	}
 }
 .gap0 {
