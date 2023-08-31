@@ -5,7 +5,7 @@
 	&-none { border: none; }
 
 	@each $c_name, $c_value in $colours {
-		&-c-#{$c_name} {
+		&-#{$c_name} {
 			border-color: var( --color-#{$c_name} );
 		}
 	}
