@@ -19,7 +19,6 @@
 	// Font size.
 	@each $s_name,
 	$s_value in $font-sizes {
-		&-s#{$s_name},
 		&#{$s_name} {
 
 			font-size: var(--type-size-#{$s_name});
