@@ -1793,12 +1793,6 @@ picture {
 .flex-col {
 	flex-direction: column;
 }
-.flex-d-c {
-	flex-direction: column;
-}
-.flex-d-r {
-	flex-direction: row;
-}
 .flex-g0 {
 	flex-grow: 0;
 }
@@ -1868,12 +1862,6 @@ picture {
 	.t\:flex-col {
 		flex-direction: column;
 	}
-	.t\:flex-d-c {
-		flex-direction: column;
-	}
-	.t\:flex-d-r {
-		flex-direction: row;
-	}
 	.t\:flex-g0 {
 		flex-grow: 0;
 	}
@@ -1942,12 +1930,6 @@ picture {
 	}
 	.d\:flex-col {
 		flex-direction: column;
-	}
-	.d\:flex-d-c {
-		flex-direction: column;
-	}
-	.d\:flex-d-r {
-		flex-direction: row;
 	}
 	.d\:flex-g0 {
 		flex-grow: 0;
@@ -2092,27 +2074,27 @@ picture {
 .f-fs-n {
 	font-style: normal;
 }
-.f-s1, .f1 {
+.f1 {
 	font-size: var(--type-size-1);
 	line-height: var(--type-lh-1);
 }
-.f-s2, .f2, h1 {
+.f2, h1 {
 	font-size: var(--type-size-2);
 	line-height: var(--type-lh-1);
 }
-.f-s3, .f3, h2 {
+.f3, h2 {
 	font-size: var(--type-size-3);
 	line-height: var(--type-lh-1);
 }
-.f-s4, .f4, h3, .screen-reader-text:focus {
+.f4, h3, .screen-reader-text:focus {
 	font-size: var(--type-size-4);
 	line-height: var(--type-lh-2);
 }
-.f-s5, .f5, h4 {
+.f5, h4 {
 	font-size: var(--type-size-5);
 	line-height: var(--type-lh-2);
 }
-.f-s6, .f6, sub,
+.f6, sub,
 sup, small, h6, h5 {
 	font-size: var(--type-size-6);
 	line-height: var(--type-lh-2);
@@ -2153,27 +2135,27 @@ sup, small, h6, h5 {
 	.t\:f-fs-n {
 		font-style: normal;
 	}
-	.t\:f-s1, .t\:f1 {
+	.t\:f1 {
 		font-size: var(--type-size-1);
 		line-height: var(--type-lh-1);
 	}
-	.t\:f-s2, .t\:f2 {
+	.t\:f2 {
 		font-size: var(--type-size-2);
 		line-height: var(--type-lh-1);
 	}
-	.t\:f-s3, .t\:f3 {
+	.t\:f3 {
 		font-size: var(--type-size-3);
 		line-height: var(--type-lh-1);
 	}
-	.t\:f-s4, .t\:f4 {
+	.t\:f4 {
 		font-size: var(--type-size-4);
 		line-height: var(--type-lh-2);
 	}
-	.t\:f-s5, .t\:f5 {
+	.t\:f5 {
 		font-size: var(--type-size-5);
 		line-height: var(--type-lh-2);
 	}
-	.t\:f-s6, .t\:f6 {
+	.t\:f6 {
 		font-size: var(--type-size-6);
 		line-height: var(--type-lh-2);
 		letter-spacing: var(--type-ls-1);
@@ -2213,27 +2195,27 @@ sup, small, h6, h5 {
 	.d\:f-fs-n {
 		font-style: normal;
 	}
-	.d\:f-s1, .d\:f1 {
+	.d\:f1 {
 		font-size: var(--type-size-1);
 		line-height: var(--type-lh-1);
 	}
-	.d\:f-s2, .d\:f2 {
+	.d\:f2 {
 		font-size: var(--type-size-2);
 		line-height: var(--type-lh-1);
 	}
-	.d\:f-s3, .d\:f3 {
+	.d\:f3 {
 		font-size: var(--type-size-3);
 		line-height: var(--type-lh-1);
 	}
-	.d\:f-s4, .d\:f4 {
+	.d\:f4 {
 		font-size: var(--type-size-4);
 		line-height: var(--type-lh-2);
 	}
-	.d\:f-s5, .d\:f5 {
+	.d\:f5 {
 		font-size: var(--type-size-5);
 		line-height: var(--type-lh-2);
 	}
-	.d\:f-s6, .d\:f6 {
+	.d\:f6 {
 		font-size: var(--type-size-6);
 		line-height: var(--type-lh-2);
 		letter-spacing: var(--type-ls-1);
@@ -4556,6 +4538,9 @@ button:focus,
 .t-td-u__hover:hover {
 	text-decoration: underline;
 }
+.t-td-st {
+	text-decoration: line-through;
+}
 .t-tt-n {
 	text-transform: none;
 }
@@ -4595,6 +4580,9 @@ button:focus,
 	.t\:t-td-u__hover:hover {
 		text-decoration: underline;
 	}
+	.t\:t-td-st {
+		text-decoration: line-through;
+	}
 	.t\:t-tt-n {
 		text-transform: none;
 	}
@@ -4633,6 +4621,9 @@ button:focus,
 	}
 	.d\:t-td-u__hover:hover {
 		text-decoration: underline;
+	}
+	.d\:t-td-st {
+		text-decoration: line-through;
 	}
 	.d\:t-tt-n {
 		text-transform: none;
