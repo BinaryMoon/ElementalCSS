@@ -31,25 +31,13 @@
 		flex-wrap: nowrap;
 	}
 
+	// Direction.
 	&-row {
 		flex-direction: row;
 	}
 
 	&-col {
 		flex-direction: column;
-	}
-
-	// Direction.
-	&-d {
-
-		&-c {
-			flex-direction: column;
-		}
-
-		&-r {
-			flex-direction: row;
-		}
-
 	}
 
 	@each $s_value in (0, 1) {
