@@ -39,6 +39,11 @@
 		text-decoration: underline;
 	}
 
+	&-td-st {
+		text-decoration: line-through;
+	}
+
+	// Text Transform.
 	&-tt-n {
 		text-transform: none;
 	}
