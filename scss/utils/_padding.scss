@@ -11,12 +11,10 @@
 			padding: var( --size-#{$s_name} );
 		}
 		&-x#{$s_name} {
-			padding-left: var( --size-#{$s_name} );
-			padding-right: var( --size-#{$s_name} );
+			padding-inline: var( --size-#{$s_name} );
 		}
 		&-y#{$s_name} {
-			padding-top: var( --size-#{$s_name} );
-			padding-bottom: var( --size-#{$s_name} );
+			padding-block: var( --size-#{$s_name} );
 		}
 
 		// Margin in specific direction.
