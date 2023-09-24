@@ -84,7 +84,7 @@
 	--font-verdana: Verdana, Geneva, DejaVu Sans, sans-serif;
 	--font-main: var( --font-system );
 	--font-monospace: var( --font-system-monospace );
-	--line-length: 55ch;
+	--line-length: 60ch;
 }
 
 .font-arial {
@@ -337,6 +337,7 @@ body {
 
 body,
 p,
+h1, h2, h3, h4,
 figure,
 blockquote,
 dl,
