@@ -21,9 +21,13 @@
 			grid-column: auto;
 		}
 
+		&-e {
+			grid-column-end: -1;
+		}
+
 		@each $v in (1, 2, 3, 4, 5, 6, 7, 8, 9) {
 			&s#{$v} {
-				grid-template-columns: repeat($v, minmax(0, 1fr));
+				grid-template-columns: repeat($v, minmax(10px, 1fr));
 			}
 
 			&-s#{$v} {
@@ -38,6 +42,28 @@
 		@each $v in (1, 2, 3, 4, 5, 6) {
 			&-span#{$v} {
 				grid-column: span $v;
+			}
+		}
+
+	}
+
+	&-row {
+
+		&-all {
+			grid-row: 1 / 999;
+		}
+
+		&-auto {
+			grid-row: auto;
+		}
+
+		&-e {
+			grid-row-end: -1;
+		}
+
+		@each $v in (1, 2, 3, 4, 5, 6) {
+			&-span#{$v} {
+				grid-row: span $v;
 			}
 		}
 
