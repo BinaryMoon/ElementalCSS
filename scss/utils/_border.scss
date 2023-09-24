@@ -20,6 +20,11 @@
 
 	@each $s_name in ( 0, 1, 2, 3 ) {
 
+		// Border width.
+		&#{$s_name} {
+			border-width: var( --size-#{$s_name} );
+		}
+
 		// Border Radius on all corners.
 		&-br#{$s_name} {
 			border-radius: var( --size-#{$s_name} );
@@ -30,11 +35,6 @@
 			&-br-#{$p_name}#{$s_name} {
 				border-#{$p_value}-radius: var( --size-#{$s_name} );
 			}
-		}
-
-		// Border width.
-		&-bw#{$s_name} {
-			border-width: var( --size-#{$s_name} );
 		}
 
 		// Border width on different sides.
