@@ -39,7 +39,7 @@
 
 		// Border width on different sides.
 		@each $p_name, $p_value in $positions {
-			&-bw-#{$p_name}#{$s_name} {
+			&-#{$p_name}#{$s_name} {
 				border-#{$p_value}-width: var( --size-#{$s_name} );
 			}
 		}
