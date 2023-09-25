@@ -640,16 +640,16 @@ picture {
 .b-br-br0 {
 	border-bottom-right-radius: var(--size-0);
 }
-.b-bw-t0 {
+.b-t0 {
 	border-top-width: var(--size-0);
 }
-.b-bw-r0 {
+.b-r0 {
 	border-right-width: var(--size-0);
 }
-.b-bw-b0 {
+.b-b0 {
 	border-bottom-width: var(--size-0);
 }
-.b-bw-l0 {
+.b-l0 {
 	border-left-width: var(--size-0);
 }
 .b1 {
@@ -670,16 +670,16 @@ picture {
 .b-br-br1 {
 	border-bottom-right-radius: var(--size-1);
 }
-.b-bw-t1 {
+.b-t1 {
 	border-top-width: var(--size-1);
 }
-.b-bw-r1 {
+.b-r1 {
 	border-right-width: var(--size-1);
 }
-.b-bw-b1 {
+.b-b1 {
 	border-bottom-width: var(--size-1);
 }
-.b-bw-l1 {
+.b-l1 {
 	border-left-width: var(--size-1);
 }
 .b2 {
@@ -700,16 +700,16 @@ picture {
 .b-br-br2 {
 	border-bottom-right-radius: var(--size-2);
 }
-.b-bw-t2 {
+.b-t2 {
 	border-top-width: var(--size-2);
 }
-.b-bw-r2 {
+.b-r2 {
 	border-right-width: var(--size-2);
 }
-.b-bw-b2 {
+.b-b2 {
 	border-bottom-width: var(--size-2);
 }
-.b-bw-l2 {
+.b-l2 {
 	border-left-width: var(--size-2);
 }
 .b3 {
@@ -730,16 +730,16 @@ picture {
 .b-br-br3 {
 	border-bottom-right-radius: var(--size-3);
 }
-.b-bw-t3 {
+.b-t3 {
 	border-top-width: var(--size-3);
 }
-.b-bw-r3 {
+.b-r3 {
 	border-right-width: var(--size-3);
 }
-.b-bw-b3 {
+.b-b3 {
 	border-bottom-width: var(--size-3);
 }
-.b-bw-l3 {
+.b-l3 {
 	border-left-width: var(--size-3);
 }
 
@@ -837,16 +837,16 @@ picture {
 	.t\:b-br-br0 {
 		border-bottom-right-radius: var(--size-0);
 	}
-	.t\:b-bw-t0 {
+	.t\:b-t0 {
 		border-top-width: var(--size-0);
 	}
-	.t\:b-bw-r0 {
+	.t\:b-r0 {
 		border-right-width: var(--size-0);
 	}
-	.t\:b-bw-b0 {
+	.t\:b-b0 {
 		border-bottom-width: var(--size-0);
 	}
-	.t\:b-bw-l0 {
+	.t\:b-l0 {
 		border-left-width: var(--size-0);
 	}
 	.t\:b1 {
@@ -867,16 +867,16 @@ picture {
 	.t\:b-br-br1 {
 		border-bottom-right-radius: var(--size-1);
 	}
-	.t\:b-bw-t1 {
+	.t\:b-t1 {
 		border-top-width: var(--size-1);
 	}
-	.t\:b-bw-r1 {
+	.t\:b-r1 {
 		border-right-width: var(--size-1);
 	}
-	.t\:b-bw-b1 {
+	.t\:b-b1 {
 		border-bottom-width: var(--size-1);
 	}
-	.t\:b-bw-l1 {
+	.t\:b-l1 {
 		border-left-width: var(--size-1);
 	}
 	.t\:b2 {
@@ -897,16 +897,16 @@ picture {
 	.t\:b-br-br2 {
 		border-bottom-right-radius: var(--size-2);
 	}
-	.t\:b-bw-t2 {
+	.t\:b-t2 {
 		border-top-width: var(--size-2);
 	}
-	.t\:b-bw-r2 {
+	.t\:b-r2 {
 		border-right-width: var(--size-2);
 	}
-	.t\:b-bw-b2 {
+	.t\:b-b2 {
 		border-bottom-width: var(--size-2);
 	}
-	.t\:b-bw-l2 {
+	.t\:b-l2 {
 		border-left-width: var(--size-2);
 	}
 	.t\:b3 {
@@ -927,16 +927,16 @@ picture {
 	.t\:b-br-br3 {
 		border-bottom-right-radius: var(--size-3);
 	}
-	.t\:b-bw-t3 {
+	.t\:b-t3 {
 		border-top-width: var(--size-3);
 	}
-	.t\:b-bw-r3 {
+	.t\:b-r3 {
 		border-right-width: var(--size-3);
 	}
-	.t\:b-bw-b3 {
+	.t\:b-b3 {
 		border-bottom-width: var(--size-3);
 	}
-	.t\:b-bw-l3 {
+	.t\:b-l3 {
 		border-left-width: var(--size-3);
 	}
 }
@@ -1034,16 +1034,16 @@ picture {
 	.d\:b-br-br0 {
 		border-bottom-right-radius: var(--size-0);
 	}
-	.d\:b-bw-t0 {
+	.d\:b-t0 {
 		border-top-width: var(--size-0);
 	}
-	.d\:b-bw-r0 {
+	.d\:b-r0 {
 		border-right-width: var(--size-0);
 	}
-	.d\:b-bw-b0 {
+	.d\:b-b0 {
 		border-bottom-width: var(--size-0);
 	}
-	.d\:b-bw-l0 {
+	.d\:b-l0 {
 		border-left-width: var(--size-0);
 	}
 	.d\:b1 {
@@ -1064,16 +1064,16 @@ picture {
 	.d\:b-br-br1 {
 		border-bottom-right-radius: var(--size-1);
 	}
-	.d\:b-bw-t1 {
+	.d\:b-t1 {
 		border-top-width: var(--size-1);
 	}
-	.d\:b-bw-r1 {
+	.d\:b-r1 {
 		border-right-width: var(--size-1);
 	}
-	.d\:b-bw-b1 {
+	.d\:b-b1 {
 		border-bottom-width: var(--size-1);
 	}
-	.d\:b-bw-l1 {
+	.d\:b-l1 {
 		border-left-width: var(--size-1);
 	}
 	.d\:b2 {
@@ -1094,16 +1094,16 @@ picture {
 	.d\:b-br-br2 {
 		border-bottom-right-radius: var(--size-2);
 	}
-	.d\:b-bw-t2 {
+	.d\:b-t2 {
 		border-top-width: var(--size-2);
 	}
-	.d\:b-bw-r2 {
+	.d\:b-r2 {
 		border-right-width: var(--size-2);
 	}
-	.d\:b-bw-b2 {
+	.d\:b-b2 {
 		border-bottom-width: var(--size-2);
 	}
-	.d\:b-bw-l2 {
+	.d\:b-l2 {
 		border-left-width: var(--size-2);
 	}
 	.d\:b3 {
@@ -1124,16 +1124,16 @@ picture {
 	.d\:b-br-br3 {
 		border-bottom-right-radius: var(--size-3);
 	}
-	.d\:b-bw-t3 {
+	.d\:b-t3 {
 		border-top-width: var(--size-3);
 	}
-	.d\:b-bw-r3 {
+	.d\:b-r3 {
 		border-right-width: var(--size-3);
 	}
-	.d\:b-bw-b3 {
+	.d\:b-b3 {
 		border-bottom-width: var(--size-3);
 	}
-	.d\:b-bw-l3 {
+	.d\:b-l3 {
 		border-left-width: var(--size-3);
 	}
 }
