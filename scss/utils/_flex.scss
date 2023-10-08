@@ -52,6 +52,12 @@
 
 	// Justify.
 	&-jc {
+		&-s {
+			justify-content: start;
+		}
+		&-e {
+			justify-content: end;
+		}
 		&-sb {
 			justify-content: space-between;
 		}
