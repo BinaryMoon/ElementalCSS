@@ -1806,6 +1806,12 @@ picture {
 .flex-s1 {
 	flex-shrink: 1;
 }
+.flex-jc-s {
+	justify-content: start;
+}
+.flex-jc-e {
+	justify-content: end;
+}
 .flex-jc-sb {
 	justify-content: space-between;
 }
@@ -1875,6 +1881,12 @@ picture {
 	.t\:flex-s1 {
 		flex-shrink: 1;
 	}
+	.t\:flex-jc-s {
+		justify-content: start;
+	}
+	.t\:flex-jc-e {
+		justify-content: end;
+	}
 	.t\:flex-jc-sb {
 		justify-content: space-between;
 	}
@@ -1943,6 +1955,12 @@ picture {
 	}
 	.d\:flex-s1 {
 		flex-shrink: 1;
+	}
+	.d\:flex-jc-s {
+		justify-content: start;
+	}
+	.d\:flex-jc-e {
+		justify-content: end;
 	}
 	.d\:flex-jc-sb {
 		justify-content: space-between;
