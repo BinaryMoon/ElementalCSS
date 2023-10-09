@@ -2,8 +2,8 @@
 
 	@each $v in ( 0, 1, 2, 3, 4, 5 ) {
 		&#{$v} { gap: var( --size-#{$v} ); }
-		&-r#{$v} { row-gap: var( --size-#{$v} ); }
-		&-c#{$v} { column-gap: var( --size-#{$v} ); }
+		&-x#{$v} { column-gap: var( --size-#{$v} ); }
+		&-y#{$v} { row-gap: var( --size-#{$v} ); }
 	}
 
 }
