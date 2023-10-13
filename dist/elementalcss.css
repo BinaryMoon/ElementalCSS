@@ -2776,6 +2776,26 @@ sup, small, h6, h5 {
 .gap-y5 {
 	row-gap: var(--size-5);
 }
+.gap6 {
+	gap: var(--size-6);
+}
+.gap-x6 {
+	-moz-column-gap: var(--size-6);
+	column-gap: var(--size-6);
+}
+.gap-y6 {
+	row-gap: var(--size-6);
+}
+.gap7 {
+	gap: var(--size-7);
+}
+.gap-x7 {
+	-moz-column-gap: var(--size-7);
+	column-gap: var(--size-7);
+}
+.gap-y7 {
+	row-gap: var(--size-7);
+}
 
 @media only screen and (min-width: 32em) {
 	.t\:gap0 {
@@ -2838,6 +2858,26 @@ sup, small, h6, h5 {
 	.t\:gap-y5 {
 		row-gap: var(--size-5);
 	}
+	.t\:gap6 {
+		gap: var(--size-6);
+	}
+	.t\:gap-x6 {
+		-moz-column-gap: var(--size-6);
+		column-gap: var(--size-6);
+	}
+	.t\:gap-y6 {
+		row-gap: var(--size-6);
+	}
+	.t\:gap7 {
+		gap: var(--size-7);
+	}
+	.t\:gap-x7 {
+		-moz-column-gap: var(--size-7);
+		column-gap: var(--size-7);
+	}
+	.t\:gap-y7 {
+		row-gap: var(--size-7);
+	}
 }
 @media only screen and (min-width: 64em) {
 	.d\:gap0 {
@@ -2899,6 +2939,26 @@ sup, small, h6, h5 {
 	}
 	.d\:gap-y5 {
 		row-gap: var(--size-5);
+	}
+	.d\:gap6 {
+		gap: var(--size-6);
+	}
+	.d\:gap-x6 {
+		-moz-column-gap: var(--size-6);
+		column-gap: var(--size-6);
+	}
+	.d\:gap-y6 {
+		row-gap: var(--size-6);
+	}
+	.d\:gap7 {
+		gap: var(--size-7);
+	}
+	.d\:gap-x7 {
+		-moz-column-gap: var(--size-7);
+		column-gap: var(--size-7);
+	}
+	.d\:gap-y7 {
+		row-gap: var(--size-7);
 	}
 }
 .l-inline {
