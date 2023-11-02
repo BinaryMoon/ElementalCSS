@@ -845,7 +845,6 @@ nav ul {
 	padding: 0;
 }
 nav ul ul {
-	-webkit-padding-start: var(--size-3);
 	padding-inline-start: var(--size-3);
 }
 
