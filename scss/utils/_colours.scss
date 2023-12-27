@@ -18,6 +18,10 @@
 		background-color: var(--bg-custom--hover) !important;
 	}
 
+	&-transparent {
+		background-color: transparent;
+	}
+
 	@each $c_name,
 	$c_value in $colours {
 		&-#{$c_name} {
