@@ -18,6 +18,7 @@ textarea {
 	border-radius: var(--border-radius);
 	line-height: var(--type-lh-2);
 	padding: var(--size-1) var(--size-3);
+	max-width: 100%;
 
 	&:active,
 	&:focus {
