@@ -2,9 +2,8 @@ input,
 select,
 textarea {
 
-	background: var(--color-pop);
-	color: inherit;
-	border: var(--border-width) solid var(--color-border);
+	border-style: solid;
+	border-width: var(--border-width);
 
 }
 
@@ -41,7 +40,6 @@ textarea {
 	}
 
 }
-
 
 /* Make the textarea wider than other inputs */
 textarea {
@@ -81,6 +79,42 @@ textarea {
 		background: green;
 		width: 10px;
 		height: 10px;
+
+	}
+
+}
+
+[type="file"] {
+
+	border: none;
+	padding: 0;
+
+}
+
+::file-selector-button {
+
+	font: inherit;
+	padding: var(--size-1) var(--size-3);
+	margin-inline-end: var(--size-3);
+
+	&:hover {
+
+		cursor: pointer;
+
+	}
+
+}
+
+::-webkit-file-upload-button {
+
+	font: inherit;
+	-webkit-appearance: button;
+	padding: var(--size-1) var(--size-3);
+	margin-inline-end: var(--size-3);
+
+	&:hover {
+
+		cursor: pointer;
 
 	}
 
