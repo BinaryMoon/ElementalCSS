@@ -52,6 +52,7 @@
 	--font-arial-black: Arial Black, Arial Bold, Gadget, sans-serif;
 	--font-arial-narrow: Arial Narrow, Arial, sans-serif;
 	--font-arial-rounded: Arial Rounded MT Bold, Arial Rounded Bold, Helvetica Rounded, Arial, sans-serif;
+	--font-avenir: avenir next, avenir, sans-serif;
 	--font-baskerville: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
 	--font-book-antiqua: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Bitstream Charter, URW Palladio, Georgia, serif;
 	--font-bookman: Bookman, Bookman Old Style, Book Antiqua, Palatino, URW Bookman, serif;
@@ -101,6 +102,10 @@
 
 .font-arial-rounded {
 	font-family: var(--font-arial-rounded);
+}
+
+.font-avenir {
+	font-family: var(--font-avenir);
 }
 
 .font-baskerville {
@@ -314,7 +319,7 @@ figcaption > :last-child {
 html {
 	height: 100%;
 	font-size: 16px;
-	accent-color: var(--color-fg-accent);
+	accent-color: var(--color-bg-accent);
 	scroll-behavior: smooth;
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
@@ -1149,6 +1154,9 @@ picture {
 }
 .bg-custom__hover:hover {
 	background-color: var(--bg-custom--hover) !important;
+}
+.bg-transparent {
+	background-color: transparent;
 }
 .bg-black {
 	background-color: var(--color-black);
@@ -5634,9 +5642,8 @@ hr {
 input,
 select,
 textarea {
-	background: var(--color-pop);
-	color: inherit;
-	border: var(--border-width) solid var(--color-border);
+	border-style: solid;
+	border-width: var(--border-width);
 }
 
 input,
@@ -5695,6 +5702,30 @@ textarea {
 	background: green;
 	width: 10px;
 	height: 10px;
+}
+
+[type=file] {
+	border: none;
+	padding: 0;
+}
+
+::file-selector-button {
+	font: inherit;
+	padding: var(--size-1) var(--size-3);
+	margin-inline-end: var(--size-3);
+}
+::file-selector-button:hover {
+	cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+	font: inherit;
+	-webkit-appearance: button;
+	padding: var(--size-1) var(--size-3);
+	margin-inline-end: var(--size-3);
+}
+::-webkit-file-upload-button:hover {
+	cursor: pointer;
 }
 
 label {
