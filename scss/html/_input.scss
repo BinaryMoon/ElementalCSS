@@ -98,6 +98,13 @@ textarea {
 
 }
 
+.dropzone[type="file"] {
+	width: 100%;
+	border: var(--size-2) dashed currentColor;
+	padding: var(--size-4);
+	border-radius: var(--size-2);
+}
+
 ::file-selector-button {
 
 	font: inherit;
