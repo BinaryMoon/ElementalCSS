@@ -9,6 +9,7 @@ $sizes: (
 	'7': calc( var( --size-base ) * 64 ),
 	'8': calc( var( --size-base ) * 128 ),
 	'9': calc( var( --size-base ) * 256 ),
+	'10': calc( var( --size-base ) * 512 ),
 );
 
 :root {
