@@ -1,5 +1,12 @@
 @include mq-prefix( 'l' ) {
 
+	&-ls-n {
+
+		list-style-type: none;
+		padding: 0;
+
+	}
+
 	&-inline {
 
 		list-style-type: none;
