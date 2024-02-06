@@ -52,30 +52,29 @@
 	--font-arial-black: Arial Black, Arial Bold, Gadget, sans-serif;
 	--font-arial-narrow: Arial Narrow, Arial, sans-serif;
 	--font-arial-rounded: Arial Rounded MT Bold, Arial Rounded Bold, Helvetica Rounded, Arial, sans-serif;
-	--font-avenir: avenir next, avenir, sans-serif;
+	--font-avenir: Avenir Next, Avenir, sans-serif;
 	--font-baskerville: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
-	--font-book-antiqua: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Bitstream Charter, URW Palladio, Georgia, serif;
-	--font-bookman: Bookman, Bookman Old Style, Book Antiqua, Palatino, URW Bookman, serif;
-	--font-calibri: Calibri, Candara, Segoe, Segoe UI, Carlito, Roboto, Ubuntu, Optima, Arial, sans-serif;
-	--font-cambria: Cambria, Caladea, Roboto Slab, Georgia, serif;
-	--font-century-gothic: Century Gothic, CenturyGothic, URW Gothic, AppleGothic, sans-serif;
-	--font-comic-sans: Comic Sans, Comic Sans MS, cursive, sans-serif;
-	--font-consolas: Consolas, monaco, Liberation Mono, monospace;
+	--font-book-antiqua: Book Antiqua, Baskerville, Palatino, Georgia, serif;
+	--font-bookman: Bookman, Bookman Old Style, Book Antiqua, Charter, Palatino, URW Bookman, serif;
+	--font-century-gothic: Century Gothic, CenturyGothic, Franklin Gothic, URW Gothic, AppleGothic, sans-serif;
+	--font-comic-sans: Chalkboard, Comic Sans, Comic Sans MS, cursive, sans-serif;
+	--font-consolas: Consolas, Menlo, Monaco, Liberation Mono, monospace;
 	--font-courier-new: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
 	--font-franklin-gothic: Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif;
 	--font-futura: Futura, Trebuchet MS, Arial, sans-serif;
+	--font-futura-condensed: Futura Condensed, Futura PT Condensed, Futura, Trebuchet MS, Arial, sans-serif;
 	--font-garamond: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
 	--font-geneva: Geneva, Tahoma, Verdana, DejaVu Sans, Bitstream Vera Sans, sans-serif;
 	--font-georgia: Georgia, Times, Times New Roman, serif;
 	--font-gill-sans: Gill Sans, Gill Sans MT, Century Gothic, Calibri, sans-serif;
+	--font-haettenschweiler: Haettenschweiler, Din Condensed, Arial Narrow Bold, sans-serif;
 	--font-helvetica: Helvetica Neue, Helvetica, Arial, sans-serif;
-	--font-haettenschweiler: Haettenschweiler, Arial Narrow Bold, sans-serif;
 	--font-hoefler: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
 	--font-impact: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-	--font-lucida-bright: Lucida Bright, Georgia, serif;
+	--font-lucida-bright: Lucida Bright, Baskerville, Georgia, serif;
+	--font-lucida-console: Lucida Console, Lucida Sans Typewriter, PT Mono, monaco, monospace;
 	--font-lucida-grande: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
-	--font-lucida-console: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, Liberation Mono, monospace;
-	--font-oswald: Oswald, Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+	--font-oswald: Oswald, Din Condensed, Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
 	--font-palatino: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, URW Palladio, Georgia, serif;
 	--font-system: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 	--font-system-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
@@ -120,14 +119,6 @@
 	font-family: var(--font-bookman);
 }
 
-.font-calibri {
-	font-family: var(--font-calibri);
-}
-
-.font-cambria {
-	font-family: var(--font-cambria);
-}
-
 .font-century-gothic {
 	font-family: var(--font-century-gothic);
 }
@@ -152,6 +143,10 @@
 	font-family: var(--font-futura);
 }
 
+.font-futura-condensed {
+	font-family: var(--font-futura-condensed);
+}
+
 .font-garamond {
 	font-family: var(--font-garamond);
 }
@@ -168,12 +163,12 @@
 	font-family: var(--font-gill-sans);
 }
 
-.font-helvetica {
-	font-family: var(--font-helvetica);
-}
-
 .font-haettenschweiler {
 	font-family: var(--font-haettenschweiler);
+}
+
+.font-helvetica {
+	font-family: var(--font-helvetica);
 }
 
 .font-hoefler {
@@ -188,12 +183,12 @@
 	font-family: var(--font-lucida-bright);
 }
 
-.font-lucida-grande {
-	font-family: var(--font-lucida-grande);
-}
-
 .font-lucida-console {
 	font-family: var(--font-lucida-console);
+}
+
+.font-lucida-grande {
+	font-family: var(--font-lucida-grande);
 }
 
 .font-oswald {
@@ -240,6 +235,7 @@
 	--size-7: calc(var(--size-base) * 64);
 	--size-8: calc(var(--size-base) * 128);
 	--size-9: calc(var(--size-base) * 256);
+	--size-10: calc(var(--size-base) * 512);
 }
 @media only screen and (min-width: 32em) {
 	:root {
