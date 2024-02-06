@@ -1,0 +1,31 @@
+{
+	"name": "elementalcss",
+	"version": "1.0.0",
+	"description": "A minimal utility CSS library",
+	"scripts": {
+		"dev": "gulp",
+		"build": "gulp build"
+	},
+	"author": "binarymoon",
+	"license": "GPL-2.0-or-later",
+	"jshintConfig": {
+		"esversion": 6
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.10",
+		"@babel/preset-env": "^7.12.11",
+		"@babel/register": "^7.12.10",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-babel": "^8.0.0",
+		"gulp-change": "^1.0.2",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-include": "^2.4.1",
+		"gulp-plumber": "^1.2.1",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^5.0.0",
+		"gulp-size": "^4.0.0",
+		"sass": "^1.43.5"
+	}
+}
