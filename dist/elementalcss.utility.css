@@ -374,8 +374,8 @@ picture {
 	color: var(--color-fg-highlight);
 }
 
-[id] {
-	scroll-margin-top: 2ex;
+::target {
+	scroll-margin-block: 2ex;
 }
 
 @media (prefers-reduced-motion: reduce) {
