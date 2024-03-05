@@ -374,8 +374,8 @@ picture {
 	color: var(--color-fg-highlight);
 }
 
-[id] {
-	scroll-margin-top: 2ex;
+::target {
+	scroll-margin-block: 2ex;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -782,6 +782,9 @@ textarea {
 	textarea {
 		width: 60%;
 	}
+}
+textarea:not([rows]) {
+	height: var(--size-5);
 }
 
 /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
