@@ -53,12 +53,6 @@ textarea {
 
 	}
 
-	&:not([rows]) {
-
-		height: var(--size-5);
-
-	}
-
 }
 
 /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
