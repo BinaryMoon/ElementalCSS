@@ -10,6 +10,10 @@ $sizes: (
 	'8': calc( var( --size-base ) * 128 ),
 	'9': calc( var( --size-base ) * 256 ),
 	'10': calc( var( --size-base ) * 512 ),
+	'100': '100%',
+	'120': '120px',
+	'160': '160px',
+	'300': '300px',
 );
 
 :root {
