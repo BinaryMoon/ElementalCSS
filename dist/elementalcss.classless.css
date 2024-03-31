@@ -311,6 +311,10 @@
 	--size-8: calc(var(--size-base) * 128);
 	--size-9: calc(var(--size-base) * 256);
 	--size-10: calc(var(--size-base) * 512);
+	--size-100: 100%;
+	--size-120: 120px;
+	--size-160: 160px;
+	--size-300: 300px;
 }
 @media only screen and (min-width: 32em) {
 	:root {
