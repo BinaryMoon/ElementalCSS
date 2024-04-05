@@ -68,6 +68,10 @@ $colour_theme: map-merge(
 			green,
 			green,
 		),
+		'bg-code': (
+			white,
+			gray4,
+		),
 	),
 	$colour_theme
 );
