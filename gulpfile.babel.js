@@ -55,7 +55,9 @@ export function process_styles() {
 			change( removeComments )
 		)
 		.pipe(
-			cleancss( { level: 2 } )
+			cleancss( {
+				level: 2,
+			} )
 		)
 		.pipe(
 			rename(
