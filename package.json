@@ -15,7 +15,7 @@
 		"@babel/core": "^7.12.10",
 		"@babel/preset-env": "^7.12.11",
 		"@babel/register": "^7.12.10",
-		"gulp": "^4.0.0",
+		"gulp": "^5.0.0",
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-babel": "^8.0.0",
 		"gulp-change": "^1.0.2",
