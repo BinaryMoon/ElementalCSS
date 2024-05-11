@@ -470,7 +470,6 @@ picture {
 .screen-reader-text {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
-	-webkit-clip-path: inset(50%);
 	clip-path: inset(50%);
 	position: absolute !important;
 	padding: 0;
