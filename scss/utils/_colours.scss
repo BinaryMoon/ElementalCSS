@@ -25,17 +25,21 @@
 	@each $c_name,
 	$c_value in $colours {
 		&-#{$c_name} {
+
 			background-color: var(--color-#{$c_name});
-			color: get_contrast($c_value );
+			color: get_contrast($c_value);
 
 			&__hover:hover {
 				background-color: var(--color-#{$c_name});
-				color: get_contrast($c_value );
+				color: get_contrast($c_value);
 			}
 
-			a {
+			// Apply contrasting colour to links that don't already have a
+			// specified foreground color.
+			a:not([class*="fg-"]) {
 				color: get_contrast($c_value, var(--color-#{$dark-link}), var(--color-#{$light-link}));
 			}
+
 		}
 	}
 
