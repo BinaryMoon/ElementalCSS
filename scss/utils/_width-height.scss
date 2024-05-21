@@ -11,7 +11,7 @@
 			}
 		}
 
-		@each $value in ( 100,120,160, 300 ) {
+		@each $value in ( 100, 120, 160, 300 ) {
 			&#{ $value } {
 				#{$property}: var( --size-#{$value} );
 			}
