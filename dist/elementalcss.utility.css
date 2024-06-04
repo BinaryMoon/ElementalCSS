@@ -486,7 +486,7 @@ picture {
 	background-color: var(--color-black);
 	color: white;
 }
-.bg-black a:not([class*=fg-]) {
+.bg-black a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-gray4 {
@@ -497,7 +497,7 @@ picture {
 	background-color: var(--color-gray4);
 	color: white;
 }
-.bg-gray4 a:not([class*=fg-]) {
+.bg-gray4 a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-gray3 {
@@ -508,7 +508,7 @@ picture {
 	background-color: var(--color-gray3);
 	color: white;
 }
-.bg-gray3 a:not([class*=fg-]) {
+.bg-gray3 a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-gray2 {
@@ -519,7 +519,7 @@ picture {
 	background-color: var(--color-gray2);
 	color: white;
 }
-.bg-gray2 a:not([class*=fg-]) {
+.bg-gray2 a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-gray1 {
@@ -530,7 +530,7 @@ picture {
 	background-color: var(--color-gray1);
 	color: black;
 }
-.bg-gray1 a:not([class*=fg-]) {
+.bg-gray1 a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-white {
@@ -541,7 +541,7 @@ picture {
 	background-color: var(--color-white);
 	color: black;
 }
-.bg-white a:not([class*=fg-]) {
+.bg-white a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-blue-light {
@@ -552,7 +552,7 @@ picture {
 	background-color: var(--color-blue-light);
 	color: black;
 }
-.bg-blue-light a:not([class*=fg-]) {
+.bg-blue-light a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-blue {
@@ -563,7 +563,7 @@ picture {
 	background-color: var(--color-blue);
 	color: white;
 }
-.bg-blue a:not([class*=fg-]) {
+.bg-blue a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-blue-dark {
@@ -574,7 +574,7 @@ picture {
 	background-color: var(--color-blue-dark);
 	color: white;
 }
-.bg-blue-dark a:not([class*=fg-]) {
+.bg-blue-dark a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-red-light {
@@ -585,7 +585,7 @@ picture {
 	background-color: var(--color-red-light);
 	color: black;
 }
-.bg-red-light a:not([class*=fg-]) {
+.bg-red-light a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-red {
@@ -596,7 +596,7 @@ picture {
 	background-color: var(--color-red);
 	color: white;
 }
-.bg-red a:not([class*=fg-]) {
+.bg-red a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-red-dark {
@@ -607,7 +607,7 @@ picture {
 	background-color: var(--color-red-dark);
 	color: white;
 }
-.bg-red-dark a:not([class*=fg-]) {
+.bg-red-dark a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-green-light {
@@ -618,7 +618,7 @@ picture {
 	background-color: var(--color-green-light);
 	color: black;
 }
-.bg-green-light a:not([class*=fg-]) {
+.bg-green-light a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-green {
@@ -629,7 +629,7 @@ picture {
 	background-color: var(--color-green);
 	color: white;
 }
-.bg-green a:not([class*=fg-]) {
+.bg-green a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-green-dark {
@@ -640,7 +640,7 @@ picture {
 	background-color: var(--color-green-dark);
 	color: white;
 }
-.bg-green-dark a:not([class*=fg-]) {
+.bg-green-dark a:not([class]) {
 	color: var(--color-yellow);
 }
 .bg-yellow-light {
@@ -651,7 +651,7 @@ picture {
 	background-color: var(--color-yellow-light);
 	color: black;
 }
-.bg-yellow-light a:not([class*=fg-]) {
+.bg-yellow-light a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-yellow {
@@ -662,7 +662,7 @@ picture {
 	background-color: var(--color-yellow);
 	color: black;
 }
-.bg-yellow a:not([class*=fg-]) {
+.bg-yellow a:not([class]) {
 	color: var(--color-blue-dark);
 }
 .bg-yellow-dark {
@@ -673,7 +673,7 @@ picture {
 	background-color: var(--color-yellow-dark);
 	color: white;
 }
-.bg-yellow-dark a:not([class*=fg-]) {
+.bg-yellow-dark a:not([class]) {
 	color: var(--color-yellow);
 }
 
