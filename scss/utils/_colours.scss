@@ -35,9 +35,9 @@
 			}
 
 			// Apply contrasting colour to links that don't already have a
-			// specified foreground color.
-			a:not([class*="fg-"]) {
-				color: get_contrast($c_value, var(--color-#{$dark-link}), var(--color-#{$light-link}));
+			// specified class.
+			a:not([class]) {
+					color: get_contrast($c_value, var(--color-#{$dark-link}), var(--color-#{$light-link}));
 			}
 
 		}
