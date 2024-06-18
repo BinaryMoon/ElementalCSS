@@ -22,6 +22,10 @@
 		background-color: transparent;
 	}
 
+	&-current {
+		background-color: currentColor;
+	}
+
 	@each $c_name,
 	$c_value in $colours {
 		&-#{$c_name} {
