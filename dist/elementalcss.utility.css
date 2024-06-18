@@ -478,6 +478,9 @@ picture {
 .bg-transparent {
 	background-color: transparent;
 }
+.bg-current {
+	background-color: currentColor;
+}
 .bg-black {
 	background-color: var(--color-black);
 	color: white;
@@ -1984,6 +1987,9 @@ picture {
 .flex-ai-e {
 	align-items: end;
 }
+.flex-ai-stretch {
+	align-items: stretch;
+}
 .flex-as-c {
 	align-self: center;
 }
@@ -2059,6 +2065,9 @@ picture {
 	.t\:flex-ai-e {
 		align-items: end;
 	}
+	.t\:flex-ai-stretch {
+		align-items: stretch;
+	}
 	.t\:flex-as-c {
 		align-self: center;
 	}
@@ -2133,6 +2142,9 @@ picture {
 	}
 	.d\:flex-ai-e {
 		align-items: end;
+	}
+	.d\:flex-ai-stretch {
+		align-items: stretch;
 	}
 	.d\:flex-as-c {
 		align-self: center;
