@@ -779,6 +779,22 @@ button:disabled,
 	cursor: not-allowed;
 }
 
+dialog {
+	background: transparent;
+	padding: var(--size-4);
+	border: none;
+	color: white;
+	max-width: 100%;
+	width: 30rem;
+	margin: var(--size-5) auto;
+}
+
+dialog::backdrop {
+	background-color: rgba(0, 0, 0, 0.6);
+	-webkit-backdrop-filter: blur(var(--size-1));
+	backdrop-filter: blur(var(--size-1));
+}
+
 h1,
 h2,
 h3,
