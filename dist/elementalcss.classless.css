@@ -301,7 +301,6 @@
 }
 
 :root {
-	--size-base: 0.15rem;
 	--size-0: 0;
 	--size-1: var(--size-base);
 	--size-2: calc(var(--size-base) * 2);
@@ -317,6 +316,7 @@
 	--size-120: 120px;
 	--size-160: 160px;
 	--size-300: 300px;
+	--size-base: 0.15rem;
 }
 @media only screen and (min-width: 32em) {
 	:root {
@@ -330,7 +330,6 @@
 }
 
 :root {
-	--type-scale: 1.125;
 	--type-base: 1rem;
 	--type-size-6: calc(var(--type-base) / var(--type-scale));
 	--type-size-5: var(--type-base);
@@ -341,6 +340,7 @@
 	--type-lh-1: 1.1;
 	--type-lh-2: 1.618;
 	--type-ls-1: 0.1em;
+	--type-scale: 1.125;
 }
 @media only screen and (min-width: 32em) {
 	:root {
@@ -466,34 +466,6 @@ picture {
 		scroll-behavior: auto;
 	}
 }
-/* Screen Reader Text: meant only for screen readers. */
-.screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	position: absolute !important;
-	padding: 0;
-	margin: -1px;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	word-wrap: normal !important;
-}
-.screen-reader-text:focus {
-	font-weight: bold;
-	clip: auto !important;
-	display: block;
-	height: auto;
-	width: auto;
-	z-index: 99999;
-	padding: var(--size-2);
-	background: var(--color-bg-accent);
-	color: var(--color-fg-accent);
-	left: var(--size-2);
-	top: var(--size-2);
-	max-width: var(--size-7);
-}
-
 .f-fw100 {
 	font-weight: 100;
 }
@@ -547,8 +519,8 @@ picture {
 	font-size: var(--type-size-5);
 	line-height: var(--type-lh-2);
 }
-.f6, sub,
-sup, small, h6, h5 {
+.f6, small, sub,
+sup, h5, h6 {
 	font-size: var(--type-size-6);
 	line-height: var(--type-lh-2);
 	letter-spacing: var(--type-ls-1);
@@ -676,17 +648,45 @@ sup, small, h6, h5 {
 }
 .outline, summary:active, summary:focus, input:active, input:focus,
 button:active,
+button:focus,
 select:active,
 select:focus,
 textarea:active,
 textarea:focus, .btn:focus,
-button:focus,
 [role=button]:focus,
 [type=submit]:focus,
 [type=reset]:focus,
 [type=button]:focus, a:focus, .screen-reader-text:focus {
 	outline: var(--size-1) solid var(--color-bg-highlight);
 	outline-offset: var(--size-1);
+}
+
+/* Screen Reader Text: meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	position: absolute !important;
+	padding: 0;
+	margin: -1px;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+	font-weight: bold;
+	clip: auto !important;
+	display: block;
+	height: auto;
+	width: auto;
+	z-index: 99999;
+	padding: var(--size-2);
+	background: var(--color-bg-accent);
+	color: var(--color-fg-accent);
+	left: var(--size-2);
+	top: var(--size-2);
+	max-width: var(--size-7);
 }
 
 .overflow {
@@ -1071,7 +1071,7 @@ table th {
 table caption,
 table th, table td {
 	padding: var(--size-1);
-	display: block;
+	display: inline-block;
 	vertical-align: top;
 	word-break: break-word;
 	min-width: var(--size-5);
