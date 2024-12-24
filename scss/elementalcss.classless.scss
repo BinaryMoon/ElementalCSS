@@ -1,16 +1,18 @@
 @use "sass:math";
+@use "sass:map";
+@use 'sass:list';
 
-@import "lib/functions";
-@import "lib/responsive";
+@use "lib/functions" as *;
+@use "lib/responsive" as *;
 
-@import "vars/index";
+@use "vars/index" as *;
 
-@import "html/reset";
+@use "html/reset" as *;
 
 // Only include the utils that are extended by HTML.
-@import "utils/accessibility";
-@import "utils/font";
-@import "utils/outline";
-@import "utils/overflow";
+@use "utils/accessibility" as *;
+@use "utils/font" as *;
+@use "utils/outline" as *;
+@use "utils/overflow" as *;
 
-@import "html/index";
+@use "html/index" as *;

@@ -1,3 +1,5 @@
+@use "../lib/responsive" as *;
+
 $sizes: (
 	'0': 0,
 	'1': var( --size-base ),
@@ -18,6 +20,10 @@ $sizes: (
 
 :root {
 
+	@each $s_name, $s_value in $sizes {
+		--size-#{$s_name}: #{$s_value};
+	}
+
 	--size-base: 0.15rem;
 
 	@include mq-tablet() {
@@ -26,10 +32,6 @@ $sizes: (
 
 	@include mq-desktop() {
 		--size-base: 0.25rem;
-	}
-
-	@each $s_name, $s_value in $sizes {
-		--size-#{$s_name}: #{$s_value};
 	}
 
 }

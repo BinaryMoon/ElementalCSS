@@ -1,19 +1,6 @@
+@use "../lib/responsive" as *;
+
 :root {
-
-	// see https://type-scale.com/
-
-	// Major second.
-	--type-scale: 1.125;
-
-	@include mq-tablet() {
-		// Major third.
-		--type-scale: 1.25;
-	}
-
-	@include mq-desktop() {
-		// Perfect fifth.
-		--type-scale: 1.414;
-	}
 
 	// 18px base font size.
 	--type-base: 1rem;
@@ -32,5 +19,20 @@
 
 	// Letter spacing.
 	--type-ls-1: 0.1em;
+
+	// see https://type-scale.com/
+
+	// Major second.
+	--type-scale: 1.125;
+
+	@include mq-tablet() {
+		// Major third.
+		--type-scale: 1.25;
+	}
+
+	@include mq-desktop() {
+		// Perfect fifth.
+		--type-scale: 1.414;
+	}
 
 }

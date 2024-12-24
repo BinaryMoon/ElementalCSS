@@ -1,11 +1,13 @@
 @use "sass:math";
 @use "sass:map";
+@use "sass:color";
+@use 'sass:list';
 
-@import "lib/functions";
-@import "lib/responsive";
+@use "lib/functions" as *;
+@use "lib/responsive" as *;
 
-@import "vars/index";
+@use "vars/index" as *;
 
-@import "html/reset";
+@use "html/reset" as *;
 
-@import "utils/index";
+@use "utils/index" as *;

@@ -1,3 +1,6 @@
+@use "../lib/responsive" as *;
+@use "../vars/positions" as *;
+
 @include mq-prefix('pc') {
 
 	@each $pc_name,

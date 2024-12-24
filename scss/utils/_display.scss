@@ -1,3 +1,5 @@
+@use "../lib/responsive" as *;
+
 @include mq-prefix( 'display' ) {
 
 	&-block { display: block; }

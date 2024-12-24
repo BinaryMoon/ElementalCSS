@@ -1,5 +1,9 @@
+@use "sass:color";
+@use "sass:map";
+@use "sass:list";
+
 $colours: () !default;
-$colours: map-merge(
+$colours: map.merge(
 	(
 		// Color Palette.
 		'black': #000000,
@@ -28,7 +32,7 @@ $colours: map-merge(
 // Theme colours.
 // The first colour is for the light theme, the second is for the dark theme.
 $colour_theme: () !default;
-$colour_theme: map-merge(
+$colour_theme: map.merge(
 	(
 		'bg': (
 			white,
@@ -83,7 +87,7 @@ $colour_theme: map-merge(
 	}
 
 	@each $c_name, $c_value in $colour_theme {
-		--color-#{$c_name}: var( --color-#{ nth( $c_value, 1 ) } );
+		--color-#{$c_name}: var( --color-#{ list.nth( $c_value, 1 ) } );
 	}
 
 }
@@ -94,8 +98,8 @@ $colour_theme: map-merge(
 	:root body:not(.disable-dark-mode) {
 
 		@each $c_name, $c_value in $colour_theme {
-			@if ( 2 == length($c_value) ) {
-				--color-#{$c_name}: var( --color-#{nth($c_value,2)} );
+			@if ( 2 == list.length($c_value) ) {
+				--color-#{$c_name}: var( --color-#{list.nth($c_value,2)} );
 			}
 		}
 

@@ -1,3 +1,6 @@
+@use "../lib/responsive" as *;
+@use "../utils/font" as *;
+
 table {
 
 	caption,
@@ -12,7 +15,7 @@ table {
 	th, td {
 
 		padding: var( --size-1 );
-		display: block;
+		display: inline-block;
 		vertical-align: top;
 		word-break: break-word;
 		min-width: var( --size-5 );

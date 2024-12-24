@@ -1,3 +1,5 @@
+@use "../lib/responsive" as *;
+
 @media print {
 
 	@include mq-prefix( 'print' ) {

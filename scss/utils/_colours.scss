@@ -2,13 +2,19 @@
  * Colours
  */
 
+@use "sass:color";
+@use "sass:map";
+@use "sass:list";
+@use "../vars/colours" as *;
+
+
 // Background colours.
 // Listed before normal colours so that colours can override the accessible
 // colour set by the background property,
 .bg {
 
-	$light-link: nth(map.get($colour_theme, "link"), 1);
-	$dark-link: nth(map.get($colour_theme, "link"), 2);
+	$light-link: list.nth(map.get($colour_theme, "link"), 1);
+	$dark-link: list.nth(map.get($colour_theme, "link"), 2);
 
 	&-custom {
 		background-color: var(--bg-custom) !important;

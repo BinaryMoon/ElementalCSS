@@ -1,3 +1,7 @@
+@use "sass:list";
+@use "../lib/responsive" as *;
+@use "../vars/fonts" as *;
+
 @include mq-prefix('f') {
 
 	// Font weights.
@@ -23,12 +27,12 @@
 
 			font-size: var(--type-size-#{$s_name});
 
-			@if nth($s_value, 1) {
-				line-height: #{nth( $s_value, 1 )};
+			@if list.nth($s_value, 1) {
+				line-height: #{list.nth( $s_value, 1 )};
 			}
 
-			@if nth($s_value, 2) {
-				letter-spacing: #{nth( $s_value, 2 )};
+			@if list.nth($s_value, 2) {
+				letter-spacing: #{list.nth( $s_value, 2 )};
 			}
 		}
 	}

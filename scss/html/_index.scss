@@ -1,12 +1,12 @@
 
-@import "anchor";
-@import "button";
-@import "dialog";
-@import "heading";
-@import "hr";
-@import "input";
-@import "list";
-@import "navigation";
-@import "other";
-@import "table";
-@import "typography";
+@use "anchor" as *;
+@use "button" as *;
+@use "dialog" as *;
+@use "heading" as *;
+@use "hr" as *;
+@use "input" as *;
+@use "list" as *;
+@use "navigation" as *;
+@use "other" as *;
+@use "table" as *;
+@use "typography" as *;

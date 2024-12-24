@@ -1,10 +1,15 @@
+@use "sass:list";
+@use "../vars/sizes" as *;
+@use "../vars/positions" as *;
+@use "../lib/responsive" as *;
+
 @include mq-prefix( 'p' ) {
 
 	@each $value in ( 1, 2, 3, 4, 5, 6, 7 ) {
 
-		$s: nth( $sizes, $value );
-		$s_name: nth( $s, 1 );
-		$s_value: nth( $s, 2 );
+		$s: list.nth( $sizes, $value );
+		$s_name: list.nth( $s, 1 );
+		$s_value: list.nth( $s, 2 );
 
 		// Margin on all sides.
 		&#{$s_name} {

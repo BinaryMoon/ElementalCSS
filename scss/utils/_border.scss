@@ -1,3 +1,7 @@
+@use "../lib/responsive" as *;
+@use "../vars/positions" as *;
+@use "../vars/colours" as *;
+
 @include mq-prefix( 'b' ) {
 
 	border: var( --border-width ) solid var( --color-border );

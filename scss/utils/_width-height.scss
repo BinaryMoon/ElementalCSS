@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "../vars/numbers" as *;
+@use "../lib/responsive" as *;
+
 @each $classname, $property in ( 'w': 'width', 'mw': 'max-width', 'h': 'height', 'mh': 'max-height' ) {
 
 	@include mq-prefix( $classname ) {
@@ -27,7 +31,7 @@
 
 		@each $p_value in $percentages {
 			&#{$p_value}p {
-				#{$property}: percentage( math.div( $p_value, 100 ) );
+				#{$property}: math.percentage( math.div( $p_value, 100 ) );
 			}
 		}
 

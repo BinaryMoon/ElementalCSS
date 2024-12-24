@@ -25,9 +25,12 @@
 	$brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-number;
 
 	// Get colour values.
-	$red-component: red( $color );
-	$green-component: green( $color );
-	$blue-component: blue( $color );
+	// $red-component: red( $color );
+	// $green-component: green( $color );
+	// $blue-component: blue( $color );
+	$red-component: color.channel($color, "red", $space: rgb);
+	$green-component: color.channel($color, "green", $space: rgb);
+	$blue-component: color.channel($color, "blue", $space: rgb);
 
 	$sum: ( ( $red-component * $red-component * $red-magic-number ) + ( $green-component * $green-component * $green-magic-number ) + ( $blue-component * $blue-component * $blue-magic-number ) );
 	$number: sqrt( math.div( $sum, $brightness-divisor ) );

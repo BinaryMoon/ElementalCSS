@@ -1,7 +1,7 @@
-@import "borders";
-@import "colours";
-@import "fonts";
-@import "numbers";
-@import "position";
-@import "sizes";
-@import "typography";
+@use "borders" as *;
+@use "colours" as *;
+@use "fonts" as *;
+@use "numbers" as *;
+@use "positions" as *;
+@use "sizes" as *;
+@use "typography" as *;

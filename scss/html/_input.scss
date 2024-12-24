@@ -1,3 +1,6 @@
+@use "../lib/responsive" as *;
+@use "../utils/outline" as *;
+
 input,
 select,
 textarea {
