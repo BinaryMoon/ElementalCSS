@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "sass:color";
+
+
 // calculate a colour to use for contrast based on the brightness of the background
 @function get_contrast( $color, $light: white, $dark: black ) {
 
