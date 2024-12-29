@@ -79,30 +79,3 @@ $colour_theme: map.merge(
 	),
 	$colour_theme
 );
-
-:root {
-
-	@each $c_name, $c_value in $colours {
-		--color-#{$c_name}: #{$c_value};
-	}
-
-	@each $c_name, $c_value in $colour_theme {
-		--color-#{$c_name}: var( --color-#{ list.nth( $c_value, 1 ) } );
-	}
-
-}
-
-/* Dark theme */
-@media ( prefers-color-scheme: dark ) {
-
-	:root body:not(.disable-dark-mode) {
-
-		@each $c_name, $c_value in $colour_theme {
-			@if ( 2 == list.length($c_value) ) {
-				--color-#{$c_name}: var( --color-#{list.nth($c_value,2)} );
-			}
-		}
-
-	}
-
-}
