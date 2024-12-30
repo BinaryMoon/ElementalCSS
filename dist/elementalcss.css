@@ -1099,201 +1099,201 @@ strong {
 }
 .bg-black {
 	background-color: var(--color-black);
-	color: get_contrast(#000000);
+	color: white;
 }
 .bg-black__hover:hover {
 	background-color: var(--color-black);
-	color: get_contrast(#000000);
+	color: white;
 }
 .bg-black a:not([class]) {
-	color: get_contrast(#000000, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-gray4 {
 	background-color: var(--color-gray4);
-	color: get_contrast(#111827);
+	color: white;
 }
 .bg-gray4__hover:hover {
 	background-color: var(--color-gray4);
-	color: get_contrast(#111827);
+	color: white;
 }
 .bg-gray4 a:not([class]) {
-	color: get_contrast(#111827, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-gray3 {
 	background-color: var(--color-gray3);
-	color: get_contrast(#374151);
+	color: white;
 }
 .bg-gray3__hover:hover {
 	background-color: var(--color-gray3);
-	color: get_contrast(#374151);
+	color: white;
 }
 .bg-gray3 a:not([class]) {
-	color: get_contrast(#374151, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-gray2 {
 	background-color: var(--color-gray2);
-	color: get_contrast(#6B7280);
+	color: white;
 }
 .bg-gray2__hover:hover {
 	background-color: var(--color-gray2);
-	color: get_contrast(#6B7280);
+	color: white;
 }
 .bg-gray2 a:not([class]) {
-	color: get_contrast(#6B7280, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-gray1 {
 	background-color: var(--color-gray1);
-	color: get_contrast(#D7DAE0);
+	color: black;
 }
 .bg-gray1__hover:hover {
 	background-color: var(--color-gray1);
-	color: get_contrast(#D7DAE0);
+	color: black;
 }
 .bg-gray1 a:not([class]) {
-	color: get_contrast(#D7DAE0, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-blue-dark);
 }
 .bg-white {
 	background-color: var(--color-white);
-	color: get_contrast(#FFFFFF);
+	color: black;
 }
 .bg-white__hover:hover {
 	background-color: var(--color-white);
-	color: get_contrast(#FFFFFF);
+	color: black;
 }
 .bg-white a:not([class]) {
-	color: get_contrast(#FFFFFF, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-blue-dark);
 }
 .bg-blue-light {
 	background-color: var(--color-blue-light);
-	color: get_contrast(#72aee6);
+	color: black;
 }
 .bg-blue-light__hover:hover {
 	background-color: var(--color-blue-light);
-	color: get_contrast(#72aee6);
+	color: black;
 }
 .bg-blue-light a:not([class]) {
-	color: get_contrast(#72aee6, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-blue-dark);
 }
 .bg-blue {
 	background-color: var(--color-blue);
-	color: get_contrast(#2271b1);
+	color: white;
 }
 .bg-blue__hover:hover {
 	background-color: var(--color-blue);
-	color: get_contrast(#2271b1);
+	color: white;
 }
 .bg-blue a:not([class]) {
-	color: get_contrast(#2271b1, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-blue-dark {
 	background-color: var(--color-blue-dark);
-	color: get_contrast(#043959);
+	color: white;
 }
 .bg-blue-dark__hover:hover {
 	background-color: var(--color-blue-dark);
-	color: get_contrast(#043959);
+	color: white;
 }
 .bg-blue-dark a:not([class]) {
-	color: get_contrast(#043959, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-red-light {
 	background-color: var(--color-red-light);
-	color: get_contrast(#ff8085);
+	color: black;
 }
 .bg-red-light__hover:hover {
 	background-color: var(--color-red-light);
-	color: get_contrast(#ff8085);
+	color: black;
 }
 .bg-red-light a:not([class]) {
-	color: get_contrast(#ff8085, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-blue-dark);
 }
 .bg-red {
 	background-color: var(--color-red);
-	color: get_contrast(#d63638);
+	color: white;
 }
 .bg-red__hover:hover {
 	background-color: var(--color-red);
-	color: get_contrast(#d63638);
+	color: white;
 }
 .bg-red a:not([class]) {
-	color: get_contrast(#d63638, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-red-dark {
 	background-color: var(--color-red-dark);
-	color: get_contrast(#631919);
+	color: white;
 }
 .bg-red-dark__hover:hover {
 	background-color: var(--color-red-dark);
-	color: get_contrast(#631919);
+	color: white;
 }
 .bg-red-dark a:not([class]) {
-	color: get_contrast(#631919, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-green-light {
 	background-color: var(--color-green-light);
-	color: get_contrast(#2fdc5b);
+	color: black;
 }
 .bg-green-light__hover:hover {
 	background-color: var(--color-green-light);
-	color: get_contrast(#2fdc5b);
+	color: black;
 }
 .bg-green-light a:not([class]) {
-	color: get_contrast(#2fdc5b, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-blue-dark);
 }
 .bg-green {
 	background-color: var(--color-green);
-	color: get_contrast(#06ae2d);
+	color: white;
 }
 .bg-green__hover:hover {
 	background-color: var(--color-green);
-	color: get_contrast(#06ae2d);
+	color: white;
 }
 .bg-green a:not([class]) {
-	color: get_contrast(#06ae2d, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-green-dark {
 	background-color: var(--color-green-dark);
-	color: get_contrast(#00450c);
+	color: white;
 }
 .bg-green-dark__hover:hover {
 	background-color: var(--color-green-dark);
-	color: get_contrast(#00450c);
+	color: white;
 }
 .bg-green-dark a:not([class]) {
-	color: get_contrast(#00450c, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 .bg-yellow-light {
 	background-color: var(--color-yellow-light);
-	color: get_contrast(#ecd8a2);
+	color: black;
 }
 .bg-yellow-light__hover:hover {
 	background-color: var(--color-yellow-light);
-	color: get_contrast(#ecd8a2);
+	color: black;
 }
 .bg-yellow-light a:not([class]) {
-	color: get_contrast(#ecd8a2, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-blue-dark);
 }
 .bg-yellow {
 	background-color: var(--color-yellow);
-	color: get_contrast(#f0c33c);
+	color: black;
 }
 .bg-yellow__hover:hover {
 	background-color: var(--color-yellow);
-	color: get_contrast(#f0c33c);
+	color: black;
 }
 .bg-yellow a:not([class]) {
-	color: get_contrast(#f0c33c, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-blue-dark);
 }
 .bg-yellow-dark {
 	background-color: var(--color-yellow-dark);
-	color: get_contrast(#9d7e20);
+	color: white;
 }
 .bg-yellow-dark__hover:hover {
 	background-color: var(--color-yellow-dark);
-	color: get_contrast(#9d7e20);
+	color: white;
 }
 .bg-yellow-dark a:not([class]) {
-	color: get_contrast(#9d7e20, var(--color-yellow), var(--color-blue-dark));
+	color: var(--color-yellow);
 }
 
 .fg-current {
