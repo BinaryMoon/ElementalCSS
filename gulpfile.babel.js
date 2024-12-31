@@ -6,7 +6,6 @@
  */
 const {
 	series,
-	parallel,
 	watch
 } = require( 'gulp' );
 
@@ -36,7 +35,7 @@ export function process_styles() {
 	return src( './scss/*.scss' )
 		.pipe( plumber() )
 		.pipe(
-			sass( sass_properties ).on( 'error', sass.logError )
+			sass.sync( sass_properties ).on( 'error', sass.logError )
 		)
 		.pipe(
 			autoprefixer(
