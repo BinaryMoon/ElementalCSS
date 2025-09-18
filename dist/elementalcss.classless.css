@@ -791,7 +791,6 @@ dialog {
 
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(var(--size-1));
   backdrop-filter: blur(var(--size-1));
 }
 
