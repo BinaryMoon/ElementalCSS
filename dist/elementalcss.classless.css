@@ -800,6 +800,8 @@ h3,
 h4,
 h5,
 h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   overflow-wrap: break-word;
   margin-top: var(--size-5);
   margin-bottom: var(--size-4);
