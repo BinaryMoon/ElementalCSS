@@ -850,6 +850,9 @@ textarea {
   border: none;
   padding: 0;
 }
+[type=file]:hover {
+  cursor: pointer;
+}
 
 .dropzone[type=file] {
   width: 100%;
@@ -1446,6 +1449,10 @@ strong {
 
 .pe-auto {
   pointer-events: auto;
+}
+
+.pointer-cursor {
+  cursor: pointer;
 }
 
 .ar-1 {

@@ -1015,6 +1015,10 @@ picture {
   pointer-events: auto;
 }
 
+.pointer-cursor {
+  cursor: pointer;
+}
+
 .ar-1 {
   aspect-ratio: 1;
 }
