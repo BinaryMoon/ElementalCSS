@@ -1418,8 +1418,8 @@ strong {
 /* Screen Reader Text: meant only for screen readers. */
 .screen-reader-text {
   border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
+  left: -10000px;
+  top: auto;
   position: absolute !important;
   padding: 0;
   margin: -1px;
@@ -1430,14 +1430,13 @@ strong {
 }
 .screen-reader-text:focus {
   font-weight: bold;
-  clip: auto !important;
   display: block;
   height: auto;
   width: auto;
   z-index: 99999;
-  padding: var(--size-2);
-  background: var(--color-bg-accent);
-  color: var(--color-fg-accent);
+  padding: var(--size-2) var(--size-3);
+  background: white;
+  color: black;
   left: var(--size-2);
   top: var(--size-2);
   max-width: var(--size-7);
@@ -6434,16 +6433,6 @@ strong {
     background-position: 0 0;
   }
 }
-.shadow-low {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 2px -2px rgba(0, 0, 0, 0.1);
-}
-.shadow-mid {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 2px -2px rgba(0, 0, 0, 0.18), 0px 3px 3px -3px rgba(0, 0, 0, 0.11), 0px 10px 7px -5px rgba(0, 0, 0, 0.05);
-}
-.shadow-high {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 2px 2px -2px rgba(0, 0, 0, 0.16), 0px 7px 5px -2px rgba(0, 0, 0, 0.1), 0px 15px 11px -3px rgba(0, 0, 0, 0.05);
-}
-
 .shadow-low {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 2px -2px rgba(0, 0, 0, 0.1);
 }
