@@ -26,8 +26,8 @@
   --color-fg: var( --color-gray4 );
   --color-bg-accent: var( --color-blue );
   --color-fg-accent: var( --color-white );
-  --color-bg-highlight: var( --color-yellow );
-  --color-fg-highlight: var( --color-black );
+  --color-bg-highlight: var( --color-blue-dark );
+  --color-fg-highlight: var( --color-white );
   --color-pop: var( --color-gray1 );
   --color-link: var( --color-blue-dark );
   --color-border: var( --color-gray1 );
@@ -42,6 +42,8 @@
     --color-fg: var( --color-gray1 );
     --color-bg-accent: var( --color-yellow );
     --color-fg-accent: var( --color-black );
+    --color-bg-highlight: var( --color-yellow );
+    --color-fg-highlight: var( --color-black );
     --color-pop: var( --color-black );
     --color-link: var( --color-yellow );
     --color-border: var( --color-gray3 );
