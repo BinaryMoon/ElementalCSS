@@ -2,6 +2,7 @@
 	scroll-behavior: smooth;
 }
 
+
 .pulse {
 	animation: pulse 1s infinite;
 }
@@ -37,3 +38,16 @@
 	}
 
 }
+
+
+.anim-d100 { animation-delay: 100ms; }
+.anim-d200 { animation-delay: 200ms; }
+.anim-d300 { animation-delay: 300ms; }
+.anim-d400 { animation-delay: 400ms; }
+.anim-d500 { animation-delay: 500ms; }
+
+.anim-s100 { animation-duration: 100ms; }
+.anim-s200 { animation-duration: 200ms; }
+.anim-s300 { animation-duration: 300ms; }
+.anim-s400 { animation-duration: 400ms; }
+.anim-s500 { animation-duration: 500ms; }
