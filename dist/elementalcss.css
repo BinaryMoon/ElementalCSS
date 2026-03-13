@@ -6458,8 +6458,14 @@ strong {
   scroll-behavior: smooth;
 }
 
+[class*=anim-] {
+  animation-fill-mode: both;
+}
+
 .pulse {
-  animation: pulse 1s infinite;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes pulse {
@@ -6474,7 +6480,9 @@ strong {
   }
 }
 .fade-in {
-  animation: fadeIn 1s ease-in-out;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fadeIn {
